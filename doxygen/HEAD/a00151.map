@@ -1,0 +1,32 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$a00059.html" title="roboptim/trajectory/sys.hh" alt="" coords="2803,486,2976,517"/>
+<area shape="rect" id="node9" href="$a00041.html" title="roboptim/trajectory/fwd.hh" alt="" coords="3777,406,3951,437"/>
+<area shape="rect" id="node12" href="$a00031.html" title="roboptim/trajectory/cubic&#45;b&#45;spline.hh" alt="" coords="2365,246,2597,277"/>
+<area shape="rect" id="node17" href="$a00064.html" title="roboptim/trajectory/trajectory.hh" alt="" coords="1883,326,2091,357"/>
+<area shape="rect" id="node25" href="$a00056.html" title="roboptim/trajectory/stable&#45;time&#45;point.hh" alt="" coords="1157,406,1405,437"/>
+<area shape="rect" id="node42" href="$a00035.html" title="roboptim/trajectory/free&#45;time&#45;trajectory.hh" alt="" coords="5532,246,5793,277"/>
+<area shape="rect" id="node53" href="$a00037.html" title="roboptim/trajectory/freeze.hh" alt="" coords="485,326,675,357"/>
+<area shape="rect" id="node65" href="$a00040.html" title="roboptim/trajectory/frontal&#45;speed.hh" alt="" coords="2499,326,2728,357"/>
+<area shape="rect" id="node70" href="$a00042.html" title="roboptim/trajectory/limit&#45;omega.hh" alt="" coords="2853,166,3075,197"/>
+<area shape="rect" id="node83" href="$a00044.html" title="roboptim/trajectory/limit&#45;speed.hh" alt="" coords="3649,166,3865,197"/>
+<area shape="rect" id="node95" href="$a00048.html" title="roboptim/trajectory/orthogonal&#45;speed.hh" alt="" coords="2165,326,2424,357"/>
+<area shape="rect" id="node99" href="$a00053.html" title="roboptim/trajectory/spline&#45;length.hh" alt="" coords="2341,166,2568,197"/>
+<area shape="rect" id="node106" href="$a00060.html" title="roboptim/trajectory/trajectory&#45;cost.hh" alt="" coords="3301,326,3539,357"/>
+<area shape="rect" id="node113" href="$a00054.html" title="roboptim/trajectory/stable&#45;point&#45;state&#45;function.hh" alt="" coords="5327,166,5625,197"/>
+<area shape="rect" id="node127" href="$a00057.html" title="roboptim/trajectory/state&#45;function.hh" alt="" coords="4407,246,4636,277"/>
+<area shape="rect" id="node140" href="$a00062.html" title="roboptim/trajectory/trajectory&#45;sum&#45;cost.hh" alt="" coords="4584,326,4848,357"/>
+<area shape="rect" id="node153" href="$a00045.html" title="roboptim/trajectory/visualization/limit&#45;speed.hh" alt="" coords="2991,86,3284,117"/>
+<area shape="rect" id="node162" href="$a00051.html" title="roboptim/trajectory/visualization/speed.hh" alt="" coords="1875,246,2144,277"/>
+<area shape="rect" id="node171" href="$a00065.html" title="roboptim/trajectory/visualization/trajectory.hh" alt="" coords="1249,246,1535,277"/>
+<area shape="rect" id="node34" href="$a00050.html" title="roboptim/trajectory/polynomial&#45;3.hh" alt="" coords="1632,326,1859,357"/>
+<area shape="rect" id="node38" href="$a00032.html" title="roboptim/trajectory/cubic&#45;b&#45;spline.hxx" alt="" coords="4872,326,5112,357"/>
+<area shape="rect" id="node30" href="$a00067.html" title="roboptim/trajectory/trajectory.hxx" alt="" coords="3028,406,3241,437"/>
+<area shape="rect" id="node51" href="$a00036.html" title="roboptim/trajectory/free&#45;time&#45;trajectory.hxx" alt="" coords="5755,326,6024,357"/>
+<area shape="rect" id="node63" href="$a00038.html" title="roboptim/trajectory/freeze.hxx" alt="" coords="203,406,400,437"/>
+<area shape="rect" id="node77" href="$a00043.html" title="roboptim/trajectory/limit&#45;omega.hxx" alt="" coords="2744,246,2973,277"/>
+<area shape="rect" id="node90" href="$a00046.html" title="roboptim/trajectory/limit&#45;speed.hxx" alt="" coords="3200,246,3424,277"/>
+<area shape="rect" id="node111" href="$a00061.html" title="roboptim/trajectory/trajectory&#45;cost.hxx" alt="" coords="3265,406,3508,437"/>
+<area shape="rect" id="node123" href="$a00055.html" title="roboptim/trajectory/stable&#45;point&#45;state&#45;function.hxx" alt="" coords="3499,246,3805,277"/>
+<area shape="rect" id="node136" href="$a00058.html" title="roboptim/trajectory/state&#45;function.hxx" alt="" coords="3968,326,4205,357"/>
+<area shape="rect" id="node149" href="$a00063.html" title="roboptim/trajectory/trajectory&#45;sum&#45;cost.hxx" alt="" coords="4723,406,4995,437"/>
+</map>

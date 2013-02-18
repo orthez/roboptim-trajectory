@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$a00013.html" title="NTimesDerivableFunction" alt="" coords="7,58,183,89"/>
+<area shape="rect" id="node3" href="$a00023.html" title="Abstract trajectory." alt="" coords="240,5,507,35"/>
+<area shape="rect" id="node5" href="$a00023.html" title="roboptim::Trajectory\&lt; 3 \&gt;" alt="" coords="287,58,460,89"/>
+<area shape="rect" id="node9" href="$a00023.html" title="roboptim::Trajectory\&lt; T::derivabilityOrder \&gt;" alt="" coords="232,111,515,142"/>
+<area shape="rect" id="node7" href="$a00005.html" title="Cubic B&#45;Spline trajectory." alt="" coords="600,58,760,89"/>
+<area shape="rect" id="node11" href="$a00007.html" title="Decorate a trajectory to make time scalable." alt="" coords="563,111,797,142"/>
+</map>

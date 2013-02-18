@@ -1,0 +1,26 @@
+var annotated =
+[
+    [ "roboptim::AnthropomorphicCostFunction< T >", "a00003.html", "a00003" ],
+    [ "roboptim::detail::ComputeIntegral< T >", "a00004.html", "a00004" ],
+    [ "roboptim::CubicBSpline", "a00005.html", "a00005" ],
+    [ "DerivableFunction", "a00006.html", null ],
+    [ "roboptim::FreeTimeTrajectory< T >", "a00007.html", "a00007" ],
+    [ "roboptim::Freeze< P >", "a00008.html", "a00008" ],
+    [ "roboptim::FrontalSpeed", "a00009.html", "a00009" ],
+    [ "roboptim::LimitOmega< T >", "a00010.html", "a00010" ],
+    [ "roboptim::LimitSpeed< T >", "a00011.html", "a00011" ],
+    [ "roboptim::Monomial", "a00012.html", "a00012" ],
+    [ "NTimesDerivableFunction", "a00013.html", null ],
+    [ "roboptim::OrthogonalSpeed", "a00014.html", "a00014" ],
+    [ "roboptim::visualization::gnuplot::detail::PlotLimitSpeed< T >", "a00015.html", "a00015" ],
+    [ "roboptim::visualization::gnuplot::detail::PlotTrajectory< T >", "a00016.html", "a00016" ],
+    [ "roboptim::Polynomial3", "a00017.html", "a00017" ],
+    [ "roboptim::SplineLength", "a00018.html", "a00018" ],
+    [ "roboptim::StablePointStateFunction< T >", "a00019.html", "a00019" ],
+    [ "roboptim::StableTimePoint", "a00020.html", "a00020" ],
+    [ "roboptim::StateFunction< T >", "a00021.html", "a00021" ],
+    [ "roboptim::TMax", "a00022.html", null ],
+    [ "roboptim::Trajectory< DerivabilityOrder >", "a00023.html", "a00023" ],
+    [ "roboptim::TrajectoryCost< T >", "a00024.html", "a00024" ],
+    [ "roboptim::TrajectorySumCost< T >", "a00025.html", "a00025" ]
+];
