@@ -16,7 +16,7 @@ var searchData=
   ['frontal_2dspeed_2ehh',['frontal-speed.hh',['../a00040.html',1,'']]],
   ['frontalspeed',['FrontalSpeed',['../a00009.html#a845015d934dff044e564c8c048279be0',1,'roboptim::FrontalSpeed']]],
   ['frontalspeed',['FrontalSpeed',['../a00009.html',1,'roboptim']]],
-  ['frozenargument_5ft',['frozenArgument_t',['../a00008.html#a8955a90f13698a1104758bf3659849a3',1,'roboptim::Freeze']]],
+  ['frozenargument_5ft',['frozenArgument_t',['../a00008.html#a7065a4d215b44041f603d7853b96a485',1,'roboptim::Freeze']]],
   ['frozenarguments_5ft',['frozenArguments_t',['../a00008.html#a5ff87f4d182bfd6c788ad2a835d57e4e',1,'roboptim::Freeze']]],
   ['fwd_2ehh',['fwd.hh',['../a00041.html',1,'']]]
 ];

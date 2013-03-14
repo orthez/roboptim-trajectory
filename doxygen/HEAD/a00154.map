@@ -1,13 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$a00003.html" title="Cost function from ``An optimal control model unifying holonomic and nonholonomic walking&#39;&#39; Katja Mom..." alt="" coords="185,5,476,35"/>
-<area shape="rect" id="node5" href="$a00009.html" title="roboptim::FrontalSpeed" alt="" coords="251,58,411,89"/>
-<area shape="rect" id="node7" href="$a00010.html" title="roboptim::LimitOmega\&lt; T \&gt;" alt="" coords="237,111,424,142"/>
-<area shape="rect" id="node9" href="$a00011.html" title="roboptim::LimitSpeed\&lt; T \&gt;" alt="" coords="240,165,421,195"/>
-<area shape="rect" id="node11" href="$a00014.html" title="roboptim::OrthogonalSpeed" alt="" coords="237,218,424,249"/>
-<area shape="rect" id="node13" href="$a00019.html" title="Trajectory cost function defined by state evaluation at parameter." alt="" coords="200,271,461,302"/>
-<area shape="rect" id="node15" href="$a00021.html" title="Trajectory cost function defined by state evaluation at parameter." alt="" coords="233,325,428,355"/>
-<area shape="rect" id="node17" href="$a00024.html" title="Meta&#45;function for trajectory cost." alt="" coords="229,378,432,409"/>
-<area shape="rect" id="node19" href="$a00025.html" title="Trajectory cost function defined by sum of state evaluations at parameters." alt="" coords="216,431,445,462"/>
-<area shape="rect" id="node21" href="$a00024.html" title="roboptim::TrajectoryCost\&lt; CubicBSpline \&gt;" alt="" coords="193,485,468,515"/>
-<area shape="rect" id="node23" href="$a00018.html" title="Approximate the length of a Spline." alt="" coords="527,485,684,515"/>
+<area shape="rect" id="node3" href="$a00023.html" title="Abstract trajectory." alt="" coords="232,5,499,35"/>
+<area shape="rect" id="node5" href="$a00023.html" title="Trajectory\&lt; 3 \&gt;" alt="" coords="308,58,423,89"/>
+<area shape="rect" id="node9" href="$a00023.html" title="Trajectory\&lt; T::derivabilityOrder \&gt;" alt="" coords="255,111,476,142"/>
+<area shape="rect" id="node7" href="$a00005.html" title="Cubic B&#45;Spline trajectory." alt="" coords="584,58,744,89"/>
+<area shape="rect" id="node11" href="$a00007.html" title="Decorate a trajectory to make time scalable." alt="" coords="547,111,781,142"/>
 </map>

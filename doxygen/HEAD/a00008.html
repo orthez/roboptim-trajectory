@@ -70,17 +70,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;roboptim/trajectory/freeze.hh&gt;</code></p>
 
-<p><a href="a00165.html">List of all members.</a></p>
+<p><a href="a00164.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; size_t, <br class="typebreak"/>
-Function::value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html#a8955a90f13698a1104758bf3659849a3">frozenArgument_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pair representing an argument index and a value.  <a href="#a8955a90f13698a1104758bf3659849a3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair<br class="typebreak"/>
+&lt; Function::size_type, <br class="typebreak"/>
+Function::value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pair representing an argument index and a value.  <a href="#a7065a4d215b44041f603d7853b96a485"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html#ac99c64ca9f1b66729d6a40e1d4b0ac63">problem_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Problem type.  <a href="#ac99c64ca9f1b66729d6a40e1d4b0ac63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="a00008.html#a8955a90f13698a1104758bf3659849a3">frozenArgument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td></tr>
+&lt; <a class="el" href="a00008.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of pairs (argument index, value).  <a href="#a5ff87f4d182bfd6c788ad2a835d57e4e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -101,14 +102,14 @@ class roboptim::Freeze&lt; P &gt;</h3>
 <p>For instance, the vector: [(0, 5.), (3, -12.)] forces the first parameter to five and the fourth one to minus twelve.</p>
 <p>This adds to the problem one linear constraint per frozen parameter. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a8955a90f13698a1104758bf3659849a3"></a><!-- doxytag: member="roboptim::Freeze::frozenArgument_t" ref="a8955a90f13698a1104758bf3659849a3" args="" -->
+<a class="anchor" id="a7065a4d215b44041f603d7853b96a485"></a><!-- doxytag: member="roboptim::Freeze::frozenArgument_t" ref="a7065a4d215b44041f603d7853b96a485" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;size_t, Function::value_type&gt; <a class="el" href="a00008.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00008.html#a8955a90f13698a1104758bf3659849a3">frozenArgument_t</a></td>
+          <td class="memname">typedef std::pair&lt;Function::size_type, Function::value_type&gt; <a class="el" href="a00008.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00008.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a></td>
         </tr>
       </table>
 </div>
@@ -125,7 +126,7 @@ template&lt;typename P &gt; </div>
 template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00008.html#a8955a90f13698a1104758bf3659849a3">frozenArgument_t</a>&gt; <a class="el" href="a00008.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00008.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00008.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a>&gt; <a class="el" href="a00008.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00008.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td>
         </tr>
       </table>
 </div>
