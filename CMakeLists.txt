@@ -60,6 +60,9 @@ SET(HEADERS
   ${CSD}/include/roboptim/trajectory/stable-point-state-function.hh
   ${CSD}/include/roboptim/trajectory.hh )
 
+#FIXME: remove this before reopening a pull request
+SET(CXX_DISABLE_WERROR 1)
+
 SETUP_PROJECT()
 
 # Add main library to pkg-config file.

@@ -66,7 +66,7 @@ ENDMACRO(ROBOPTIM_TRAJECTORY_TEST)
 #
 MACRO(ROBOPTIM_TRAJECTORY_ANTHROPOMORPHIC_TEST NAME)
   ADD_EXECUTABLE(${NAME} ${NAME}.cc
-    ${COMMON_HEADERS} anthropomorphic-cost-function.cc)
+    ${COMMON_HEADERS} anthropomorphic-cost-function.cc foo.cc)
   ADD_TEST(${NAME} ${RUNTIME_OUTPUT_DIRECTORY}/${NAME})
 
   TARGET_LINK_LIBRARIES(${NAME} roboptim-trajectory)

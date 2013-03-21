@@ -18,12 +18,12 @@
 
 #ifndef ROBOPTIM_TRAJECTORY_POLYNOMIAL_HH
 # define ROBOPTIM_TRAJECTORY_POLYNOMIAL_HH
-
 # include <roboptim/core/function.hh>
 
-namespace roboptim {
+namespace roboptim
+{
   /// Polynomial of degree at most N
-
+  ///
   /// \f[
   /// P (t) = \sum_{i=0}{3} a_i (t-t_0)^i
   /// \f]
@@ -37,9 +37,9 @@ namespace roboptim {
     Polynomial (double t0, const  vector_t& coefs);
 
     /**
-     * these operations are degree specific, and are only implemented for N={3,5} FIXME
+     * these operations are degree specific, and are only implemented
+     * for N={3,5} FIXME
      */
-
     Polynomial<N> translate (const double &t1) const;
 
     double derivative (const double& t, size_type order = 1) const;
@@ -48,15 +48,22 @@ namespace roboptim {
     Polynomial<N> operator- (const Polynomial<N>& poly) const;
     double operator () (const double& t) const;
 
-    double coefs_[N+1];	//could not use fixed size Eigen::Matrix here since this would create a direct reference to Eigen
+    double coefs_[N+1];
+    // could not use fixed size Eigen::Matrix here since this would
+    // create a direct reference to Eigen
     double t0_;
   protected:
-	double impl_derivative(const double &t, size_type order, size_type start_coef=0) const;
-	static const int order_=N;
-    enum special_polynomials {
-    	all_zero_coefficients=0,
-    	monomial_coefficients=1
-    };
+    double
+    impl_derivative
+    (const double &t, size_type order, size_type start_coef=0) const;
+
+    static const int order_=N;
+
+    enum special_polynomials
+      {
+	all_zero_coefficients=0,
+	monomial_coefficients=1
+      };
 
     /**
      * \brief special constructor for Monomial<N> and some operators
@@ -75,11 +82,11 @@ namespace roboptim {
   struct Monomial : public Polynomial<N>
   {
   public:
-    Monomial (double t0) : Polynomial<N> (t0,Polynomial<N>::monomial_coefficients) {}
+    Monomial (double t0)
+      : Polynomial<N> (t0,Polynomial<N>::monomial_coefficients)
+    {}
   }; // class Monomial
-
-} // namespace roboptim
+} // end of namespace roboptim.
 
 # include <roboptim/trajectory/polynomial.hxx>
-
 #endif // ROBOPTIM_TRAJECTORY_POLYNOMIAL_HH
