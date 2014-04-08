@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#undef NDEBUG</span>
 <span class="preprocessor"></span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00059.html">roboptim/trajectory/sys.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00060.html">roboptim/trajectory/sys.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &lt;fstream&gt;</span>
 
@@ -88,18 +88,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</span>
 <span class="preprocessor">#include &lt;roboptim/core/visualization/gnuplot-function.hh&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00035.html">roboptim/trajectory/free-time-trajectory.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00041.html">roboptim/trajectory/fwd.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00044.html">roboptim/trajectory/limit-speed.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00053.html">roboptim/trajectory/spline-length.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00031.html">roboptim/trajectory/cubic-b-spline.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00060.html">roboptim/trajectory/trajectory-cost.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00036.html">roboptim/trajectory/free-time-trajectory.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00045.html">roboptim/trajectory/limit-speed.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00054.html">roboptim/trajectory/spline-length.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00032.html">roboptim/trajectory/cubic-b-spline.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00061.html">roboptim/trajectory/trajectory-cost.hh</a>&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00045.html">roboptim/trajectory/visualization/limit-speed.hh</a>&gt;</span>
-
-
-<span class="preprocessor">#include &lt;roboptim/core/plugin/cfsqp.hh&gt;</span>
-
+<span class="preprocessor">#include &lt;<a class="code" href="a00046.html">roboptim/trajectory/visualization/limit-speed.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &quot;shared-tests/common.hh&quot;</span>
 
@@ -107,17 +103,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="keyword">using namespace </span>roboptim::visualization;
 <span class="keyword">using namespace </span>roboptim::visualization::gnuplot;
 
-<span class="keyword">typedef</span> CFSQPSolver::problem_t::constraints_t constraint_t;
-<span class="keyword">typedef</span> CFSQPSolver solver_t;
+<span class="comment">// Solver type different from the test suite&#39;s solver_t</span>
+<span class="keyword">typedef</span> Solver&lt;DifferentiableFunction,
+         boost::mpl::vector&lt;LinearFunction, DifferentiableFunction&gt; &gt;
+test_solver_t;
+
+<span class="keyword">typedef</span> test_solver_t::problem_t::constraints_t constraint_t;
 <span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00007.html" title="Decorate a trajectory to make time scalable.">FreeTimeTrajectory&lt;CubicBSpline&gt;</a> freeTime_t;
 
 
 <span class="comment">// Problem parameters.</span>
-<span class="keyword">const</span> <span class="keywordtype">unsigned</span> nControlPoints = 15;
-<span class="keyword">const</span> <span class="keywordtype">unsigned</span> nConstraintsPerCtrlPts = 10;
+<span class="keyword">const</span> <span class="keywordtype">unsigned</span> nControlPoints = 6;
+<span class="keyword">const</span> <span class="keywordtype">unsigned</span> nConstraintsPerCtrlPts = 5;
 <span class="keyword">const</span> <span class="keywordtype">double</span> vMax = 85.;
 
-<span class="keywordtype">int</span> run_test ()
+BOOST_FIXTURE_TEST_SUITE (trajectory, TestSuiteConfiguration)
+
+BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
 {
   <span class="keyword">using namespace </span>boost;
   <span class="keyword">using namespace </span>boost::assign;
@@ -146,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   roboptim::NumericLinearFunction cost (a, b);
 
   <span class="comment">// Create problem.</span>
-  solver_t::problem_t problem (cost);
+  test_solver_t::problem_t problem (cost);
   problem.startingPoint () = freeTimeTraj.parameters ();
 
   <span class="comment">// Scale has to remain positive.</span>
@@ -154,8 +156,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <span class="keyword">const</span> freeTime_t::vector_t freeTimeParams = freeTimeTraj.parameters ();
 
-  spline.<a name="a4"></a><a class="code" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6">freezeCurveStart</a> (problem, 1);
-  spline.<a name="a5"></a><a class="code" href="a00005.html#a723ba4453c80d67132b3734593cb0adb">freezeCurveEnd</a> (problem, 1);
+  spline.<a name="a4"></a><a class="code" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem, 1);
+  spline.<a name="a5"></a><a class="code" href="a00005.html#a723ba4453c80d67132b3734593cb0adb" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem, 1);
 
   Function::interval_t vRange = Function::makeUpperInterval (.5 * vMax * vMax);
   <a name="_a6"></a><a class="code" href="a00011.html">LimitSpeed&lt;FreeTimeTrajectory&lt;CubicBSpline&gt;</a> &gt;::addToProblem
@@ -168,15 +170,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;multiplot layout 1,2 title &quot;</span>
       <span class="stringliteral">&quot;&#39;variation of speed before and after optimization&#39;&quot;</span>)
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;grid&quot;</span>);
-  gnuplot &lt;&lt; <a name="a7"></a><a class="code" href="a00072.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (freeTimeTraj, vMax);
+  gnuplot &lt;&lt; <a name="a7"></a><a class="code" href="a00075.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (freeTimeTraj, vMax);
 
 
-  SolverFactory&lt;solver_t&gt; factory (<span class="stringliteral">&quot;cfsqp&quot;</span>, problem);
-  solver_t&amp; solver = factory ();
+  SolverFactory&lt;test_solver_t&gt; factory (TESTSUITE_SOLVER, problem);
+  test_solver_t&amp; solver = factory ();
+
+  <span class="comment">// Set optional log file for debugging</span>
+  SET_LOG_FILE(solver);
+
+  <span class="comment">// Ipopt-specific parameters</span>
+  <span class="comment">// WARNING: these parameters may not be relevant! These are only set to</span>
+  <span class="comment">// prevent hour-long unit testing...</span>
+  solver.parameters()[<span class="stringliteral">&quot;ipopt.linear_solver&quot;</span>].value = IPOPT_LINEAR_SOLVER;
+  solver.parameters()[<span class="stringliteral">&quot;ipopt.tol&quot;</span>].value = 1e-3;
+  solver.parameters()[<span class="stringliteral">&quot;ipopt.acceptable_tol&quot;</span>].value = 5e-2;
+  solver.parameters()[<span class="stringliteral">&quot;ipopt.mu_strategy&quot;</span>].value = <span class="stringliteral">&quot;adaptive&quot;</span>;
 
   std::cout &lt;&lt; solver &lt;&lt; std::endl;
 
-  solver_t::result_t res = solver.minimum ();
+  test_solver_t::result_t res = solver.minimum ();
   std::cerr &lt;&lt; res &lt;&lt; std::endl;
 
   <a class="code" href="a00007.html" title="Decorate a trajectory to make time scalable.">FreeTimeTrajectory&lt;CubicBSpline&gt;</a> optimizedTrajectory =
@@ -201,15 +214,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
     <span class="keywordflow">case</span> GenericSolver::SOLVER_NO_SOLUTION:
     <span class="keywordflow">case</span> GenericSolver::SOLVER_ERROR:
-      <span class="keywordflow">return</span> 1;
+      BOOST_CHECK(<span class="keyword">false</span>);
     }
 
-  gnuplot &lt;&lt; <a class="code" href="a00072.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (optimizedTrajectory, vMax);
+  gnuplot &lt;&lt; <a class="code" href="a00075.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (optimizedTrajectory, vMax);
   limitSpeedStream &lt;&lt; (gnuplot &lt;&lt; unset (<span class="stringliteral">&quot;multiplot&quot;</span>));
-  <span class="keywordflow">return</span> 0;
 }
 
-GENERATE_TEST ()
+BOOST_AUTO_TEST_SUITE_END ()
 </pre></div> </div><!-- contents -->
 </div><!-- contents -->
 <!-- window showing the filter options -->

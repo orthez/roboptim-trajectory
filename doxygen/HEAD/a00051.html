@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>speed.hh File Reference</title>
+<title>polynomial-3.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -56,50 +56,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">speed.hh File Reference</div>  </div>
+<div class="title">polynomial-3.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00059.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;boost/format.hpp&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot.hh&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00056.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00040.html">roboptim/trajectory/frontal-speed.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00048.html">roboptim/trajectory/orthogonal-speed.hh</a>&gt;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for speed.hh:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00123.png" border="0" usemap="#speed_8hh" alt=""/></div>
-<map name="speed_8hh" id="speed_8hh">
-<area shape="rect" id="node3" href="a00059.html" title="roboptim/trajectory/sys.hh" alt="" coords="1017,246,1190,277"/><area shape="rect" id="node15" href="a00064.html" title="roboptim/trajectory/trajectory.hh" alt="" coords="781,86,989,117"/><area shape="rect" id="node25" href="a00056.html" title="roboptim/trajectory/stable&#45;time&#45;point.hh" alt="" coords="22,166,270,197"/><area shape="rect" id="node33" href="a00040.html" title="roboptim/trajectory/frontal&#45;speed.hh" alt="" coords="1406,86,1635,117"/><area shape="rect" id="node38" href="a00048.html" title="roboptim/trajectory/orthogonal&#45;speed.hh" alt="" coords="1123,86,1382,117"/><area shape="rect" id="node22" href="a00041.html" title="roboptim/trajectory/fwd.hh" alt="" coords="955,166,1129,197"/><area shape="rect" id="node30" href="a00067.html" title="roboptim/trajectory/trajectory.hxx" alt="" coords="718,166,931,197"/></map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00124.png" border="0" usemap="#speed_8hhdep" alt=""/></div>
-<map name="speed_8hhdep" id="speed_8hhdep">
-<area shape="rect" id="node3" href="a00066.html" title="trajectory.hh" alt="" coords="5,86,99,117"/></map>
-</div>
+<div class="textblock"><code>#include &lt;roboptim/core/function.hh&gt;</code><br/>
+<code>#include &lt;ostream&gt;</code><br/>
 </div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html">roboptim::Polynomial3</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Polynomial of degree at most 3.  <a href="a00017.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html">roboptim::Monomial</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00012.html" title="Monomial .">Monomial</a> </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ M (t) = t-t_0 \]" src="form_6.png"/>
+</p>
+<p>.  <a href="a00012.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim::visualization</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphic visualization. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim::visualization::gnuplot</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Gnuplot rendering. </p>
 <br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00072.html#af0c2649b3ea630e1aed8ac2dde4d6495">roboptim::visualization::gnuplot::plot_speeds</a> (const T &amp;traj, typename T::value_type step=.01)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Polynomial3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#a0d43cc04b62be6282095e7d1162d78ee">roboptim::operator*</a> (const double &amp;lambda, const Polynomial3 &amp;poly)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication of a 3rd degree polynomial.  <a href="#a0d43cc04b62be6282095e7d1162d78ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#a9d5f6fee9d918aab7bc0b1d3c46f1264">roboptim::operator&lt;&lt;</a> (std::ostream &amp;o, const Polynomial3 &amp;p)</td></tr>
 </table>
 </div><!-- contents -->
 </div>
@@ -119,6 +105,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00051.html">speed.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00051.html">polynomial-3.hh</a>      </li>
 </body>
 </html>

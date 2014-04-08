@@ -57,53 +57,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">limit-speed.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00059.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;boost/format.hpp&gt;</code><br/>
-<code>#include &lt;boost/optional.hpp&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot.hh&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00044.html">roboptim/trajectory/limit-speed.hh</a>&gt;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for visualization/limit-speed.hh:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00113.png" border="0" usemap="#limit-speed_8hh" alt=""/></div>
-<map name="limit-speed_8hh" id="limit-speed_8hh">
-<area shape="rect" id="node3" href="a00059.html" title="roboptim/trajectory/sys.hh" alt="" coords="137,406,311,437"/><area shape="rect" id="node17" href="a00044.html" title="roboptim/trajectory/limit&#45;speed.hh" alt="" coords="316,86,532,117"/><area shape="rect" id="node24" href="a00041.html" title="roboptim/trajectory/fwd.hh" alt="" coords="93,326,267,357"/><area shape="rect" id="node27" href="a00056.html" title="roboptim/trajectory/stable&#45;time&#45;point.hh" alt="" coords="341,326,589,357"/><area shape="rect" id="node32" href="a00046.html" title="roboptim/trajectory/limit&#45;speed.hxx" alt="" coords="312,166,536,197"/><area shape="rect" id="node40" href="a00064.html" title="roboptim/trajectory/trajectory.hh" alt="" coords="341,246,549,277"/><area shape="rect" id="node49" href="a00067.html" title="roboptim/trajectory/trajectory.hxx" alt="" coords="1037,326,1251,357"/></map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00114.png" border="0" usemap="#limit-speed_8hhdep" alt=""/></div>
-<map name="limit-speed_8hhdep" id="limit-speed_8hhdep">
-<area shape="rect" id="node3" href="a00066.html" title="trajectory.hh" alt="" coords="9,86,103,117"/></map>
-</div>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00060.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
+<code>#include &lt;roboptim/core/derivable-function.hh&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00057.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00047.html">roboptim/trajectory/limit-speed.hxx</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt;</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html">roboptim::LimitSpeed&lt; T &gt;</a></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim::visualization</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphic visualization. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim::visualization::gnuplot</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Gnuplot rendering. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">roboptim::visualization::gnuplot::detail</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;unsigned dorder&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00072.html#aad07f0f1d78793149fea1a519a578738">roboptim::visualization::gnuplot::plot_limitSpeed</a> (const Trajectory&lt; dorder &gt; &amp;trajectory, boost::optional&lt; double &gt; vMax=boost::optional&lt; double &gt;(), typename Trajectory&lt; dorder &gt;::value_type step=.01)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a speed limit constraint.  <a href="#aad07f0f1d78793149fea1a519a578738"></a><br/></td></tr>
 </table>
 </div><!-- contents -->
 </div>

@@ -19,7 +19,8 @@ var hierarchy =
     [ "NTimesDerivableFunction", "a00013.html", [
       [ "roboptim::Trajectory< DerivabilityOrder >", "a00023.html", null ],
       [ "roboptim::Trajectory< 3 >", "a00023.html", [
-        [ "roboptim::CubicBSpline", "a00005.html", null ]
+        [ "roboptim::CubicBSpline", "a00005.html", null ],
+        [ "roboptim::VectorInterpolation", "a00026.html", null ]
       ] ],
       [ "roboptim::Trajectory< T::derivabilityOrder >", "a00023.html", [
         [ "roboptim::FreeTimeTrajectory< T >", "a00007.html", null ]

@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#undef NDEBUG</span>
 <span class="preprocessor"></span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00059.html">roboptim/trajectory/sys.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00060.html">roboptim/trajectory/sys.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &lt;boost/assign/list_of.hpp&gt;</span>
 <span class="preprocessor">#include &lt;boost/mpl/vector.hpp&gt;</span>
@@ -86,15 +86,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</span>
 <span class="preprocessor">#include &lt;roboptim/core/visualization/gnuplot-function.hh&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00041.html">roboptim/trajectory/fwd.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00053.html">roboptim/trajectory/spline-length.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00031.html">roboptim/trajectory/cubic-b-spline.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00060.html">roboptim/trajectory/trajectory-cost.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00065.html">roboptim/trajectory/visualization/trajectory.hh</a>&gt;</span>
-
-
-<span class="preprocessor">#include &lt;roboptim/core/plugin/cfsqp.hh&gt;</span>
-
+<span class="preprocessor">#include &lt;<a class="code" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00054.html">roboptim/trajectory/spline-length.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00032.html">roboptim/trajectory/cubic-b-spline.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00061.html">roboptim/trajectory/trajectory-cost.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00066.html">roboptim/trajectory/visualization/trajectory.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &quot;shared-tests/common.hh&quot;</span>
 
@@ -102,8 +98,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="keyword">using namespace </span>roboptim::visualization;
 <span class="keyword">using namespace </span>roboptim::visualization::gnuplot;
 
-<span class="keyword">typedef</span> CFSQPSolver::problem_t::constraints_t constraint_t;
-<span class="keyword">typedef</span> CFSQPSolver solver_t;
+<span class="comment">// Solver type different from the test suite&#39;s solver_t</span>
+<span class="keyword">typedef</span> Solver&lt;DifferentiableFunction,
+         boost::mpl::vector&lt;LinearFunction, DifferentiableFunction&gt; &gt;
+test_solver_t;
+
+<span class="keyword">typedef</span> test_solver_t::problem_t::constraints_t constraint_t;
 
 <span class="keywordtype">void</span> showSpline (<span class="keyword">const</span> <a name="_a0"></a><a class="code" href="a00005.html" title="Cubic B-Spline trajectory.">CubicBSpline</a>&amp; spline);
 
@@ -131,7 +131,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (4.)) &lt;&lt; std::endl;
 }
 
-<span class="keywordtype">int</span> run_test ()
+BOOST_FIXTURE_TEST_SUITE (trajectory, TestSuiteConfiguration)
+
+BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
 {
   <span class="keyword">using namespace </span>boost::assign;
   <a name="a3"></a><a class="code" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca" title="Import vector type.">CubicBSpline::vector_t</a> params (16);
@@ -160,42 +162,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   gnuplot
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;multiplot layout 1,2&quot;</span>)
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;grid&quot;</span>)
-    &lt;&lt; <a name="a5"></a><a class="code" href="a00072.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (spline);
+    &lt;&lt; <a name="a5"></a><a class="code" href="a00075.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (spline);
 
   <span class="comment">// Optimize.</span>
   <a name="_a6"></a><a class="code" href="a00018.html" title="Approximate the length of a Spline.">SplineLength</a> cost (spline);
 
   <span class="comment">// Check cost gradient.</span>
   <span class="keywordflow">try</span>
-  {
-    Function::vector_t x (params.size ());
-    x.setZero ();
-    checkGradientAndThrow (cost, 0, x, 2e-3);
+    {
+      Function::vector_t x (params.size ());
+      x.setZero ();
+      checkGradientAndThrow (cost, 0, x, 2e-3);
 
-    x = params;
-    checkGradientAndThrow (cost, 0, x, 2e-3);
-  }
-  <span class="keywordflow">catch</span> (BadGradient&amp; bg)
+      x = params;
+      checkGradientAndThrow (cost, 0, x, 2e-3);
+    }
+  <span class="keywordflow">catch</span> (BadGradient&lt;EigenMatrixDense&gt;&amp; bg)
     {
       std::cerr &lt;&lt; bg &lt;&lt; std::endl;
-      <span class="keywordflow">return</span> 1;
+      BOOST_CHECK(<span class="keyword">false</span>);
     }
 
-  solver_t::problem_t problem (cost);
+  test_solver_t::problem_t problem (cost);
   problem.startingPoint () = params;
 
-  spline.<a name="a7"></a><a class="code" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6">freezeCurveStart</a> (problem);
-  spline.<a name="a8"></a><a class="code" href="a00005.html#a723ba4453c80d67132b3734593cb0adb">freezeCurveEnd</a> (problem);
+  spline.<a name="a7"></a><a class="code" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem);
+  spline.<a name="a8"></a><a class="code" href="a00005.html#a723ba4453c80d67132b3734593cb0adb" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem);
 
-  SolverFactory&lt;solver_t&gt; factory (<span class="stringliteral">&quot;cfsqp&quot;</span>, problem);
-  solver_t&amp; solver = factory ();
+  SolverFactory&lt;test_solver_t&gt; factory (TESTSUITE_SOLVER, problem);
+  test_solver_t&amp; solver = factory ();
+
+  <span class="comment">// Set optional log file for debugging</span>
+  SET_LOG_FILE(solver);
 
   std::cerr &lt;&lt; <span class="stringliteral">&quot;Cost function (before): &quot;</span> &lt;&lt; cost (params) &lt;&lt; std::endl;
   std::cerr &lt;&lt; <span class="stringliteral">&quot;Parameters (before): &quot;</span> &lt;&lt; params &lt;&lt; std::endl;
 
   std::cerr &lt;&lt; solver &lt;&lt; std::endl;
 
-  solver_t::result_t res = solver.minimum ();
+  test_solver_t::result_t res = solver.minimum ();
 
   <span class="keywordflow">switch</span> (res.which ())
     {
@@ -205,14 +210,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <a class="code" href="a00005.html" title="Cubic B-Spline trajectory.">CubicBSpline</a> optimizedSpline (timeRange, 2, result.x, <span class="stringliteral">&quot;after&quot;</span>);
   showSpline (optimizedSpline);
   params = result.x;
-  gnuplot &lt;&lt; <a class="code" href="a00072.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
+  gnuplot &lt;&lt; <a class="code" href="a00075.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
   <span class="keywordflow">break</span>;
       }
 
     <span class="keywordflow">case</span> GenericSolver::SOLVER_NO_SOLUTION:
       {
   std::cerr &lt;&lt; <span class="stringliteral">&quot;No solution&quot;</span> &lt;&lt; std::endl;
-  <span class="keywordflow">return</span> 1;
+  BOOST_CHECK(<span class="keyword">false</span>);
       }
     <span class="keywordflow">case</span> GenericSolver::SOLVER_VALUE_WARNINGS:
       {
@@ -221,7 +226,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   showSpline (optimizedSpline);
   params = result.x;
   std::cerr &lt;&lt; result &lt;&lt; std::endl;
-  gnuplot &lt;&lt; <a class="code" href="a00072.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
+  gnuplot &lt;&lt; <a class="code" href="a00075.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
   <span class="keywordflow">break</span>;
       }
 
@@ -229,7 +234,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       {
   SolverError&amp; result = boost::get&lt;SolverError&gt; (res);
   std::cerr &lt;&lt; result &lt;&lt; std::endl;
-      <span class="keywordflow">return</span> 1;
+  BOOST_CHECK(<span class="keyword">false</span>);
       }
     }
 
@@ -240,17 +245,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     {
       checkGradientAndThrow (cost, 0, params, 2e-3);
     }
-  <span class="keywordflow">catch</span> (BadGradient&amp; bg)
+  <span class="keywordflow">catch</span> (BadGradient&lt;EigenMatrixDense&gt;&amp; bg)
     {
       std::cerr &lt;&lt; bg &lt;&lt; std::endl;
-      <span class="keywordflow">return</span> 1;
+      BOOST_CHECK(<span class="keyword">false</span>);
     }
 
   std::cout &lt;&lt; (gnuplot &lt;&lt; unset (<span class="stringliteral">&quot;multiplot&quot;</span>));
-  <span class="keywordflow">return</span> 0;
 }
 
-GENERATE_TEST ()
+BOOST_AUTO_TEST_SUITE_END ()
 </pre></div> </div><!-- contents -->
 </div><!-- contents -->
 <!-- window showing the filter options -->

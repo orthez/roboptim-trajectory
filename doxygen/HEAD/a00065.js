@@ -1,5 +1,5 @@
 var a00065 =
 [
-    [ "plot_xy", "a00072.html#a8470b3cde9bc3f5c8bda1de059a469f4", null ],
-    [ "plot_xytheta", "a00072.html#a10e4af94da20e9c1e65d68c85a15f6d5", null ]
+    [ "ROBOPTIM_IMPLEMENT_CLONE", "a00065.html#a8f4791e10718727120fec1d0bf67f645", null ],
+    [ "fixTime", "a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc", null ]
 ];

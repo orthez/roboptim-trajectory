@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>trajectory.hxx File Reference</title>
+<title>trajectory.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -55,27 +55,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">trajectory.hxx File Reference</div>  </div>
+<div class="title">trajectory.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00152.png" border="0" usemap="#trajectory_8hxxdep" alt=""/></div>
-<map name="trajectory_8hxxdep" id="trajectory_8hxxdep">
-<area shape="rect" id="node3" href="a00064.html" title="trajectory.hh" alt="" coords="529,86,623,117"/><area shape="rect" id="node5" href="a00031.html" title="cubic&#45;b&#45;spline.hh" alt="" coords="147,246,264,277"/><area shape="rect" id="node9" href="a00066.html" title="trajectory.hh" alt="" coords="549,406,643,437"/><area shape="rect" id="node16" href="a00035.html" title="free&#45;time&#45;trajectory.hh" alt="" coords="397,246,544,277"/><area shape="rect" id="node22" href="a00043.html" title="limit&#45;omega.hxx" alt="" coords="519,166,633,197"/><area shape="rect" id="node27" href="a00046.html" title="limit&#45;speed.hxx" alt="" coords="657,166,767,197"/><area shape="rect" id="node35" href="a00051.html" title="speed.hh" alt="" coords="791,166,868,197"/><area shape="rect" id="node38" href="a00065.html" title="trajectory.hh" alt="" coords="892,166,985,197"/><area shape="rect" id="node7" href="a00053.html" title="spline&#45;length.hh" alt="" coords="5,326,120,357"/><area shape="rect" id="node14" href="a00030.html" title="cubic&#45;b&#45;spline.cc" alt="" coords="195,326,312,357"/><area shape="rect" id="node11" href="a00052.html" title="spline&#45;length.cc" alt="" coords="5,406,120,437"/><area shape="rect" id="node18" href="a00054.html" title="stable&#45;point&#45;state&#45;function.hh" alt="" coords="437,326,624,357"/><area shape="rect" id="node24" href="a00042.html" title="limit&#45;omega.hh" alt="" coords="568,246,677,277"/><area shape="rect" id="node29" href="a00044.html" title="limit&#45;speed.hh" alt="" coords="701,246,803,277"/><area shape="rect" id="node31" href="a00045.html" title="limit&#45;speed.hh" alt="" coords="749,326,851,357"/></map>
-</div>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
-<br/></td></tr>
-</table>
-</div><!-- contents -->
+<div class="textblock"><code>#include &lt;<a class="el" href="a00060.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00032.html">roboptim/trajectory/cubic-b-spline.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00036.html">roboptim/trajectory/free-time-trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00038.html">roboptim/trajectory/freeze.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00041.html">roboptim/trajectory/frontal-speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00043.html">roboptim/trajectory/limit-omega.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00045.html">roboptim/trajectory/limit-speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00049.html">roboptim/trajectory/orthogonal-speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00054.html">roboptim/trajectory/spline-length.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00055.html">roboptim/trajectory/stable-point-state-function.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00057.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00058.html">roboptim/trajectory/state-function.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00061.html">roboptim/trajectory/trajectory-cost.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00063.html">roboptim/trajectory/trajectory-sum-cost.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00065.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00046.html">roboptim/trajectory/visualization/limit-speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00052.html">roboptim/trajectory/visualization/speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00066.html">roboptim/trajectory/visualization/trajectory.hh</a>&gt;</code><br/>
+</div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -93,6 +96,6 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00067.html">trajectory.hxx</a>      </li>
+      <li class="navelem"><a class="el" href="a00067.html">trajectory.hh</a>      </li>
 </body>
 </html>

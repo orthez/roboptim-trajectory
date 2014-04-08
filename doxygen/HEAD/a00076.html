@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Mathematical functions</title>
+<title>roboptim::visualization::gnuplot::detail Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -12,7 +12,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -34,6 +34,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
 </div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -50,157 +56,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Mathematical functions</div>  </div>
+<div class="title">roboptim::visualization::gnuplot::detail Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html">roboptim::CubicBSpline</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cubic B-Spline trajectory.  <a href="a00005.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html">roboptim::FreeTimeTrajectory&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate a trajectory to make time scalable.  <a href="a00007.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html">roboptim::SplineLength</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate the length of a Spline.  <a href="a00018.html#details">More...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ga108e7e919d913e11f7b20bb923aa02ad">roboptim::SplineLength::SplineLength</a> (const CubicBSpline &amp;spline, const size_type nDiscretizationPoints=100, boost::optional&lt; interval_t &gt; interval=boost::none_t())  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the function from a Spline and a definition interval.  <a href="#ga108e7e919d913e11f7b20bb923aa02ad"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ga1782f184c8428487235745d35e3f9e7a">roboptim::SplineLength::~SplineLength</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">PlotLimitSpeed</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">PlotTrajectory</a></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="gac38788259d62f4369483b198e9734eb1"></a><!-- doxytag: member="roboptim::SplineLength::impl_compute" ref="gac38788259d62f4369483b198e9734eb1" args="(result_t &amp;, const argument_t &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00076.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
-          <td class="paramname"><em>res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>References <a class="el" href="a00005.html#ad3980bb2d61ceff9f5df92aa17768252">roboptim::CubicBSpline::setParameters()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gabcf4b780c024c21c433d6965bed3c62f"></a><!-- doxytag: member="roboptim::SplineLength::impl_gradient" ref="gabcf4b780c024c21c433d6965bed3c62f" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00076.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type  &#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>References <a class="el" href="a00005.html#ad3980bb2d61ceff9f5df92aa17768252">roboptim::CubicBSpline::setParameters()</a>, and <a class="el" href="a00024.html#a1fcac55e0be93c130db9ddfc6457c381">roboptim::TrajectoryCost&lt; CubicBSpline &gt;::trajectory_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga108e7e919d913e11f7b20bb923aa02ad"></a><!-- doxytag: member="roboptim::SplineLength::SplineLength" ref="ga108e7e919d913e11f7b20bb923aa02ad" args="(const CubicBSpline &amp;spline, const size_type nDiscretizationPoints=100, boost::optional&lt; interval_t &gt; interval=boost::none_t())" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html#ga108e7e919d913e11f7b20bb923aa02ad">roboptim::SplineLength::SplineLength</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00005.html">CubicBSpline</a> &amp;&#160;</td>
-          <td class="paramname"><em>spline</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_type&#160;</td>
-          <td class="paramname"><em>nDiscretizationPoints</em> = <code>100</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::optional&lt; interval_t &gt;&#160;</td>
-          <td class="paramname"><em>interval</em> = <code>boost::none_t&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Construct the function from a Spline and a definition interval. </p>
-<p>The interval allows to only compute the length of the Spline on a specific interval. The step associated to the interval controls the approximation precision. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spline</td><td>spline used for length computation </td></tr>
-    <tr><td class="paramname">interval</td><td>interval on which the length is computed. </td></tr>
-    <tr><td class="paramname">nDiscretizationPoints</td><td>number of discretization points </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga1782f184c8428487235745d35e3f9e7a"></a><!-- doxytag: member="roboptim::SplineLength::~SplineLength" ref="ga1782f184c8428487235745d35e3f9e7a" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html#ga1782f184c8428487235745d35e3f9e7a">roboptim::SplineLength::~SplineLength</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
+</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -215,8 +83,11 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-</div>
   <div id="nav-path" class="navpath">
     <ul>
+      <li class="navelem"><a class="el" href="a00071.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00074.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">gnuplot</a>      </li>
+      <li class="navelem"><a class="el" href="a00076.html">detail</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Mathematical abstract functions</title>
+<title>roboptim::visualization::gnuplot Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -12,7 +12,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -34,6 +34,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
 </div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -50,26 +56,184 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Mathematical abstract functions</div>  </div>
+<div class="title">roboptim::visualization::gnuplot Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Gnuplot rendering.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html">roboptim::StablePointStateFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter.  <a href="a00019.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter.  <a href="a00021.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html">roboptim::TrajectoryCost&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-function for trajectory cost.  <a href="a00024.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html">roboptim::TrajectorySumCost&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> cost function defined by sum of state evaluations at parameters.  <a href="a00025.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">roboptim::Trajectory&lt; DerivabilityOrder &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract trajectory.  <a href="a00023.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html">detail</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;unsigned dorder&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00075.html#aad07f0f1d78793149fea1a519a578738">plot_limitSpeed</a> (const <a class="el" href="a00023.html">Trajectory</a>&lt; dorder &gt; &amp;trajectory, boost::optional&lt; double &gt; vMax=boost::optional&lt; double &gt;(), typename <a class="el" href="a00023.html">Trajectory</a>&lt; dorder &gt;::value_type step=.01)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a speed limit constraint.  <a href="#aad07f0f1d78793149fea1a519a578738"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00075.html#af0c2649b3ea630e1aed8ac2dde4d6495">plot_speeds</a> (const T &amp;traj, typename T::value_type step=.01)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;unsigned N&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00075.html#a8470b3cde9bc3f5c8bda1de059a469f4">plot_xy</a> (const <a class="el" href="a00023.html">Trajectory</a>&lt; N &gt; &amp;traj, typename <a class="el" href="a00023.html">Trajectory</a>&lt; N &gt;::value_type step=.01)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a 2D trajectory with Gnuplot.  <a href="#a8470b3cde9bc3f5c8bda1de059a469f4"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00075.html#a10e4af94da20e9c1e65d68c85a15f6d5">plot_xytheta</a> (const T &amp;traj, typename T::value_type step=.01)</td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Gnuplot rendering. </p>
+<p>Gnuplot display classes. </p>
+</div><hr/><h2>Function Documentation</h2>
+<a class="anchor" id="aad07f0f1d78793149fea1a519a578738"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_limitSpeed" ref="aad07f0f1d78793149fea1a519a578738" args="(const Trajectory&lt; dorder &gt; &amp;trajectory, boost::optional&lt; double &gt; vMax=boost::optional&lt; double &gt;(), typename Trajectory&lt; dorder &gt;::value_type step=.01)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Command <a class="el" href="a00075.html#aad07f0f1d78793149fea1a519a578738">roboptim::visualization::gnuplot::plot_limitSpeed</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Trajectory&lt; dorder &gt; &amp;&#160;</td>
+          <td class="paramname"><em>trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::optional&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>vMax</em> = <code>boost::optional&lt;double&gt;&#160;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename Trajectory&lt; dorder &gt;::value_type&#160;</td>
+          <td class="paramname"><em>step</em> = <code>.01</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Plot a speed limit constraint. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Gnuplot command </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#a7">spline-time-optimization.cc</a>.</dd>
+</dl>
+<p>References <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; DerivabilityOrder &gt;::timeRange()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0c2649b3ea630e1aed8ac2dde4d6495"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_speeds" ref="af0c2649b3ea630e1aed8ac2dde4d6495" args="(const T &amp;traj, typename T::value_type step=.01)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Command <a class="el" href="a00075.html#af0c2649b3ea630e1aed8ac2dde4d6495">roboptim::visualization::gnuplot::plot_speeds</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>traj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename T::value_type&#160;</td>
+          <td class="paramname"><em>step</em> = <code>.01</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00020.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>, and <a class="el" href="a00071.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8470b3cde9bc3f5c8bda1de059a469f4"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_xy" ref="a8470b3cde9bc3f5c8bda1de059a469f4" args="(const Trajectory&lt; N &gt; &amp;traj, typename Trajectory&lt; N &gt;::value_type step=.01)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Command <a class="el" href="a00075.html#a8470b3cde9bc3f5c8bda1de059a469f4">roboptim::visualization::gnuplot::plot_xy</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Trajectory&lt; N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>traj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename Trajectory&lt; N &gt;::value_type&#160;</td>
+          <td class="paramname"><em>step</em> = <code>.01</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Plot a 2D trajectory with Gnuplot. </p>
+<p>Plot a 2D trajectory in Gnuplot. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">traj</td><td>trajectory to be displayed </td></tr>
+    <tr><td class="paramname">step</td><td>discretization step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Gnuplot command </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00002.html#a5">spline-optimization.cc</a>.</dd>
+</dl>
+<p>References <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; DerivabilityOrder &gt;::timeRange()</a>, and <a class="el" href="a00071.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10e4af94da20e9c1e65d68c85a15f6d5"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_xytheta" ref="a10e4af94da20e9c1e65d68c85a15f6d5" args="(const T &amp;traj, typename T::value_type step=.01)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Command <a class="el" href="a00075.html#a10e4af94da20e9c1e65d68c85a15f6d5">roboptim::visualization::gnuplot::plot_xytheta</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>traj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename T::value_type&#160;</td>
+          <td class="paramname"><em>step</em> = <code>.01</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00020.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>, and <a class="el" href="a00071.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
+</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -84,8 +248,10 @@ Classes</h2></td></tr>
 </iframe>
 </div>
 
-</div>
   <div id="nav-path" class="navpath">
     <ul>
+      <li class="navelem"><a class="el" href="a00071.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00074.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">gnuplot</a>      </li>
 </body>
 </html>

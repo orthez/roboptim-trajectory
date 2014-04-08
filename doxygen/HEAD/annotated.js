@@ -22,5 +22,6 @@ var annotated =
     [ "roboptim::TMax", "a00022.html", null ],
     [ "roboptim::Trajectory< DerivabilityOrder >", "a00023.html", "a00023" ],
     [ "roboptim::TrajectoryCost< T >", "a00024.html", "a00024" ],
-    [ "roboptim::TrajectorySumCost< T >", "a00025.html", "a00025" ]
+    [ "roboptim::TrajectorySumCost< T >", "a00025.html", "a00025" ],
+    [ "roboptim::VectorInterpolation", "a00026.html", "a00026" ]
 ];

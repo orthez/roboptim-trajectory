@@ -58,55 +58,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Defines</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">trajectory.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00059.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;boost/format.hpp&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot.hh&gt;</code><br/>
-<code>#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00056.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for trajectory/visualization/trajectory.hh:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00149.png" border="0" usemap="#trajectory_8hh" alt=""/></div>
-<map name="trajectory_8hh" id="trajectory_8hh">
-<area shape="rect" id="node3" href="a00059.html" title="roboptim/trajectory/sys.hh" alt="" coords="685,246,859,277"/><area shape="rect" id="node15" href="a00064.html" title="roboptim/trajectory/trajectory.hh" alt="" coords="401,86,609,117"/><area shape="rect" id="node25" href="a00056.html" title="roboptim/trajectory/stable&#45;time&#45;point.hh" alt="" coords="864,166,1112,197"/><area shape="rect" id="node22" href="a00041.html" title="roboptim/trajectory/fwd.hh" alt="" coords="667,166,840,197"/><area shape="rect" id="node30" href="a00067.html" title="roboptim/trajectory/trajectory.hxx" alt="" coords="5,166,219,197"/></map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00150.png" border="0" usemap="#trajectory_8hhdep" alt=""/></div>
-<map name="trajectory_8hhdep" id="trajectory_8hhdep">
-<area shape="rect" id="node3" href="a00066.html" title="trajectory.hh" alt="" coords="5,86,99,117"/></map>
-</div>
+<div class="textblock"><code>#include &lt;roboptim/core/sys.hh&gt;</code><br/>
+<code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;roboptim/core/n-times-derivable-function.hh&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00057.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00068.html">roboptim/trajectory/trajectory.hxx</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">roboptim::visualization::gnuplot::detail::PlotTrajectory&lt; T &gt;</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">roboptim::Trajectory&lt; DerivabilityOrder &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract trajectory.  <a href="a00023.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim::visualization</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphic visualization. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim::visualization::gnuplot</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Gnuplot rendering. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">roboptim::visualization::gnuplot::detail</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">roboptim::detail</a></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a8f4791e10718727120fec1d0bf67f645">ROBOPTIM_IMPLEMENT_CLONE</a>(C)</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;unsigned N&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00072.html#a8470b3cde9bc3f5c8bda1de059a469f4">roboptim::visualization::gnuplot::plot_xy</a> (const Trajectory&lt; N &gt; &amp;traj, typename Trajectory&lt; N &gt;::value_type step=.01)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a 2D trajectory with Gnuplot.  <a href="#a8470b3cde9bc3f5c8bda1de059a469f4"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00072.html#a10e4af94da20e9c1e65d68c85a15f6d5">roboptim::visualization::gnuplot::plot_xytheta</a> (const T &amp;traj, typename T::value_type step=.01)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime</a> (double t, const T &amp;trajectory)</td></tr>
 </table>
+<hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a8f4791e10718727120fec1d0bf67f645"></a><!-- doxytag: member="trajectory/trajectory.hh::ROBOPTIM_IMPLEMENT_CLONE" ref="a8f4791e10718727120fec1d0bf67f645" args="(C)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="a00065.html#a8f4791e10718727120fec1d0bf67f645">ROBOPTIM_IMPLEMENT_CLONE</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">C</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">virtual</span> C* clone () <span class="keyword">const</span> throw ()    \
+  {           \
+    return <span class="keyword">new</span> C (*<span class="keyword">this</span>);     \
+  }
+</pre></div>
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->

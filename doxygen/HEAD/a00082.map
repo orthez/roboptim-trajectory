@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$a00059.html" title="roboptim/trajectory/sys.hh" alt="" coords="269,246,442,277"/>
-<area shape="rect" id="node13" href="$a00041.html" title="roboptim/trajectory/fwd.hh" alt="" coords="269,166,442,197"/>
-<area shape="rect" id="node16" href="$a00056.html" title="roboptim/trajectory/stable&#45;time&#45;point.hh" alt="" coords="98,86,346,117"/>
-<area shape="rect" id="node21" href="$a00027.html" title="roboptim/trajectory/anthropomorphic&#45;cost&#45;function.hxx" alt="" coords="421,86,757,117"/>
-<area shape="rect" id="node23" href="$a00040.html" title="roboptim/trajectory/frontal&#45;speed.hh" alt="" coords="466,166,695,197"/>
-<area shape="rect" id="node27" href="$a00048.html" title="roboptim/trajectory/orthogonal&#45;speed.hh" alt="" coords="719,166,978,197"/>
-</map>
