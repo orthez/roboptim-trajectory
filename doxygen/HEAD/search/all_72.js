@@ -3,6 +3,7 @@ var searchData=
   ['detail',['detail',['../a00073.html',1,'roboptim']]],
   ['detail',['detail',['../a00076.html',1,'roboptim::visualization::gnuplot']]],
   ['gnuplot',['gnuplot',['../a00075.html',1,'roboptim::visualization']]],
+  ['realroots',['realRoots',['../a00017.html#aba3747436a47f5c9a40aa94048d58d75',1,'roboptim::Polynomial3']]],
   ['removescalefromparameters',['removeScaleFromParameters',['../a00071.html#aa5c12d11052417b6478ab2e668ff3e14',1,'roboptim']]],
   ['res_5f',['res_',['../a00053.html#aeb11d374dedce38c0fb8a53aa4c15fca',1,'spline-length.cc']]],
   ['resize',['resize',['../a00005.html#a629cdb8cd2321fd129893a6e4d2a48bc',1,'roboptim::CubicBSpline::resize()'],['../a00007.html#a4f924237d4e5654f285c48b2f24073e0',1,'roboptim::FreeTimeTrajectory::resize()'],['../a00023.html#a663fb66c3ef467e6d3f0a33001ed2ad9',1,'roboptim::Trajectory::resize()'],['../a00026.html#a10e3767705188efecb3132511b86a5a2',1,'roboptim::VectorInterpolation::resize()']]],

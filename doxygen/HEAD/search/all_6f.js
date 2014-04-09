@@ -6,6 +6,7 @@ var searchData=
   ['operator_2b',['operator+',['../a00017.html#ac659b9c440cd8281b1adaa9c5c159844',1,'roboptim::Polynomial3']]],
   ['operator_2d',['operator-',['../a00017.html#a5f2037b120f2a40f3a200646af5d6112',1,'roboptim::Polynomial3']]],
   ['operator_3c_3c',['operator<<',['../a00071.html#a9d5f6fee9d918aab7bc0b1d3c46f1264',1,'roboptim']]],
+  ['operator_5b_5d',['operator[]',['../a00017.html#a759f8a2e0e6a75c3417f550a27c6e7ba',1,'roboptim::Polynomial3']]],
   ['order',['order',['../a00019.html#a62f2fa2cf1cb77dbafd538a74842e67b',1,'roboptim::StablePointStateFunction::order()'],['../a00021.html#aeca7305f8895bd733e31e99f651fa412',1,'roboptim::StateFunction::order()'],['../a00025.html#a1fa8949f2f9d9b052d0cd87ddcda73f5',1,'roboptim::TrajectorySumCost::order()']]],
   ['orthogonal_2dspeed_2ecc',['orthogonal-speed.cc',['../a00048.html',1,'']]],
   ['orthogonal_2dspeed_2ehh',['orthogonal-speed.hh',['../a00049.html',1,'']]],

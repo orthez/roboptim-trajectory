@@ -103,6 +103,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a1513943abd2fcf4c04625e6d784595a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae8fcaf3ab4ffa5207ec1127aaad92fd0">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="a00017.html" title="Polynomial of degree at most 3.">Polynomial3</a>.  <a href="#ae8fcaf3ab4ffa5207ec1127aaad92fd0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a759f8a2e0e6a75c3417f550a27c6e7ba">operator[]</a> (int i) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#a759f8a2e0e6a75c3417f550a27c6e7ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aba3747436a47f5c9a40aa94048d58d75">realRoots</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the translated polynomial.  <a href="#aba3747436a47f5c9a40aa94048d58d75"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a> [4]</td></tr>
@@ -311,6 +315,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a759f8a2e0e6a75c3417f550a27c6e7ba"></a><!-- doxytag: member="roboptim::Polynomial3::operator[]" ref="a759f8a2e0e6a75c3417f550a27c6e7ba" args="(int i) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double roboptim::Polynomial3::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the i-th polynomial coefficient. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>number of the coefficient to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>i-th polynomial coefficient αi, with: α_i (t-t₀)^i </dd></dl>
+
+<p>References <a class="el" href="a00017.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae8fcaf3ab4ffa5207ec1127aaad92fd0"></a><!-- doxytag: member="roboptim::Polynomial3::print" ref="ae8fcaf3ab4ffa5207ec1127aaad92fd0" args="(std::ostream &amp;o) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -329,6 +361,28 @@ Public Attributes</h2></td></tr>
 <p>Print <a class="el" href="a00017.html" title="Polynomial of degree at most 3.">Polynomial3</a>. </p>
 
 <p>Referenced by <a class="el" href="a00071.html#a9d5f6fee9d918aab7bc0b1d3c46f1264">roboptim::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba3747436a47f5c9a40aa94048d58d75"></a><!-- doxytag: member="roboptim::Polynomial3::realRoots" ref="aba3747436a47f5c9a40aa94048d58d75" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; <a class="el" href="a00017.html#aba3747436a47f5c9a40aa94048d58d75">roboptim::Polynomial3::realRoots</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the real roots of the translated polynomial. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>This function relies on Eigen's experimental polynomial solver. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>vector of the real roots of the translated polynomial. </dd></dl>
+
+<p>References <a class="el" href="a00017.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00017.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +405,7 @@ Public Attributes</h2></td></tr>
 
 <p>References <a class="el" href="a00017.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, <a class="el" href="a00017.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, and <a class="el" href="a00017.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
 
-<p>Referenced by <a class="el" href="a00017.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00017.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, and <a class="el" href="a00017.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>.</p>
+<p>Referenced by <a class="el" href="a00017.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00017.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00017.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, and <a class="el" href="a00017.html#aba3747436a47f5c9a40aa94048d58d75">realRoots()</a>.</p>
 
 </div>
 </div>
@@ -390,7 +444,7 @@ Public Attributes</h2></td></tr>
 
 <p>Polynomial coefficients (ordered from lowest to highest degree). </p>
 
-<p>Referenced by <a class="el" href="a00017.html#a1513943abd2fcf4c04625e6d784595a9">derivative()</a>, <a class="el" href="a00017.html#ab11ff9d18d57a221e3853f85064e26c2">operator()()</a>, <a class="el" href="a00017.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00071.html#a0d43cc04b62be6282095e7d1162d78ee">roboptim::operator*()</a>, <a class="el" href="a00017.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00017.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, <a class="el" href="a00017.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00017.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>, and <a class="el" href="a00017.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace()</a>.</p>
+<p>Referenced by <a class="el" href="a00017.html#a1513943abd2fcf4c04625e6d784595a9">derivative()</a>, <a class="el" href="a00017.html#ab11ff9d18d57a221e3853f85064e26c2">operator()()</a>, <a class="el" href="a00017.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00071.html#a0d43cc04b62be6282095e7d1162d78ee">roboptim::operator*()</a>, <a class="el" href="a00017.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00017.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, <a class="el" href="a00017.html#a759f8a2e0e6a75c3417f550a27c6e7ba">operator[]()</a>, <a class="el" href="a00017.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00017.html#aba3747436a47f5c9a40aa94048d58d75">realRoots()</a>, <a class="el" href="a00017.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>, and <a class="el" href="a00017.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace()</a>.</p>
 
 </div>
 </div>
