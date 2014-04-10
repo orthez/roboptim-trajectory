@@ -12,7 +12,7 @@ var searchData=
   ['plottrajectory',['PlotTrajectory',['../a00017.html',1,'roboptim::visualization::gnuplot::detail']]],
   ['plottrajectory',['PlotTrajectory',['../a00017.html#aa705abbf968f28cd49cd86ad925b79ce',1,'roboptim::visualization::gnuplot::detail::PlotTrajectory']]],
   ['polynomial',['Polynomial',['../a00018.html',1,'roboptim']]],
-  ['polynomial',['Polynomial',['../a00018.html#a657ec7d47dc937be37e0081c1bb319fb',1,'roboptim::Polynomial::Polynomial()'],['../a00018.html#a939ecdd9e19708828f506120672f5770',1,'roboptim::Polynomial::Polynomial(value_type t0, const vector_t &amp;coefs)'],['../a00018.html#a537a1e4aa6ca54fdce2214dea7de074f',1,'roboptim::Polynomial::Polynomial(value_type t0, special_polynomials key)']]],
+  ['polynomial',['Polynomial',['../a00018.html#a657ec7d47dc937be37e0081c1bb319fb',1,'roboptim::Polynomial::Polynomial()'],['../a00018.html#a939ecdd9e19708828f506120672f5770',1,'roboptim::Polynomial::Polynomial(value_type t0, const vector_t &amp;coefs)'],['../a00018.html#a233850918a67a2556cb481b260272a02',1,'roboptim::Polynomial::Polynomial(const Polynomial&lt; M &gt; &amp;p)'],['../a00018.html#a537a1e4aa6ca54fdce2214dea7de074f',1,'roboptim::Polynomial::Polynomial(value_type t0, special_polynomials key)']]],
   ['polynomial_2d3_2ecc',['polynomial-3.cc',['../a00052.html',1,'']]],
   ['polynomial_2d3_2ehh',['polynomial-3.hh',['../a00053.html',1,'']]],
   ['polynomial_2ehh',['polynomial.hh',['../a00054.html',1,'']]],
