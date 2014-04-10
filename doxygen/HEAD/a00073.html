@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail Namespace Reference</title>
+<title>vector-interpolation.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -12,9 +12,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -36,8 +36,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -57,143 +57,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail Namespace Reference</div>  </div>
+<div class="title">vector-interpolation.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &lt;boost/make_shared.hpp&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00069.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00074.html">roboptim/trajectory/vector-interpolation.hxx</a>&gt;</code><br/>
+</div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html">ComputeIntegral</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html">roboptim::VectorInterpolation</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a vector or argument and differentiate it.  <a href="a00028.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">roboptim</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
+<br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">Function::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ae275d124d42d540fb4cb060aa4e4322f">unscaleTime</a> (Function::value_type unscaled, Function::value_type min, Function::value_type scale)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;unsigned dorder&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Function::interval_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00073.html#a52ba18d87cef70c3783bf6bf86ba1100">unscaleInterval</a> (const <a class="el" href="a00023.html">Trajectory</a>&lt; dorder &gt; &amp;traj, typename Function::value_type scale)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a510a83f9d49d84dd2bcc1a65fcc33da4">getLimitSpeedName</a> (const <a class="el" href="a00020.html">StableTimePoint</a> &amp;timePoint)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">fixTime</a> (double t, const T &amp;trajectory)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
+&lt; VectorInterpolation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a9c7dcb3672048b40ea9a5703437f52ae">roboptim::vectorInterpolation</a> (VectorInterpolation::vector_t x, VectorInterpolation::size_type outputSize, VectorInterpolation::value_type dt=1.)</td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="afcac15d5d4c3d6d6e2d8d6a0178dc2cc"></a><!-- doxytag: member="roboptim::detail::fixTime" ref="afcac15d5d4c3d6d6e2d8d6a0178dc2cc" args="(double t, const T &amp;trajectory)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>trajectory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">roboptim::CubicBSpline::basisFunctions()</a>, <a class="el" href="a00005.html#adccf908b3e4ae0036078eac00509c66b">roboptim::CubicBSpline::impl_compute()</a>, <a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative()</a>, <a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">roboptim::CubicBSpline::interval()</a>, <a class="el" href="a00007.html#a0e42ae27e23f2b3b59a640b1724c81f1">roboptim::FreeTimeTrajectory&lt; T &gt;::scaleTime()</a>, <a class="el" href="a00007.html#a32dcce2b55ef298a2a338dd52083dc64">roboptim::FreeTimeTrajectory&lt; T &gt;::unscaleTime()</a>, and <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a510a83f9d49d84dd2bcc1a65fcc33da4"></a><!-- doxytag: member="roboptim::detail::getLimitSpeedName" ref="a510a83f9d49d84dd2bcc1a65fcc33da4" args="(const StableTimePoint &amp;timePoint)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="a00073.html#a510a83f9d49d84dd2bcc1a65fcc33da4">roboptim::detail::getLimitSpeedName</a> </td>
-          <td>(</td>
-          <td class="paramtype">const StableTimePoint &amp;&#160;</td>
-          <td class="paramname"><em>timePoint</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00020.html#ac224524284ba191a8282e5b1b8eb31a3">roboptim::StableTimePoint::getAlpha()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a52ba18d87cef70c3783bf6bf86ba1100"></a><!-- doxytag: member="roboptim::detail::unscaleInterval" ref="a52ba18d87cef70c3783bf6bf86ba1100" args="(const Trajectory&lt; dorder &gt; &amp;traj, typename Function::value_type scale)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned dorder&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">Function::interval_t <a class="el" href="a00073.html#a52ba18d87cef70c3783bf6bf86ba1100">roboptim::detail::unscaleInterval</a> </td>
-          <td>(</td>
-          <td class="paramtype">const Trajectory&lt; dorder &gt; &amp;&#160;</td>
-          <td class="paramname"><em>traj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Function::value_type&#160;</td>
-          <td class="paramname"><em>scale</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; DerivabilityOrder &gt;::timeRange()</a>, and <a class="el" href="a00073.html#ae275d124d42d540fb4cb060aa4e4322f">unscaleTime()</a>.</p>
-
-<p>Referenced by <a class="el" href="a00007.html#a91c66089ea69347f6b2d2e61c0e1e54b">roboptim::FreeTimeTrajectory&lt; T &gt;::setParameters()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae275d124d42d540fb4cb060aa4e4322f"></a><!-- doxytag: member="roboptim::detail::unscaleTime" ref="ae275d124d42d540fb4cb060aa4e4322f" args="(Function::value_type unscaled, Function::value_type min, Function::value_type scale)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Function::value_type <a class="el" href="a00073.html#ae275d124d42d540fb4cb060aa4e4322f">roboptim::detail::unscaleTime</a> </td>
-          <td>(</td>
-          <td class="paramtype">Function::value_type&#160;</td>
-          <td class="paramname"><em>unscaled</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Function::value_type&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Function::value_type&#160;</td>
-          <td class="paramname"><em>scale</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00073.html#a52ba18d87cef70c3783bf6bf86ba1100">unscaleInterval()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -201,7 +91,7 @@ template&lt;unsigned dorder&gt; </div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -212,7 +102,6 @@ template&lt;unsigned dorder&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00071.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00073.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00073.html">vector-interpolation.hh</a>      </li>
 </body>
 </html>

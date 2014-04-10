@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::TrajectoryCost&lt; T &gt; Class Template Reference</title>
+<title>roboptim::TMax Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -57,151 +57,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::TrajectoryCost&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00078.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::TMax Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::TrajectoryCost" --><!-- doxytag: inherits="DerivableFunction" -->
-<p>Meta-function for trajectory cost.  
- <a href="a00024.html#details">More...</a></p>
-
-<p><code>#include &lt;roboptim/trajectory/trajectory-cost.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::TrajectoryCost&lt; T &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00024.png" usemap="#roboptim::TrajectoryCost&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::TrajectoryCost&lt; T &gt;_map" name="roboptim::TrajectoryCost&lt; T &gt;_map">
-<area href="a00006.html" alt="DerivableFunction" shape="rect" coords="0,0,180,24"/>
-</map>
- </div></div>
-
-<p><a href="a00099.html">List of all members.</a></p>
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#ad0b2be9f24cc110906215697a9a69a52"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a6d9d1399593c435c872ff1d125e13776">TrajectoryCost</a> (const <a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;traj, std::string name=std::string())  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concret class should call this constructor.  <a href="#a6d9d1399593c435c872ff1d125e13776"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ac58cc178462e67a9d0279a8f01fcf5f3">~TrajectoryCost</a> ()  throw ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a1fcac55e0be93c130db9ddfc6457c381">trajectory_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Input trajectory.  <a href="#a1fcac55e0be93c130db9ddfc6457c381"></a><br/></td></tr>
-</table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::TrajectoryCost&lt; T &gt;</h3>
-
-<p>Meta-function for trajectory cost. </p>
-<p>This is a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_16.png"/> meta-function for costs on trajectories.</p>
-<p>It takes a trajectory as its input.</p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">T</td><td>trajectory type </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ad0b2be9f24cc110906215697a9a69a52"></a><!-- doxytag: member="roboptim::TrajectoryCost::trajectory_t" ref="ad0b2be9f24cc110906215697a9a69a52" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef T <a class="el" href="a00024.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> type. </p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6d9d1399593c435c872ff1d125e13776"></a><!-- doxytag: member="roboptim::TrajectoryCost::TrajectoryCost" ref="a6d9d1399593c435c872ff1d125e13776" args="(const trajectory_t &amp;traj, std::string name=std::string())" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00024.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00024.html">TrajectoryCost</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>traj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Concret class should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">traj</td><td>trajectory on which the cost is computed </td></tr>
-    <tr><td class="paramname">name</td><td>function's name </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac58cc178462e67a9d0279a8f01fcf5f3"></a><!-- doxytag: member="roboptim::TrajectoryCost::~TrajectoryCost" ref="ac58cc178462e67a9d0279a8f01fcf5f3" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00024.html">roboptim::TrajectoryCost</a>&lt; T &gt;::~<a class="el" href="a00024.html">TrajectoryCost</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a1fcac55e0be93c130db9ddfc6457c381"></a><!-- doxytag: member="roboptim::TrajectoryCost::trajectory_" ref="a1fcac55e0be93c130db9ddfc6457c381" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00024.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a>&amp; <a class="el" href="a00024.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00024.html#a1fcac55e0be93c130db9ddfc6457c381">trajectory_</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Input trajectory. </p>
-
-</div>
-</div>
+<!-- doxytag: class="roboptim::TMax" -->
+<p><code>#include &lt;roboptim/trajectory/stable-time-point.hh&gt;</code></p>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -209,7 +70,7 @@ template&lt;typename T&gt; </div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -220,7 +81,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00071.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00024.html">TrajectoryCost</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00024.html">TMax</a>      </li>
 </body>
 </html>

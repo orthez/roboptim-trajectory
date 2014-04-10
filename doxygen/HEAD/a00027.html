@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>anthropomorphic-cost-function.hh File Reference</title>
+<title>roboptim::TrajectorySumCost&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -13,8 +13,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -36,8 +36,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -56,29 +58,527 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">anthropomorphic-cost-function.hh File Reference</div>  </div>
+<div class="title">roboptim::TrajectorySumCost&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00082.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00060.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;boost/optional.hpp&gt;</code><br/>
-<code>#include &lt;roboptim/core/derivable-function.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00042.html">roboptim/trajectory/fwd.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00057.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00028.html">roboptim/trajectory/anthropomorphic-cost-function.hxx</a>&gt;</code><br/>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html">roboptim::AnthropomorphicCostFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cost function from ``An optimal control model unifying holonomic and nonholonomic walking'' Katja Mombaur, Jean-Paul Laumond, Eiichi Yoshida (2008 8th IEEE-RAS Interational Conference on Humanoid Robots).  <a href="a00003.html#details">More...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
-<br/></td></tr>
+<!-- doxytag: class="roboptim::TrajectorySumCost" --><!-- doxytag: inherits="DerivableFunction" -->
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> cost function defined by sum of state evaluations at parameters.  
+ <a href="a00027.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/trajectory/trajectory-sum-cost.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::TrajectorySumCost&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00027.png" usemap="#roboptim::TrajectorySumCost&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::TrajectorySumCost&lt; T &gt;_map" name="roboptim::TrajectorySumCost&lt; T &gt;_map">
+<area href="a00006.html" alt="DerivableFunction" shape="rect" coords="0,0,204,24"/>
+</map>
+ </div></div>
+
+<p><a href="a00106.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00006.html">DerivableFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a09a020e54e182b3ff30dbba957929b4e">parent_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent type.  <a href="#a09a020e54e182b3ff30dbba957929b4e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#ad4fb3f8ec4865b9b461474b869485939"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4d1887d6955d69355b04090de2ccbdba">vector_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import vector type.  <a href="#a4d1887d6955d69355b04090de2ccbdba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import gradient type.  <a href="#a0528dabf8268e40db79ee63f76739198"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+parent_t::discreteInterval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aa92ae3c9f70bfb6c628145028a7733ec">discreteInterval_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import discrete interval type.  <a href="#aa92ae3c9f70bfb6c628145028a7733ec"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7546e9b87c43f85847a08c84d5697225">TrajectorySumCost</a> (const <a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval, size_type <a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a>=1)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7546e9b87c43f85847a08c84d5697225"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a5762a8c40580798b89c8d7fee0742ff6">~TrajectorySumCost</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a> () const   throw ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7987432f43a9ce7fb8f75f87b49caaeb">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4649289d51d38aacd18858d4e05ce541">impl_gradient</a> (<a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a> &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+<tr><td colspan="2"><h2><a name="member-group"></a>
+Discrete interval of stable time points.</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::tuple<br class="typebreak"/>
+&lt; <a class="el" href="a00022.html">StableTimePoint</a>, <br class="typebreak"/>
+<a class="el" href="a00022.html">StableTimePoint</a>, <br class="typebreak"/>
+<a class="el" href="a00022.html">StableTimePoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Types representing a discrete interval of stable time points.  <a href="#a637edcf053c62eb2b02747217180bb5f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+<a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a17aebf78fe9a3afd7ff40eae3bbd9251">makeDiscreteInterval</a> (<a class="el" href="a00022.html">StableTimePoint</a> min, <a class="el" href="a00022.html">StableTimePoint</a> max, <a class="el" href="a00022.html">StableTimePoint</a> step)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a discrete interval.  <a href="#a17aebf78fe9a3afd7ff40eae3bbd9251"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+<a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a0d5806d4c5327117101bfb4cbafc52b9">makeDiscreteInterval</a> (interval_t interval, <a class="el" href="a00022.html">StableTimePoint</a> step)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a discrete interval.  <a href="#a0d5806d4c5327117101bfb4cbafc52b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a359163d4d872e2cd00ea866d3a20cb35">getLowerBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of a discrete interval.  <a href="#a359163d4d872e2cd00ea866d3a20cb35"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#afe2d0ba0e4c47683dde4e51f0d53dabd">getUpperBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of a discrete interval.  <a href="#afe2d0ba0e4c47683dde4e51f0d53dabd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aa8f91e6840e896b6b2311956669803fd">getStep</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper step of a discrete interval.  <a href="#aa8f91e6840e896b6b2311956669803fd"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::TrajectorySumCost&lt; T &gt;</h3>
+
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> cost function defined by sum of state evaluations at parameters. </p>
+<p>The state along a trajectory is defined as the vector containing the configuration and derivatives up to order <img class="formulaInl" alt="$r$" src="form_11.png"/> of the configuration. </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \textbf{Cost}(\Gamma) = \sum_{i=1}{n} cost \left({\Gamma(t_i)}, {\dot{\Gamma}(t_i)},\cdots,\frac{d^{r}\Gamma}{dt^{r}}(t_i) \right) \]" src="form_18.png"/>
+</p>
+<p> where</p>
+<ul>
+<li><img class="formulaInl" alt="$\textbf{Cost}$" src="form_13.png"/> is the trajectory cost,</li>
+<li><img class="formulaInl" alt="$cost$" src="form_14.png"/> is the state cost,</li>
+<li><img class="formulaInl" alt="$t_i\ \ i=1\cdots n$" src="form_19.png"/> are the parameters along the trajectory where the cost is evaluated,</li>
+<li><img class="formulaInl" alt="$r$" src="form_11.png"/> is called the order of the state.</li>
+</ul>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">T</td><td>trajectory type </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="aa92ae3c9f70bfb6c628145028a7733ec"></a><!-- doxytag: member="roboptim::TrajectorySumCost::discreteInterval_t" ref="aa92ae3c9f70bfb6c628145028a7733ec" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::discreteInterval_t <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#aa92ae3c9f70bfb6c628145028a7733ec">discreteInterval_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import discrete interval type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a637edcf053c62eb2b02747217180bb5f"></a><!-- doxytag: member="roboptim::TrajectorySumCost::discreteStableTimePointInterval_t" ref="a637edcf053c62eb2b02747217180bb5f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::tuple&lt;<a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00022.html">StableTimePoint</a>&gt; <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Types representing a discrete interval of stable time points. </p>
+<p>A discrete interval is a triplet of values:</p>
+<ul>
+<li>lower bound,</li>
+<li>upper bound,</li>
+<li>step. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a0528dabf8268e40db79ee63f76739198"></a><!-- doxytag: member="roboptim::TrajectorySumCost::gradient_t" ref="a0528dabf8268e40db79ee63f76739198" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::gradient_t <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import gradient type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09a020e54e182b3ff30dbba957929b4e"></a><!-- doxytag: member="roboptim::TrajectorySumCost::parent_t" ref="a09a020e54e182b3ff30dbba957929b4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00006.html">DerivableFunction</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a09a020e54e182b3ff30dbba957929b4e">parent_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Parent type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4fb3f8ec4865b9b461474b869485939"></a><!-- doxytag: member="roboptim::TrajectorySumCost::trajectory_t" ref="ad4fb3f8ec4865b9b461474b869485939" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d1887d6955d69355b04090de2ccbdba"></a><!-- doxytag: member="roboptim::TrajectorySumCost::vector_t" ref="a4d1887d6955d69355b04090de2ccbdba" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::vector_t <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a4d1887d6955d69355b04090de2ccbdba">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import vector type. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7546e9b87c43f85847a08c84d5697225"></a><!-- doxytag: member="roboptim::TrajectorySumCost::TrajectorySumCost" ref="a7546e9b87c43f85847a08c84d5697225" args="(const trajectory_t &amp;gamma, boost::shared_ptr&lt; DerivableFunction &gt; cost, const discreteStableTimePointInterval_t &amp;interval, size_type order=1)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html">TrajectorySumCost</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>cost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gamma</td><td><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> <img class="formulaInl" alt="$\Gamma$" src="form_16.png"/> along which the state is evaluated. </td></tr>
+    <tr><td class="paramname">cost</td><td>state cost: <img class="formulaInl" alt="$cost$" src="form_14.png"/>. </td></tr>
+    <tr><td class="paramname">interval</td><td>Stable time points list where cost will be evaluated. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_11.png"/> of derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5762a8c40580798b89c8d7fee0742ff6"></a><!-- doxytag: member="roboptim::TrajectorySumCost::~TrajectorySumCost" ref="a5762a8c40580798b89c8d7fee0742ff6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::~<a class="el" href="a00027.html">TrajectorySumCost</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a359163d4d872e2cd00ea866d3a20cb35"></a><!-- doxytag: member="roboptim::TrajectorySumCost::getLowerBound" ref="a359163d4d872e2cd00ea866d3a20cb35" args="(const discreteStableTimePointInterval_t &amp;interval)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00022.html">StableTimePoint</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a359163d4d872e2cd00ea866d3a20cb35">getLowerBound</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td>  throw ()<code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the lower bound of a discrete interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>accessed discrete interval </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>lower bound of the discrete interval </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa8f91e6840e896b6b2311956669803fd"></a><!-- doxytag: member="roboptim::TrajectorySumCost::getStep" ref="aa8f91e6840e896b6b2311956669803fd" args="(const discreteStableTimePointInterval_t &amp;interval)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00022.html">StableTimePoint</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#aa8f91e6840e896b6b2311956669803fd">getStep</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td>  throw ()<code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the upper step of a discrete interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>accessed discrete interval </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>upper step of the discrete interval </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe2d0ba0e4c47683dde4e51f0d53dabd"></a><!-- doxytag: member="roboptim::TrajectorySumCost::getUpperBound" ref="afe2d0ba0e4c47683dde4e51f0d53dabd" args="(const discreteStableTimePointInterval_t &amp;interval)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00022.html">StableTimePoint</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#afe2d0ba0e4c47683dde4e51f0d53dabd">getUpperBound</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td>  throw ()<code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the upper bound of a discrete interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>accessed discrete interval </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>upper bound of the discrete interval </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7987432f43a9ce7fb8f75f87b49caaeb"></a><!-- doxytag: member="roboptim::TrajectorySumCost::impl_compute" ref="a7987432f43a9ce7fb8f75f87b49caaeb" args="(result_t &amp;, const argument_t &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a7987432f43a9ce7fb8f75f87b49caaeb">impl_compute</a> </td>
+          <td>(</td>
+          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="a4649289d51d38aacd18858d4e05ce541"></a><!-- doxytag: member="roboptim::TrajectorySumCost::impl_gradient" ref="a4649289d51d38aacd18858d4e05ce541" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a4649289d51d38aacd18858d4e05ce541">impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="a17aebf78fe9a3afd7ff40eae3bbd9251"></a><!-- doxytag: member="roboptim::TrajectorySumCost::makeDiscreteInterval" ref="a17aebf78fe9a3afd7ff40eae3bbd9251" args="(StableTimePoint min, StableTimePoint max, StableTimePoint step)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a17aebf78fe9a3afd7ff40eae3bbd9251">makeDiscreteInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct a discrete interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>miminum value of the interval </td></tr>
+    <tr><td class="paramname">max</td><td>maxinum value of the interval </td></tr>
+    <tr><td class="paramname">step</td><td>discretization step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0d5806d4c5327117101bfb4cbafc52b9"></a><!-- doxytag: member="roboptim::TrajectorySumCost::makeDiscreteInterval" ref="a0d5806d4c5327117101bfb4cbafc52b9" args="(interval_t interval, StableTimePoint step)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a17aebf78fe9a3afd7ff40eae3bbd9251">makeDiscreteInterval</a> </td>
+          <td>(</td>
+          <td class="paramtype">interval_t&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct a discrete interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>continuous interval </td></tr>
+    <tr><td class="paramname">step</td><td>discretization step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fa8949f2f9d9b052d0cd87ddcda73f5"></a><!-- doxytag: member="roboptim::TrajectorySumCost::order" ref="a1fa8949f2f9d9b052d0cd87ddcda73f5" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00027.html">TrajectorySumCost</a>&lt; T &gt;::size_type <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -86,7 +586,7 @@ Namespaces</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,6 +597,7 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00027.html">anthropomorphic-cost-function.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00027.html">TrajectorySumCost</a>      </li>
 </body>
 </html>

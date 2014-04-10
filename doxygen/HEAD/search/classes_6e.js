@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ntimesderivablefunction',['NTimesDerivableFunction',['../a00013.html',1,'']]]
+  ['ntimesderivablefunction',['NTimesDerivableFunction',['../a00014.html',1,'']]]
 ];

@@ -1,5 +1,7 @@
 var a00015 =
 [
-    [ "PlotLimitSpeed", "a00015.html#a0d9a76260d315aeb2ab8bd275a9e9b07", null ],
-    [ "operator()", "a00015.html#a79a21ab9f22e3375197378859072aba6", null ]
+    [ "OrthogonalSpeed", "a00015.html#a04979b813e8719aa8e0b710b54894c41", null ],
+    [ "~OrthogonalSpeed", "a00015.html#ad04149e5f4dfb01a74243044ca217f72", null ],
+    [ "impl_compute", "a00015.html#ae22a26b973bb6100b2ef18a88877c7e5", null ],
+    [ "impl_gradient", "a00015.html#a95e486a4b1321850f213a1c5adeb487f", null ]
 ];

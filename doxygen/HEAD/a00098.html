@@ -53,30 +53,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('a00021.html','');
+  initNavTree('a00013.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">roboptim::StateFunction&lt; T &gt; Member List</div>  </div>
+<div class="title">roboptim::Monomial3 Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-This is the complete list of members for <a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="a00021.html#a4328eeca6e66edbab179f74d6d7fd734">addToProblem</a>(const trajectory_t &amp;trajectory, boost::shared_ptr&lt; DerivableFunction &gt; function, unsigned order, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t bounds, unsigned nConstraints)</td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td><code> [inline, static]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#a09466f2cc15876d9b880d9b7116acda8">addToProblem</a>(const trajectory_t &amp;trajectory, boost::shared_ptr&lt; DerivableFunction &gt; function, unsigned order, Problem&lt; F, CLIST &gt; &amp;problem, const typename Function::intervals_t &amp;bounds, const std::vector&lt; typename Function::value_type &gt; &amp;scales, unsigned nConstraints)</td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td><code> [inline, static]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#aba28dab423bd30bd5913afdd50998856">impl_compute</a>(result_t &amp;, const argument_t &amp;) const </td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td><code> [protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#ae9e624b5c00396938c688fbcb50f9300">impl_gradient</a>(gradient_t &amp;, const argument_t &amp;, size_type) const </td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td><code> [protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#aeca7305f8895bd733e31e99f651fa412">order</a>() const </td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#a6af3c2eaa0b7c1472ae2bba74ce827ec">StateFunction</a>(const trajectory_t &amp;gamma, boost::shared_ptr&lt; DerivableFunction &gt; cost, const StableTimePoint tpt, size_type order=1)</td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#a17010521237325e087014a549c418cd3">trajectory_t</a> typedef</td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00021.html#a31f8efa638bff53256de0f9f3df540a0">~StateFunction</a>()</td><td><a class="el" href="a00021.html">roboptim::StateFunction&lt; T &gt;</a></td><td><code> [virtual]</code></td></tr>
+This is the complete list of members for <a class="el" href="a00013.html">roboptim::Monomial3</a>, including all inherited members.<table>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a></td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">derivative</a>(const double &amp;t, size_type order=1) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00013.html#abaf17914ab64a6f4449e3a431cdf97bf">Monomial3</a>(double t0)</td><td><a class="el" href="a00013.html">roboptim::Monomial3</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#ab11ff9d18d57a221e3853f85064e26c2">operator()</a>(const double &amp;t) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*</a>(const Polynomial3 &amp;poly) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+</a>(const Polynomial3 &amp;poly) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-</a>(const Polynomial3 &amp;poly) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a759f8a2e0e6a75c3417f550a27c6e7ba">operator[]</a>(int i) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3</a>()</td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a6ea504e11d51748e0406e11977dce6c4">Polynomial3</a>(double t0, double a0, double a1, double a2, double a3)</td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#ae8fcaf3ab4ffa5207ec1127aaad92fd0">print</a>(std::ostream &amp;o) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#aba3747436a47f5c9a40aa94048d58d75">realRoots</a>() const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#ab7539fa191ba683179c740420da4e606">size_type</a> typedef</td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a></td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate</a>(const double &amp;t1) const </td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00019.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace</a>(const double &amp;t1)</td><td><a class="el" href="a00019.html">roboptim::Polynomial3</a></td><td></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

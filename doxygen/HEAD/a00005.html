@@ -61,7 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::CubicBSpline Class Reference<div class="ingroups"><a class="el" href="a00079.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::CubicBSpline Class Reference<div class="ingroups"><a class="el" href="a00083.html">Mathematical functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::CubicBSpline" --><!-- doxytag: inherits="Trajectory&lt; 3 &gt;" -->
@@ -75,68 +75,68 @@ Inheritance diagram for roboptim::CubicBSpline:</div>
  <div class="center">
   <img src="a00005.png" usemap="#roboptim::CubicBSpline_map" alt=""/>
   <map id="roboptim::CubicBSpline_map" name="roboptim::CubicBSpline_map">
-<area href="a00023.html" alt="roboptim::Trajectory&lt; 3 &gt;" shape="rect" coords="0,56,279,80"/>
-<area href="a00013.html" alt="NTimesDerivableFunction" shape="rect" coords="0,0,279,24"/>
+<area href="a00025.html" alt="roboptim::Trajectory&lt; 3 &gt;" shape="rect" coords="0,56,279,80"/>
+<area href="a00014.html" alt="NTimesDerivableFunction" shape="rect" coords="0,0,279,24"/>
 </map>
  </div></div>
 
-<p><a href="a00086.html">List of all members.</a></p>
+<p><a href="a00090.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline</a> (<a class="el" href="a00023.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> dimension, const <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;<a class="el" href="a00023.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;cubic B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline</a> (<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> dimension, const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;cubic B-Spline&quot;)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a cubic B-Spline from its definition.  <a href="#a4e3fd3f90b73ff83cb9b170c5f9cd981"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a00f557d748f4ee1b8cfb15b54d3b5c4c">CubicBSpline</a> (const <a class="el" href="a00005.html">CubicBSpline</a> &amp;spline)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a00f557d748f4ee1b8cfb15b54d3b5c4c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#abc3354b8f5c069986fd32549967df3af">~CubicBSpline</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ad3980bb2d61ceff9f5df92aa17768252">setParameters</a> (const <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ad3980bb2d61ceff9f5df92aa17768252">setParameters</a> (const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify spline parameters.  <a href="#ad3980bb2d61ceff9f5df92aa17768252"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">variationConfigWrtParam</a> (double t) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">variationConfigWrtParam</a> (double t) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a configuration with respect to parameter vector.  <a href="#adcf137d2f85a0dea72f1b01eac4db32e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">variationDerivWrtParam</a> (double t, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">variationDerivWrtParam</a> (double t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a derivative with respect to parameter vector.  <a href="#a5bb38d6cce0fcd79e5632a4d402d5385"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank</a> (<a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singular point at given rank.  <a href="#ab28cc29406766f2bb42f720314b6493c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a05170ea645fe94a609758b84ee456e87">derivBeforeSingularPoint</a> (<a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a05170ea645fe94a609758b84ee456e87">derivBeforeSingularPoint</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get left limit value of derivative at given singular point.  <a href="#a05170ea645fe94a609758b84ee456e87"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a13aa0f0de97c0ad0eadbd1a3758254dc">derivAfterSingularPoint</a> (<a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a13aa0f0de97c0ad0eadbd1a3758254dc">derivAfterSingularPoint</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get right limit value of derivative at given singular point.  <a href="#a13aa0f0de97c0ad0eadbd1a3758254dc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html">Trajectory</a><br class="typebreak"/>
-&lt; derivabilityOrder &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a629cdb8cd2321fd129893a6e4d2a48bc">resize</a> (<a class="el" href="a00023.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a><br class="typebreak"/>
+&lt; derivabilityOrder &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a629cdb8cd2321fd129893a6e4d2a48bc">resize</a> (<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone and resize a trajectory.  <a href="#a629cdb8cd2321fd129893a6e4d2a48bc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a3e974fa06743e37072efc0d639e4e8c6">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a3e974fa06743e37072efc0d639e4e8c6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ad76c2959098b7c47a06c566cf6300ffd">variationConfigWrtParam</a> (<a class="el" href="a00020.html">StableTimePoint</a> tp) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ac3da5c759b28482e0917b52e4faaead8">variationDerivWrtParam</a> (<a class="el" href="a00020.html">StableTimePoint</a> tp, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ad76c2959098b7c47a06c566cf6300ffd">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ac3da5c759b28482e0917b52e4faaead8">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename P &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6">freezeCurveStart</a> (P &amp;problem, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> offset=0) const   throw ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00005.html#a2c34cf69e8a7d4e4d70faec6c67776f6">freezeCurveStart</a> (P &amp;problem, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> offset=0) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to a problem in order to freeze the B-spline at its start.  <a href="#a2c34cf69e8a7d4e4d70faec6c67776f6"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename P &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00005.html#a723ba4453c80d67132b3734593cb0adb">freezeCurveEnd</a> (P &amp;problem, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> offset=0) const   throw ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00005.html#a723ba4453c80d67132b3734593cb0adb">freezeCurveEnd</a> (P &amp;problem, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> offset=0) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to a problem in order to freeze the B-spline at its end.  <a href="#a723ba4453c80d67132b3734593cb0adb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">Dt</a> () const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">Dt</a> () const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular spacing between B-spline knots.  <a href="#ace3fa5d056522cbf1f44debc606af465"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a6317258db0055f9d6d8ac20bb3a90e00">translateBasisPolynomials</a> (double t1)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the basis polynomials to a given time t1.  <a href="#a6317258db0055f9d6d8ac20bb3a90e00"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a92bd1dd5443631f72b629d6a550efe57">toPolynomials</a> (std::vector&lt; <a class="el" href="a00017.html">Polynomial3</a> &gt; &amp;res) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a92bd1dd5443631f72b629d6a550efe57">toPolynomials</a> (std::vector&lt; <a class="el" href="a00019.html">Polynomial3</a> &gt; &amp;res) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the polynomial expression of the cubic B-spline on each time interval.  <a href="#a92bd1dd5443631f72b629d6a550efe57"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector<br class="typebreak"/>
-&lt; <a class="el" href="a00017.html">Polynomial3</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a03ed5527b676a82c99a5ca8535dcccb4">basisPolynomials</a> () const </td></tr>
+&lt; <a class="el" href="a00019.html">Polynomial3</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a03ed5527b676a82c99a5ca8535dcccb4">basisPolynomials</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the cubic B-spline.  <a href="#a03ed5527b676a82c99a5ca8535dcccb4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a014bed3c537c09d5ba372582b5bd5b29">getNumberControlPoints</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a014bed3c537c09d5ba372582b5bd5b29">getNumberControlPoints</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of control points of the spline.  <a href="#a014bed3c537c09d5ba372582b5bd5b29"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ac96ddc6d49335e72ecbec987737f5b72">knot_vector</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ac96ddc6d49335e72ecbec987737f5b72">knot_vector</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the knot vector of the spline.  <a href="#ac96ddc6d49335e72ecbec987737f5b72"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#adccf908b3e4ae0036078eac00509c66b">impl_compute</a> (<a class="el" href="a00023.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;, double) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">impl_derivative</a> (<a class="el" href="a00023.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;g, double x, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a7c9a50264ee5464048cac192044775f8">impl_derivative</a> (<a class="el" href="a00023.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;g, <a class="el" href="a00020.html">StableTimePoint</a>, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">interval</a> (<a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> t) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#adccf908b3e4ae0036078eac00509c66b">impl_compute</a> (<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;, double) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">impl_derivative</a> (<a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;g, double x, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a7c9a50264ee5464048cac192044775f8">impl_derivative</a> (<a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;g, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">interval</a> (<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> t) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the index of the interval in which t is.  <a href="#aedfccc978b8942bbb1a1f3f3a8d2a85c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a2ccc246e1d9fc08f3b9a9b7579a6fa12">computeBasisPolynomials</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the basis polynomials for the cubic B-spline.  <a href="#a2ccc246e1d9fc08f3b9a9b7579a6fa12"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">basisFunctions</a> (<a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> t, <a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">basisFunctions</a> (<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the basis functions for a given instant t.  <a href="#a44e2e0228f37800de87990d3f6543b97"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -151,19 +151,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="a00005.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">roboptim::CubicBSpline::CubicBSpline</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
           <td class="paramname"><em>timeRange</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>dimension</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>parameters</em>, </td>
         </tr>
         <tr>
@@ -244,15 +244,15 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">roboptim::CubicBSpline::basisFunctions</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">roboptim::CubicBSpline::basisFunctions</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -274,7 +274,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>basis functions evaluated at t. </dd></dl>
 
-<p>References <a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">Dt()</a>, <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>, <a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">interval()</a>, <a class="el" href="a00023.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>, <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>, and <a class="el" href="a00023.html#a4200380e77c7c4a9dba8112d8793676b">roboptim::Trajectory&lt; 3 &gt;::tolerance()</a>.</p>
+<p>References <a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">Dt()</a>, <a class="el" href="a00077.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>, <a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">interval()</a>, <a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>, <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>, and <a class="el" href="a00025.html#a4200380e77c7c4a9dba8112d8793676b">roboptim::Trajectory&lt; 3 &gt;::tolerance()</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;std::vector &lt;<a class="el" href="a00017.html">Polynomial3</a>&gt; &gt;&amp; <a class="el" href="a00005.html#a03ed5527b676a82c99a5ca8535dcccb4">roboptim::CubicBSpline::basisPolynomials</a> </td>
+          <td class="memname">const std::vector&lt;std::vector &lt;<a class="el" href="a00019.html">Polynomial3</a>&gt; &gt;&amp; <a class="el" href="a00005.html#a03ed5527b676a82c99a5ca8535dcccb4">roboptim::CubicBSpline::basisPolynomials</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -321,15 +321,15 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a13aa0f0de97c0ad0eadbd1a3758254dc">roboptim::CubicBSpline::derivAfterSingularPoint</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a13aa0f0de97c0ad0eadbd1a3758254dc">roboptim::CubicBSpline::derivAfterSingularPoint</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>rank</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -356,9 +356,9 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00023.html#a90bcbc3ff8224b7eff3c67364c796289">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a90bcbc3ff8224b7eff3c67364c796289">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>References <a class="el" href="a00023.html#a37d249123851924155a46cb8c0a62dbc">roboptim::Trajectory&lt; 3 &gt;::derivative()</a>, and <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank()</a>.</p>
+<p>References <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">roboptim::Trajectory&lt; 3 &gt;::derivative()</a>, and <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank()</a>.</p>
 
 </div>
 </div>
@@ -367,15 +367,15 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a05170ea645fe94a609758b84ee456e87">roboptim::CubicBSpline::derivBeforeSingularPoint</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">CubicBSpline::vector_t</a> <a class="el" href="a00005.html#a05170ea645fe94a609758b84ee456e87">roboptim::CubicBSpline::derivBeforeSingularPoint</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>rank</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -397,9 +397,9 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Limit of the derivative at singular point for increasing parameter values. </dd></dl>
 
-<p>Implements <a class="el" href="a00023.html#a11d44644c5892d80d5ef4b02d36586ef">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a11d44644c5892d80d5ef4b02d36586ef">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>References <a class="el" href="a00023.html#a37d249123851924155a46cb8c0a62dbc">roboptim::Trajectory&lt; 3 &gt;::derivative()</a>, and <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank()</a>.</p>
+<p>References <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">roboptim::Trajectory&lt; 3 &gt;::derivative()</a>, and <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">singularPointAtRank()</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">CubicBSpline::value_type</a> <a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">roboptim::CubicBSpline::Dt</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">CubicBSpline::value_type</a> <a class="el" href="a00005.html#ace3fa5d056522cbf1f44debc606af465">roboptim::CubicBSpline::Dt</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -421,7 +421,7 @@ Protected Member Functions</h2></td></tr>
 <p>This is only valid for uniform B-splines. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>regular spacing between B-spline knots. </dd></dl>
 
-<p>References <a class="el" href="a00023.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>.</p>
+<p>References <a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">basisFunctions()</a>.</p>
 
@@ -442,7 +442,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -481,7 +481,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -510,7 +510,7 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> <a class="el" href="a00005.html#a014bed3c537c09d5ba372582b5bd5b29">roboptim::CubicBSpline::getNumberControlPoints</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> <a class="el" href="a00005.html#a014bed3c537c09d5ba372582b5bd5b29">roboptim::CubicBSpline::getNumberControlPoints</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -531,7 +531,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a00005.html#adccf908b3e4ae0036078eac00509c66b">roboptim::CubicBSpline::impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;&#160;</td>
           <td class="paramname"><em>derivative</em>, </td>
         </tr>
         <tr>
@@ -550,7 +550,7 @@ template&lt;typename P &gt; </div>
 <div class="memdoc">
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
 
-<p>References <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
+<p>References <a class="el" href="a00077.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -573,7 +573,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -586,7 +586,7 @@ template&lt;typename P &gt; </div>
 <div class="memdoc">
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
 
-<p>References <a class="el" href="a00017.html#a1513943abd2fcf4c04625e6d784595a9">roboptim::Polynomial3::derivative()</a>, and <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
+<p>References <a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">roboptim::Polynomial3::derivative()</a>, and <a class="el" href="a00077.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
 
 </div>
 </div>
@@ -597,19 +597,19 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00020.html">StableTimePoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>stp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -622,7 +622,7 @@ template&lt;typename P &gt; </div>
 <div class="memdoc">
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
 
-<p>Implements <a class="el" href="a00023.html#aa956e4feb4b819f1dfbfe84fa68cc9ef">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#aa956e4feb4b819f1dfbfe84fa68cc9ef">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
 </div>
 </div>
@@ -631,9 +631,9 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">CubicBSpline::size_type</a> <a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">roboptim::CubicBSpline::interval</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">CubicBSpline::size_type</a> <a class="el" href="a00005.html#aedfccc978b8942bbb1a1f3f3a8d2a85c">roboptim::CubicBSpline::interval</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td> const<code> [protected]</code></td>
         </tr>
@@ -650,7 +650,7 @@ template&lt;typename P &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>index of the interval in which t is. </dd></dl>
 
-<p>References <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>, and <a class="el" href="a00023.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>.</p>
+<p>References <a class="el" href="a00077.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>, and <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00005.html#a44e2e0228f37800de87990d3f6543b97">basisFunctions()</a>.</p>
 
@@ -661,7 +661,7 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&gt;&amp; <a class="el" href="a00005.html#ac96ddc6d49335e72ecbec987737f5b72">roboptim::CubicBSpline::knot_vector</a> </td>
+          <td class="memname">const std::vector&lt;<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&gt;&amp; <a class="el" href="a00005.html#ac96ddc6d49335e72ecbec987737f5b72">roboptim::CubicBSpline::knot_vector</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -699,7 +699,7 @@ template&lt;typename P &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
 
-<p>Reimplemented from <a class="el" href="a00023.html#a9fdf55675206c496ae578fdc741d0e03">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="a00025.html#a9fdf55675206c496ae578fdc741d0e03">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
 </div>
 </div>
@@ -708,9 +708,9 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00023.html">Trajectory</a>&lt;derivabilityOrder&gt;* <a class="el" href="a00005.html#a629cdb8cd2321fd129893a6e4d2a48bc">roboptim::CubicBSpline::resize</a> </td>
+          <td class="memname">virtual <a class="el" href="a00025.html">Trajectory</a>&lt;derivabilityOrder&gt;* <a class="el" href="a00005.html#a629cdb8cd2321fd129893a6e4d2a48bc">roboptim::CubicBSpline::resize</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
           <td class="paramname"><em>timeRange</em></td><td>)</td>
           <td> const  throw ()<code> [inline, virtual]</code></td>
         </tr>
@@ -720,7 +720,7 @@ template&lt;typename P &gt; </div>
 
 <p>Clone and resize a trajectory. </p>
 
-<p>Implements <a class="el" href="a00023.html#a663fb66c3ef467e6d3f0a33001ed2ad9">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a663fb66c3ef467e6d3f0a33001ed2ad9">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
 <p>References <a class="el" href="a00005.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline()</a>.</p>
 
@@ -733,7 +733,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a00005.html#ad3980bb2d61ceff9f5df92aa17768252">roboptim::CubicBSpline::setParameters</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00023.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td>  throw ()<code> [virtual]</code></td>
         </tr>
@@ -743,9 +743,9 @@ template&lt;typename P &gt; </div>
 
 <p>Modify spline parameters. </p>
 
-<p>Reimplemented from <a class="el" href="a00023.html#ab629b024360573b744b2f2ea53f55f40">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="a00025.html#ab629b024360573b744b2f2ea53f55f40">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>Referenced by <a class="el" href="a00079.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute()</a>, and <a class="el" href="a00079.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient()</a>.</p>
+<p>Referenced by <a class="el" href="a00083.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute()</a>, and <a class="el" href="a00083.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient()</a>.</p>
 
 </div>
 </div>
@@ -754,9 +754,9 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#a090f8aa4afd3b36ff98d015c40a21191">CubicBSpline::value_type</a> <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">roboptim::CubicBSpline::singularPointAtRank</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">CubicBSpline::value_type</a> <a class="el" href="a00005.html#ab28cc29406766f2bb42f720314b6493c">roboptim::CubicBSpline::singularPointAtRank</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>rank</em></td><td>)</td>
           <td> const<code> [virtual]</code></td>
         </tr>
@@ -766,9 +766,9 @@ template&lt;typename P &gt; </div>
 
 <p>Get singular point at given rank. </p>
 
-<p>Implements <a class="el" href="a00023.html#a619dd773012986935cd7d2e146c0e049">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a619dd773012986935cd7d2e146c0e049">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>References <a class="el" href="a00023.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>.</p>
+<p>References <a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">roboptim::Trajectory&lt; 3 &gt;::length()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00005.html#a13aa0f0de97c0ad0eadbd1a3758254dc">derivAfterSingularPoint()</a>, and <a class="el" href="a00005.html#a05170ea645fe94a609758b84ee456e87">derivBeforeSingularPoint()</a>.</p>
 
@@ -781,7 +781,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a00005.html#a92bd1dd5443631f72b629d6a550efe57">roboptim::CubicBSpline::toPolynomials</a> </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="a00017.html">Polynomial3</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a00019.html">Polynomial3</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>res</em></td><td>)</td>
           <td> const  throw ()</td>
         </tr>
@@ -825,7 +825,7 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">roboptim::CubicBSpline::variationConfigWrtParam</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">roboptim::CubicBSpline::variationConfigWrtParam</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -838,16 +838,16 @@ template&lt;typename P &gt; </div>
 <p>Get the variation of a configuration with respect to parameter vector. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_14.png"/> in the definition interval. </td></tr>
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_15.png"/> in the definition interval. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Jacobian: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[\frac{\partial\Gamma_{\textbf{p}}(t)}{\partial\textbf{p}}\]" src="form_23.png"/>
+<img class="formulaDsp" alt="\[\frac{\partial\Gamma_{\textbf{p}}(t)}{\partial\textbf{p}}\]" src="form_24.png"/>
 </p>
  </dd></dl>
 
-<p>Implements <a class="el" href="a00023.html#aee9c38f8b50e76851ffc7e2639ac6adc">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#aee9c38f8b50e76851ffc7e2639ac6adc">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00002.html#a2">spline-optimization.cc</a>.</dd>
 </dl>
 </div>
@@ -857,9 +857,9 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">roboptim::CubicBSpline::variationConfigWrtParam</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#adcf137d2f85a0dea72f1b01eac4db32e">roboptim::CubicBSpline::variationConfigWrtParam</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00020.html">StableTimePoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>tp</em></td><td>)</td>
           <td> const  throw ()<code> [virtual]</code></td>
         </tr>
@@ -867,7 +867,7 @@ template&lt;typename P &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00023.html#a06aeca11e301c147c2ff4e4f02353e6d">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a06aeca11e301c147c2ff4e4f02353e6d">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -884,7 +884,7 @@ template&lt;typename P &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -899,19 +899,19 @@ template&lt;typename P &gt; </div>
 <p>Get the variation of a derivative with respect to parameter vector. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_14.png"/> in the definition interval. </td></tr>
-    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_10.png"/> of the derivative. </td></tr>
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_15.png"/> in the definition interval. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_11.png"/> of the derivative. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>jacobian <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \frac{\partial}{\partial\textbf{p}} \left(\frac{d^r\Gamma_{\textbf{p}}}{dt^r}(t)\right) \]" src="form_24.png"/>
+<img class="formulaDsp" alt="\[ \frac{\partial}{\partial\textbf{p}} \left(\frac{d^r\Gamma_{\textbf{p}}}{dt^r}(t)\right) \]" src="form_25.png"/>
 </p>
  </dd></dl>
 
-<p>Implements <a class="el" href="a00023.html#a0a056eb444a272b4f6ae1e07131e7888">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a0a056eb444a272b4f6ae1e07131e7888">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>References <a class="el" href="a00017.html#a1513943abd2fcf4c04625e6d784595a9">roboptim::Polynomial3::derivative()</a>, and <a class="el" href="a00073.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
+<p>References <a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">roboptim::Polynomial3::derivative()</a>, and <a class="el" href="a00077.html#afcac15d5d4c3d6d6e2d8d6a0178dc2cc">roboptim::detail::fixTime()</a>.</p>
 
 </div>
 </div>
@@ -920,15 +920,15 @@ template&lt;typename P &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam</a> </td>
+          <td class="memname"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">CubicBSpline::jacobian_t</a> <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00020.html">StableTimePoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>tp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00023.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
@@ -940,7 +940,7 @@ template&lt;typename P &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00023.html#a486070a92b99d92c1fb6bcebfcad17a5">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+<p>Implements <a class="el" href="a00025.html#a486070a92b99d92c1fb6bcebfcad17a5">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
 </div>
 </div>
@@ -951,7 +951,7 @@ template&lt;typename P &gt; </div>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -962,7 +962,7 @@ template&lt;typename P &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00071.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00005.html">CubicBSpline</a>      </li>
 </body>
 </html>

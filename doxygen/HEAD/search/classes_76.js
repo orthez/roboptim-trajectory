@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectorinterpolation',['VectorInterpolation',['../a00026.html',1,'roboptim']]]
+  ['vectorinterpolation',['VectorInterpolation',['../a00028.html',1,'roboptim']]]
 ];
