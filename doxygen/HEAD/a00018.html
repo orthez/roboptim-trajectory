@@ -60,6 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
@@ -102,7 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of polynomials of different orders.  <a href="#a233850918a67a2556cb481b260272a02"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a6ff0d9f7311ce508bc9e67b1d235b417">translate</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new polynomial translated from (t-t₀) to (t-t₁).  <a href="#a6ff0d9f7311ce508bc9e67b1d235b417"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98">derivative</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> order=1) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a5127ae88e3f1d94fe92673e6f4c45d09">translateInPlace</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the polynomial (in place) from (t-t₀) to (t-t₁).  <a href="#a5127ae88e3f1d94fe92673e6f4c45d09"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98">derivative</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>=1) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a7ef9624cd950cb41cf8d7d3b2a0a7b98"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00018.html">Polynomial</a>&lt; N+M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00018.html#a0c94bad8f9317a217e18cf2896b44bee">operator*</a> (const <a class="el" href="a00018.html">Polynomial</a>&lt; M &gt; &amp;poly) const </td></tr>
@@ -127,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#aa977c36e195270a56130ba4d833d542f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a66f12a6a055ee98c3ad5c4d2e54873a0">realRoots</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#a66f12a6a055ee98c3ad5c4d2e54873a0"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the order of such a polynomial.  <a href="#ad0c5e2fa6f7a4a0d84a6b41187adb8dd"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a> { <br/>
@@ -135,10 +142,11 @@ Protected Types</h2></td></tr>
 &#160;&#160;<a class="el" href="a00018.html#ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1">monomial_coefficients</a> =  1
 <br/>
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME.  <a href="a00018.html#ab8517f56366fa53134976efa1069a141">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for special polynomials.  <a href="a00018.html#ab8517f56366fa53134976efa1069a141">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> order, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> start_coef=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>, <a class="el" href="a00018.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> start_coef=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ade7edc4c36d96fb7eb8288c15b577c52">impl_translate</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a537a1e4aa6ca54fdce2214dea7de074f">Polynomial</a> (<a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00018.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>, <a class="el" href="a00018.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a> key)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Special constructor for Monomial&lt;N&gt; and some operators.  <a href="#a537a1e4aa6ca54fdce2214dea7de074f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
@@ -152,7 +160,7 @@ class roboptim::Polynomial&lt; N &gt;</h3>
 
 <p><a class="el" href="a00018.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most N. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ P (t) = \sum_{i=0}{N} a_i (t-t_0)^i \]" src="form_7.png"/>
+<img class="formulaDsp" alt="\[ P (t) = \sum_{i=0}^{N} a_i (t-t_0)^i \]" src="form_7.png"/>
 </p>
  </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="abb886543112518b4cba8f3a17c3c94c1"></a><!-- doxytag: member="roboptim::Polynomial::coefs_t" ref="abb886543112518b4cba8f3a17c3c94c1" args="" -->
@@ -231,11 +239,13 @@ template&lt;int N&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>FIXME. </p>
+<p>Enum for special polynomials. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488"></a><!-- doxytag: member="all_zero_coefficients" ref="ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488" args="" -->all_zero_coefficients</em>&nbsp;</td><td>
+<p>Null polynomial: 0. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1"></a><!-- doxytag: member="monomial_coefficients" ref="ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1" args="" -->monomial_coefficients</em>&nbsp;</td><td>
+<p><a class="el" href="a00012.html" title="Monomial .">Monomial</a> polynomial: (t-t₀) </p>
 </td></tr>
 </table>
 </dd>
@@ -402,7 +412,7 @@ template&lt;int N&gt; </div>
 <p>Const getter to coefs. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>const reference to polynomial coefficients. </dd></dl>
 
-<p>Referenced by <a class="el" href="a00018.html#a939ecdd9e19708828f506120672f5770">roboptim::Polynomial&lt; N &gt;::Polynomial()</a>.</p>
+<p>Referenced by <a class="el" href="a00018.html#a0c94bad8f9317a217e18cf2896b44bee">roboptim::Polynomial&lt; N &gt;::operator*()</a>, and <a class="el" href="a00018.html#a939ecdd9e19708828f506120672f5770">roboptim::Polynomial&lt; N &gt;::Polynomial()</a>.</p>
 
 </div>
 </div>
@@ -501,6 +511,25 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ade7edc4c36d96fb7eb8288c15b577c52"></a><!-- doxytag: member="roboptim::Polynomial::impl_translate" ref="ade7edc4c36d96fb7eb8288c15b577c52" args="(value_type t1) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00018.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00018.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> <a class="el" href="a00018.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00018.html#ade7edc4c36d96fb7eb8288c15b577c52">impl_translate</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramname"><em>t1</em></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a476d94c1e37cd0e8f3c53c56251cbb01"></a><!-- doxytag: member="roboptim::Polynomial::operator()" ref="a476d94c1e37cd0e8f3c53c56251cbb01" args="(value_type t) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -563,7 +592,7 @@ template&lt;int M&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>P₀P₁ </dd></dl>
 
-<p>References <a class="el" href="a00018.html#a6ff0d9f7311ce508bc9e67b1d235b417">roboptim::Polynomial&lt; N &gt;::translate()</a>.</p>
+<p>References <a class="el" href="a00018.html#a3026ed88761f0d452fdfe04a9641ba7e">roboptim::Polynomial&lt; N &gt;::coefs()</a>, and <a class="el" href="a00018.html#a6ff0d9f7311ce508bc9e67b1d235b417">roboptim::Polynomial&lt; N &gt;::translate()</a>.</p>
 
 </div>
 </div>
@@ -683,6 +712,29 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ad0c5e2fa6f7a4a0d84a6b41187adb8dd"></a><!-- doxytag: member="roboptim::Polynomial::order" ref="ad0c5e2fa6f7a4a0d84a6b41187adb8dd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static int <a class="el" href="a00018.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the order of such a polynomial. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>order of such a polynomial. </dd></dl>
+
+<p>References <a class="el" href="a00018.html#a0f0dc975c4aafe4b85269dad5f348f40">roboptim::Polynomial&lt; N &gt;::order_</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a66f12a6a055ee98c3ad5c4d2e54873a0"></a><!-- doxytag: member="roboptim::Polynomial::realRoots" ref="a66f12a6a055ee98c3ad5c4d2e54873a0" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -767,13 +819,40 @@ template&lt;int N&gt; </div>
 <p>Return a new polynomial translated from (t-t₀) to (t-t₁). </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">t1</td><td>new center.</td></tr>
+    <tr><td class="paramname">t1</td><td>new center. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>polynomial translated to (t-t₁) </dd></dl>
 
 <p>Referenced by <a class="el" href="a00018.html#a0c94bad8f9317a217e18cf2896b44bee">roboptim::Polynomial&lt; N &gt;::operator*()</a>, <a class="el" href="a00018.html#a9dd83503d928586ed8b550b2bb5feb95">roboptim::Polynomial&lt; N &gt;::operator+()</a>, and <a class="el" href="a00018.html#a38701598fe15b6ae0b38b77851996fab">roboptim::Polynomial&lt; N &gt;::operator-()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5127ae88e3f1d94fe92673e6f4c45d09"></a><!-- doxytag: member="roboptim::Polynomial::translateInPlace" ref="a5127ae88e3f1d94fe92673e6f4c45d09" args="(value_type t1)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00018.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00018.html#a5127ae88e3f1d94fe92673e6f4c45d09">translateInPlace</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramname"><em>t1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Translate the polynomial (in place) from (t-t₀) to (t-t₁). </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t1</td><td>new center. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -792,6 +871,8 @@ template&lt;int N&gt; </div>
 <div class="memdoc">
 
 <p>order of the polynomial. </p>
+
+<p>Referenced by <a class="el" href="a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">roboptim::Polynomial&lt; N &gt;::order()</a>.</p>
 
 </div>
 </div>

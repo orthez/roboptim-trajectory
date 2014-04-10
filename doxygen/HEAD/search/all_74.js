@@ -31,5 +31,5 @@ var searchData=
   ['trajectorysumcost',['TrajectorySumCost',['../a00027.html',1,'roboptim']]],
   ['translate',['translate',['../a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b',1,'roboptim::Polynomial3::translate()'],['../a00018.html#a6ff0d9f7311ce508bc9e67b1d235b417',1,'roboptim::Polynomial::translate()']]],
   ['translatebasispolynomials',['translateBasisPolynomials',['../a00005.html#a6317258db0055f9d6d8ac20bb3a90e00',1,'roboptim::CubicBSpline']]],
-  ['translateinplace',['translateInPlace',['../a00019.html#a5da3a541ca4faa7835773d12b22e30b4',1,'roboptim::Polynomial3']]]
+  ['translateinplace',['translateInPlace',['../a00019.html#a5da3a541ca4faa7835773d12b22e30b4',1,'roboptim::Polynomial3::translateInPlace()'],['../a00018.html#a5127ae88e3f1d94fe92673e6f4c45d09',1,'roboptim::Polynomial::translateInPlace()']]]
 ];

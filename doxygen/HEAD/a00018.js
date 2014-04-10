@@ -13,15 +13,18 @@ var a00018 =
     [ "coefs", "a00018.html#ae9718d6ea68938870cb26b14464480f6", null ],
     [ "derivative", "a00018.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98", null ],
     [ "impl_derivative", "a00018.html#a727023f00fed5a59e443676eb8785e0b", null ],
+    [ "impl_translate", "a00018.html#ade7edc4c36d96fb7eb8288c15b577c52", null ],
     [ "operator()", "a00018.html#a476d94c1e37cd0e8f3c53c56251cbb01", null ],
     [ "operator*", "a00018.html#a0c94bad8f9317a217e18cf2896b44bee", null ],
     [ "operator*", "a00018.html#a302d13b8e1cdc9e8336d9f277eb026b1", null ],
     [ "operator+", "a00018.html#a9dd83503d928586ed8b550b2bb5feb95", null ],
     [ "operator-", "a00018.html#a38701598fe15b6ae0b38b77851996fab", null ],
     [ "operator[]", "a00018.html#aa977c36e195270a56130ba4d833d542f", null ],
+    [ "order", "a00018.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd", null ],
     [ "realRoots", "a00018.html#a66f12a6a055ee98c3ad5c4d2e54873a0", null ],
     [ "t0", "a00018.html#aba1dc041201a06d7e967fcbb261541ba", null ],
     [ "t0", "a00018.html#aad8ba7668a23226c587220430e64226e", null ],
     [ "translate", "a00018.html#a6ff0d9f7311ce508bc9e67b1d235b417", null ],
+    [ "translateInPlace", "a00018.html#a5127ae88e3f1d94fe92673e6f4c45d09", null ],
     [ "order_", "a00018.html#a0f0dc975c4aafe4b85269dad5f348f40", null ]
 ];
