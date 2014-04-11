@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Polynomial3 Class Reference</title>
+<title>roboptim::StablePointStateFunction&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -60,23 +60,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Polynomial3 Class Reference</div>  </div>
+<div class="title">roboptim::StablePointStateFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00079.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Polynomial3" -->
-<p><a class="el" href="a00018.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most 3.  
+<!-- doxytag: class="roboptim::StablePointStateFunction" --><!-- doxytag: inherits="DerivableFunction" -->
+<p><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter.  
  <a href="a00019.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/trajectory/polynomial-3.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/trajectory/stable-point-state-function.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::Polynomial3:</div>
+Inheritance diagram for roboptim::StablePointStateFunction&lt; T &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00019.png" usemap="#roboptim::Polynomial3_map" alt=""/>
-  <map id="roboptim::Polynomial3_map" name="roboptim::Polynomial3_map">
-<area href="a00013.html" title="Monomial3 ." alt="roboptim::Monomial3" shape="rect" coords="0,56,134,80"/>
+  <img src="a00019.png" usemap="#roboptim::StablePointStateFunction&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::StablePointStateFunction&lt; T &gt;_map" name="roboptim::StablePointStateFunction&lt; T &gt;_map">
+<area href="a00006.html" alt="DerivableFunction" shape="rect" coords="0,0,237,24"/>
 </map>
  </div></div>
 
@@ -84,384 +85,273 @@ Inheritance diagram for roboptim::Polynomial3:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab7539fa191ba683179c740420da4e606">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#af2de134baefbfbef3ce8b1618d7ab153"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: create a null polynomial.  <a href="#a7bd1f5a48e97fa5eb5d12aa60ffa878a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a6ea504e11d51748e0406e11977dce6c4">Polynomial3</a> (double t0, double a0, double a1, double a2, double a3)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*</a> (const <a class="el" href="a00019.html">Polynomial3</a> &amp;poly) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+</a> (const <a class="el" href="a00019.html">Polynomial3</a> &amp;poly) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-</a> (const <a class="el" href="a00019.html">Polynomial3</a> &amp;poly) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate</a> (const double &amp;t1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new polynomial translated from (t-t0) to (t-t1).  <a href="#a9fdcff7ae2ed043943b5230e006c6e1b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace</a> (const double &amp;t1)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the polynomial (in place) from (t-t0) to (t-t1).  <a href="#a5da3a541ca4faa7835773d12b22e30b4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab11ff9d18d57a221e3853f85064e26c2">operator()</a> (const double &amp;t) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial.  <a href="#ab11ff9d18d57a221e3853f85064e26c2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">derivative</a> (const double &amp;t, <a class="el" href="a00019.html#ab7539fa191ba683179c740420da4e606">size_type</a> order=1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a1513943abd2fcf4c04625e6d784595a9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae8fcaf3ab4ffa5207ec1127aaad92fd0">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print <a class="el" href="a00019.html" title="Polynomial of degree at most 3.">Polynomial3</a>.  <a href="#ae8fcaf3ab4ffa5207ec1127aaad92fd0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a759f8a2e0e6a75c3417f550a27c6e7ba">operator[]</a> (int i) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#a759f8a2e0e6a75c3417f550a27c6e7ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aba3747436a47f5c9a40aa94048d58d75">realRoots</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the translated polynomial.  <a href="#aba3747436a47f5c9a40aa94048d58d75"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a> [4]</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00018.html" title="Polynomial of degree at most N.">Polynomial</a> coefficients (ordered from lowest to highest degree).  <a href="#a7b031a9f678f42b8a00f461839cf9fef"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Point on which the polynomial is centered.  <a href="#a771973d9f4707e3db6c112920f275079"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae88011ab802df52fc8744b89bb1c5509">StablePointStateFunction</a> (const <a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00020.html">StableTimePoint</a> tpt, size_type <a class="el" href="a00019.html#a62f2fa2cf1cb77dbafd538a74842e67b">order</a>=1)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae88011ab802df52fc8744b89bb1c5509"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aa4e1dbff08533f639db954172d495efe">~StablePointStateFunction</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a62f2fa2cf1cb77dbafd538a74842e67b">order</a> () const   throw ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a311b3a7647821947f39d1abbc046b52b">addToProblem</a> (const <a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a> &amp;trajectory, boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt; function, unsigned <a class="el" href="a00019.html#a62f2fa2cf1cb77dbafd538a74842e67b">order</a>, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t bounds, unsigned nConstraints)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#af9dfea7f254da4a8e465050e95017ecf">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a3ed873cb88b4e1bb64ad57fa4898a4aa">impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="a00018.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most 3. </p>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::StablePointStateFunction&lt; T &gt;</h3>
+
+<p><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter. </p>
+<p>The state along a trajectory is defined as the vector containing the configuration and derivatives up to order <img class="formulaInl" alt="$r$" src="form_11.png"/> of the configuration. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ P (t) = \sum_{i=0}{3} a_i (t-t_0)^i \]" src="form_5.png"/>
+<img class="formulaDsp" alt="\[ \textbf{Cost}(\Gamma) = cost \left({\Gamma(t)}, {\dot{\Gamma}(t)},\cdots,\frac{d^{r}\Gamma}{dt^{r}}(t) \right) \]" src="form_12.png"/>
 </p>
- </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ab7539fa191ba683179c740420da4e606"></a><!-- doxytag: member="roboptim::Polynomial3::size_type" ref="ab7539fa191ba683179c740420da4e606" args="" -->
+<p> where</p>
+<ul>
+<li><img class="formulaInl" alt="$\textbf{Cost}$" src="form_13.png"/> is the trajectory cost,</li>
+<li><img class="formulaInl" alt="$cost$" src="form_14.png"/> is the state cost,</li>
+<li><img class="formulaInl" alt="$t$" src="form_15.png"/> is the parameter along the trajectory where the cost is evaluated (fixed at construction),</li>
+<li><img class="formulaInl" alt="$r$" src="form_11.png"/> is called the order of the state.</li>
+</ul>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">T</td><td>trajectory type </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="af2de134baefbfbef3ce8b1618d7ab153"></a><!-- doxytag: member="roboptim::StablePointStateFunction::trajectory_t" ref="af2de134baefbfbef3ce8b1618d7ab153" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Function::size_type <a class="el" href="a00019.html#ab7539fa191ba683179c740420da4e606">roboptim::Polynomial3::size_type</a></td>
+          <td class="memname">typedef T <a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> type. </p>
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7bd1f5a48e97fa5eb5d12aa60ffa878a"></a><!-- doxytag: member="roboptim::Polynomial3::Polynomial3" ref="a7bd1f5a48e97fa5eb5d12aa60ffa878a" args="()" -->
+<a class="anchor" id="ae88011ab802df52fc8744b89bb1c5509"></a><!-- doxytag: member="roboptim::StablePointStateFunction::StablePointStateFunction" ref="ae88011ab802df52fc8744b89bb1c5509" args="(const trajectory_t &amp;gamma, boost::shared_ptr&lt; DerivableFunction &gt; cost, const StableTimePoint tpt, size_type order=1)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">roboptim::Polynomial3::Polynomial3</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html">StablePointStateFunction</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Default constructor: create a null polynomial. </p>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-<p>Referenced by <a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, and <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6ea504e11d51748e0406e11977dce6c4"></a><!-- doxytag: member="roboptim::Polynomial3::Polynomial3" ref="a6ea504e11d51748e0406e11977dce6c4" args="(double t0, double a0, double a1, double a2, double a3)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">roboptim::Polynomial3::Polynomial3</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>t0</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a0</em>, </td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>cost</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a1</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00020.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>tpt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1513943abd2fcf4c04625e6d784595a9"></a><!-- doxytag: member="roboptim::Polynomial3::derivative" ref="a1513943abd2fcf4c04625e6d784595a9" args="(const double &amp;t, size_type order=1) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">roboptim::Polynomial3::derivative</a> </td>
-          <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html#ab7539fa191ba683179c740420da4e606">size_type</a>&#160;</td>
+          <td class="paramtype">size_type&#160;</td>
           <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td>  throw ()</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Evaluate the derivative of a given order. </p>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-<p>Referenced by <a class="el" href="a00005.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative()</a>, and <a class="el" href="a00005.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab11ff9d18d57a221e3853f85064e26c2"></a><!-- doxytag: member="roboptim::Polynomial3::operator()" ref="ab11ff9d18d57a221e3853f85064e26c2" args="(const double &amp;t) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double roboptim::Polynomial3::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Evaluate the polynomial. </p>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a42d51eecde29e2c2fdf5643b15215f10"></a><!-- doxytag: member="roboptim::Polynomial3::operator*" ref="a42d51eecde29e2c2fdf5643b15215f10" args="(const Polynomial3 &amp;poly) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial3</a> roboptim::Polynomial3::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00019.html">Polynomial3</a> &amp;&#160;</td>
-          <td class="paramname"><em>poly</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>, and <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac659b9c440cd8281b1adaa9c5c159844"></a><!-- doxytag: member="roboptim::Polynomial3::operator+" ref="ac659b9c440cd8281b1adaa9c5c159844" args="(const Polynomial3 &amp;poly) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial3</a> roboptim::Polynomial3::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00019.html">Polynomial3</a> &amp;&#160;</td>
-          <td class="paramname"><em>poly</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>, and <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5f2037b120f2a40f3a200646af5d6112"></a><!-- doxytag: member="roboptim::Polynomial3::operator&#45;" ref="a5f2037b120f2a40f3a200646af5d6112" args="(const Polynomial3 &amp;poly) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial3</a> roboptim::Polynomial3::operator- </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00019.html">Polynomial3</a> &amp;&#160;</td>
-          <td class="paramname"><em>poly</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>, and <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a759f8a2e0e6a75c3417f550a27c6e7ba"></a><!-- doxytag: member="roboptim::Polynomial3::operator[]" ref="a759f8a2e0e6a75c3417f550a27c6e7ba" args="(int i) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double roboptim::Polynomial3::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get the i-th polynomial coefficient. </p>
+<p>Constructor. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>number of the coefficient to get. </td></tr>
+    <tr><td class="paramname">gamma</td><td><a class="el" href="a00023.html" title="Abstract trajectory.">Trajectory</a> <img class="formulaInl" alt="$\Gamma$" src="form_16.png"/> along which the state is evaluated. </td></tr>
+    <tr><td class="paramname">cost</td><td>state cost: <img class="formulaInl" alt="$cost$" src="form_14.png"/>. </td></tr>
+    <tr><td class="paramname">tpt</td><td>parameter <img class="formulaInl" alt="$t$" src="form_15.png"/> where the state is evaluated. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_11.png"/> of derivation. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>i-th polynomial coefficient αi, with: α_i (t-t₀)^i </dd></dl>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae8fcaf3ab4ffa5207ec1127aaad92fd0"></a><!-- doxytag: member="roboptim::Polynomial3::print" ref="ae8fcaf3ab4ffa5207ec1127aaad92fd0" args="(std::ostream &amp;o) const " -->
+<a class="anchor" id="aa4e1dbff08533f639db954172d495efe"></a><!-- doxytag: member="roboptim::StablePointStateFunction::~StablePointStateFunction" ref="aa4e1dbff08533f639db954172d495efe" args="()" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00019.html#ae8fcaf3ab4ffa5207ec1127aaad92fd0">roboptim::Polynomial3::print</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::~<a class="el" href="a00019.html">StablePointStateFunction</a> </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a311b3a7647821947f39d1abbc046b52b"></a><!-- doxytag: member="roboptim::StablePointStateFunction::addToProblem" ref="a311b3a7647821947f39d1abbc046b52b" args="(const trajectory_t &amp;trajectory, boost::shared_ptr&lt; DerivableFunction &gt; function, unsigned order, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t bounds, unsigned nConstraints)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename F , typename CLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html#a311b3a7647821947f39d1abbc046b52b">addToProblem</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00019.html#af2de134baefbfbef3ce8b1618d7ab153">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00006.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Problem&lt; F, CLIST &gt; &amp;&#160;</td>
+          <td class="paramname"><em>problem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename Function::interval_t&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>nConstraints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00072.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9dfea7f254da4a8e465050e95017ecf"></a><!-- doxytag: member="roboptim::StablePointStateFunction::impl_compute" ref="af9dfea7f254da4a8e465050e95017ecf" args="(result_t &amp;, const argument_t &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html#af9dfea7f254da4a8e465050e95017ecf">impl_compute</a> </td>
+          <td>(</td>
+          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ed873cb88b4e1bb64ad57fa4898a4aa"></a><!-- doxytag: member="roboptim::StablePointStateFunction::impl_gradient" ref="a3ed873cb88b4e1bb64ad57fa4898a4aa" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html#a3ed873cb88b4e1bb64ad57fa4898a4aa">impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramname"><em>grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="a62f2fa2cf1cb77dbafd538a74842e67b"></a><!-- doxytag: member="roboptim::StablePointStateFunction::order" ref="a62f2fa2cf1cb77dbafd538a74842e67b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">StablePointStateFunction</a>&lt; T &gt;::size_type <a class="el" href="a00019.html">roboptim::StablePointStateFunction</a>&lt; T &gt;::<a class="el" href="a00019.html#a62f2fa2cf1cb77dbafd538a74842e67b">order</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const  throw ()</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Print <a class="el" href="a00019.html" title="Polynomial of degree at most 3.">Polynomial3</a>. </p>
-
-<p>Referenced by <a class="el" href="a00075.html#a9d5f6fee9d918aab7bc0b1d3c46f1264">roboptim::operator&lt;&lt;()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aba3747436a47f5c9a40aa94048d58d75"></a><!-- doxytag: member="roboptim::Polynomial3::realRoots" ref="aba3747436a47f5c9a40aa94048d58d75" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; double &gt; <a class="el" href="a00019.html#aba3747436a47f5c9a40aa94048d58d75">roboptim::Polynomial3::realRoots</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the real roots of the translated polynomial. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>This function relies on Eigen's experimental polynomial solver. </dd></dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>vector of the real roots of the translated polynomial. </dd></dl>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9fdcff7ae2ed043943b5230e006c6e1b"></a><!-- doxytag: member="roboptim::Polynomial3::translate" ref="a9fdcff7ae2ed043943b5230e006c6e1b" args="(const double &amp;t1) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial3</a> <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">roboptim::Polynomial3::translate</a> </td>
-          <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>t1</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return a new polynomial translated from (t-t0) to (t-t1). </p>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-<p>Referenced by <a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, and <a class="el" href="a00019.html#aba3747436a47f5c9a40aa94048d58d75">realRoots()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5da3a541ca4faa7835773d12b22e30b4"></a><!-- doxytag: member="roboptim::Polynomial3::translateInPlace" ref="a5da3a541ca4faa7835773d12b22e30b4" args="(const double &amp;t1)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00019.html#a5da3a541ca4faa7835773d12b22e30b4">roboptim::Polynomial3::translateInPlace</a> </td>
-          <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>t1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Translate the polynomial (in place) from (t-t0) to (t-t1). </p>
-
-<p>References <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">coefs_</a>, and <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">t0_</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a7b031a9f678f42b8a00f461839cf9fef"></a><!-- doxytag: member="roboptim::Polynomial3::coefs_" ref="a7b031a9f678f42b8a00f461839cf9fef" args="[4]" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="a00019.html#a7b031a9f678f42b8a00f461839cf9fef">roboptim::Polynomial3::coefs_</a>[4]</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p><a class="el" href="a00018.html" title="Polynomial of degree at most N.">Polynomial</a> coefficients (ordered from lowest to highest degree). </p>
-
-<p>Referenced by <a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">derivative()</a>, <a class="el" href="a00019.html#ab11ff9d18d57a221e3853f85064e26c2">operator()()</a>, <a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00075.html#a0d43cc04b62be6282095e7d1162d78ee">roboptim::operator*()</a>, <a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, <a class="el" href="a00019.html#a759f8a2e0e6a75c3417f550a27c6e7ba">operator[]()</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00019.html#aba3747436a47f5c9a40aa94048d58d75">realRoots()</a>, <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>, and <a class="el" href="a00019.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a771973d9f4707e3db6c112920f275079"></a><!-- doxytag: member="roboptim::Polynomial3::t0_" ref="a771973d9f4707e3db6c112920f275079" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="a00019.html#a771973d9f4707e3db6c112920f275079">roboptim::Polynomial3::t0_</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Point on which the polynomial is centered. </p>
-
-<p>Referenced by <a class="el" href="a00019.html#a1513943abd2fcf4c04625e6d784595a9">derivative()</a>, <a class="el" href="a00019.html#ab11ff9d18d57a221e3853f85064e26c2">operator()()</a>, <a class="el" href="a00019.html#a42d51eecde29e2c2fdf5643b15215f10">operator*()</a>, <a class="el" href="a00075.html#a0d43cc04b62be6282095e7d1162d78ee">roboptim::operator*()</a>, <a class="el" href="a00019.html#ac659b9c440cd8281b1adaa9c5c159844">operator+()</a>, <a class="el" href="a00019.html#a5f2037b120f2a40f3a200646af5d6112">operator-()</a>, <a class="el" href="a00019.html#a7bd1f5a48e97fa5eb5d12aa60ffa878a">Polynomial3()</a>, <a class="el" href="a00019.html#a9fdcff7ae2ed043943b5230e006c6e1b">translate()</a>, and <a class="el" href="a00019.html#a5da3a541ca4faa7835773d12b22e30b4">translateInPlace()</a>.</p>
 
 </div>
 </div>
@@ -483,7 +373,7 @@ Public Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00019.html">Polynomial3</a>      </li>
+      <li class="navelem"><a class="el" href="a00072.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00019.html">StablePointStateFunction</a>      </li>
 </body>
 </html>

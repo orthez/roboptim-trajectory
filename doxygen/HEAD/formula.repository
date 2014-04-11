@@ -3,7 +3,7 @@
 \form#2:\[t' = t_{min} + \lambda * (t - t_{min})\]
 \form#3:$[t_{min}, t_{max}]$
 \form#4:\[\lambda\]
-\form#5:\[ P (t) = \sum_{i=0}{3} a_i (t-t_0)^i \]
+\form#5:\[ P (t) = \sum_{i=0}^{3} a_i (t-t_0)^i \]
 \form#6:\[ M (t) = t-t_0 \]
 \form#7:\[ P (t) = \sum_{i=0}^{N} a_i (t-t_0)^i \]
 \form#8:\[\frac{1}{2} \int_{t_{min}}^{t_{max}} ||\ddot{\Gamma_p(t)}||^2 dt\]

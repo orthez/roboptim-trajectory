@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>debug.hh File Reference</title>
+<title>free-time-trajectory.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -56,35 +56,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#define-members">Defines</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">debug.hh File Reference</div>  </div>
+<div class="title">free-time-trajectory.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00061.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
+<code>#include &lt;boost/type_traits/is_base_of.hpp&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00066.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00037.html">roboptim/trajectory/free-time-trajectory.hxx</a>&gt;</code><br/>
 </div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#abb511c40d86f9efb1c90642ed7c79acb">ONLY_DEBUG</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html">roboptim::FreeTimeTrajectory&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate a trajectory to make time scalable.  <a href="a00007.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
+<br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a75f523058812afb18fd488daea880d3e">roboptim::addScaleToParameters</a> (const Function::vector_t &amp;p, Function::value_type t=1.)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#aa5c12d11052417b6478ab2e668ff3e14">roboptim::removeScaleFromParameters</a> (const Function::vector_t &amp;v)</td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="abb511c40d86f9efb1c90642ed7c79acb"></a><!-- doxytag: member="debug.hh::ONLY_DEBUG" ref="abb511c40d86f9efb1c90642ed7c79acb" args="(x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00036.html#abb511c40d86f9efb1c90642ed7c79acb">ONLY_DEBUG</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;x</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -103,6 +101,6 @@ Defines</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00036.html">debug.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00036.html">free-time-trajectory.hh</a>      </li>
 </body>
 </html>

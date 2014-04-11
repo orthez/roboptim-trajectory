@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::SplineLength Class Reference</title>
+<title>roboptim::StableTimePoint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,49 +58,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::SplineLength Class Reference<div class="ingroups"><a class="el" href="a00083.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::StableTimePoint Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::SplineLength" --><!-- doxytag: inherits="TrajectoryCost&lt; CubicBSpline &gt;" -->
-<p>Approximate the length of a Spline.  
- <a href="a00020.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::StableTimePoint" -->
+<p><code>#include &lt;roboptim/trajectory/stable-time-point.hh&gt;</code></p>
 
-<p><code>#include &lt;roboptim/trajectory/spline-length.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::SplineLength:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00020.png" usemap="#roboptim::SplineLength_map" alt=""/>
-  <map id="roboptim::SplineLength_map" name="roboptim::SplineLength_map">
-<area href="a00026.html" alt="roboptim::TrajectoryCost&lt; CubicBSpline &gt;" shape="rect" coords="0,56,249,80"/>
-<area href="a00006.html" alt="DerivableFunction" shape="rect" coords="0,0,249,24"/>
-</map>
- </div></div>
-
-<p><a href="a00101.html">List of all members.</a></p>
+<p><a href="a00098.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#ga108e7e919d913e11f7b20bb923aa02ad">SplineLength</a> (const <a class="el" href="a00005.html">CubicBSpline</a> &amp;spline, const size_type nDiscretizationPoints=100, boost::optional&lt; interval_t &gt; interval=boost::none_t())  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the function from a Spline and a definition interval.  <a href="a00083.html#ga108e7e919d913e11f7b20bb923aa02ad"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#ga1782f184c8428487235745d35e3f9e7a">~SplineLength</a> ()  throw ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#gac38788259d62f4369483b198e9734eb1">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#gabcf4b780c024c21c433d6965bed3c62f">impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a3bf4b9a6044b9d81378d935bddda3d06">StableTimePoint</a> (<a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a> alpha)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac224524284ba191a8282e5b1b8eb31a3">getAlpha</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad56b244310ce512b8d9d736ebc5130cc">getTime</a> (Function::interval_t timeRange) const </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Approximate the length of a Spline. </p>
-<p>The length is computed using:</p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[\frac{1}{2} \int_{t_{min}}^{t_{max}} ||\ddot{\Gamma_p(t)}||^2 dt\]" src="form_8.png"/>
-</p>
-<p><img class="formulaInl" alt="$t_{min}$" src="form_9.png"/> and <img class="formulaInl" alt="$t_{max}$" src="form_10.png"/> are given when the object is instantiated. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00002.html#_a6">spline-optimization.cc</a>.</dd>
-</dl></div></div><!-- contents -->
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="acb0f8ed986e00d147084d90fe81256ba"></a><!-- doxytag: member="roboptim::StableTimePoint::value_type" ref="acb0f8ed986e00d147084d90fe81256ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Function::value_type <a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">roboptim::StableTimePoint::value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3bf4b9a6044b9d81378d935bddda3d06"></a><!-- doxytag: member="roboptim::StableTimePoint::StableTimePoint" ref="a3bf4b9a6044b9d81378d935bddda3d06" args="(value_type alpha)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html#a3bf4b9a6044b9d81378d935bddda3d06">roboptim::StableTimePoint::StableTimePoint</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a>&#160;</td>
+          <td class="paramname"><em>alpha</em></td><td>)</td>
+          <td><code> [inline, explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ac224524284ba191a8282e5b1b8eb31a3"></a><!-- doxytag: member="roboptim::StableTimePoint::getAlpha" ref="ac224524284ba191a8282e5b1b8eb31a3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a>&amp; <a class="el" href="a00020.html#ac224524284ba191a8282e5b1b8eb31a3">roboptim::StableTimePoint::getAlpha</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00074.html#a510a83f9d49d84dd2bcc1a65fcc33da4">roboptim::detail::getLimitSpeedName()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad56b244310ce512b8d9d736ebc5130cc"></a><!-- doxytag: member="roboptim::StableTimePoint::getTime" ref="ad56b244310ce512b8d9d736ebc5130cc" args="(Function::interval_t timeRange) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html#acb0f8ed986e00d147084d90fe81256ba">value_type</a> <a class="el" href="a00020.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">Function::interval_t&#160;</td>
+          <td class="paramname"><em>timeRange</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00023.html#a4a73586d3a59f4fa0ba1f8d3d5eadd80">roboptim::Trajectory&lt; DerivabilityOrder &gt;::impl_compute()</a>, <a class="el" href="a00026.html#afd9ec6dea84b4f29ed3e0cd0ca65b4bd">roboptim::VectorInterpolation::impl_derivative()</a>, <a class="el" href="a00076.html#af0c2649b3ea630e1aed8ac2dde4d6495">roboptim::visualization::gnuplot::plot_speeds()</a>, <a class="el" href="a00076.html#a10e4af94da20e9c1e65d68c85a15f6d5">roboptim::visualization::gnuplot::plot_xytheta()</a>, and <a class="el" href="a00026.html#a1d425bdee1195e1ee0b4c25b158350c1">roboptim::VectorInterpolation::variationDerivWrtParam()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -118,7 +166,7 @@ Protected Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00020.html">SplineLength</a>      </li>
+      <li class="navelem"><a class="el" href="a00072.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00020.html">StableTimePoint</a>      </li>
 </body>
 </html>
