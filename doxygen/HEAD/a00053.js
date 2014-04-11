@@ -1,4 +1,5 @@
 var a00053 =
 [
-    [ "plot_speeds", "a00076.html#af0c2649b3ea630e1aed8ac2dde4d6495", null ]
+    [ "Monomial3", "a00075.html#a551b03622bc1907c6ab5a73bdfec1a32", null ],
+    [ "Polynomial3", "a00075.html#a5a84cb517e65b9793e4c84a3b6911fc8", null ]
 ];

@@ -1,8 +1,8 @@
 var namespaces =
 [
-    [ "roboptim", "a00072.html", "a00072" ],
-    [ "roboptim::detail", "a00074.html", "a00074" ],
-    [ "roboptim::visualization", "a00075.html", null ],
-    [ "roboptim::visualization::gnuplot", "a00076.html", "a00076" ],
-    [ "roboptim::visualization::gnuplot::detail", "a00077.html", "a00077" ]
+    [ "roboptim", "a00075.html", "a00075" ],
+    [ "roboptim::detail", "a00077.html", "a00077" ],
+    [ "roboptim::visualization", "a00078.html", null ],
+    [ "roboptim::visualization::gnuplot", "a00079.html", "a00079" ],
+    [ "roboptim::visualization::gnuplot::detail", "a00080.html", "a00080" ]
 ];

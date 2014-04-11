@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::FrontalSpeed Class Reference</title>
+<title>roboptim::Freeze&lt; P &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,61 +58,141 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::FrontalSpeed Class Reference</div>  </div>
+<div class="title">roboptim::Freeze&lt; P &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::FrontalSpeed" --><!-- doxytag: inherits="DerivableFunction" -->
-<p><code>#include &lt;roboptim/trajectory/frontal-speed.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::FrontalSpeed:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00009.png" usemap="#roboptim::FrontalSpeed_map" alt=""/>
-  <map id="roboptim::FrontalSpeed_map" name="roboptim::FrontalSpeed_map">
-<area href="a00006.html" alt="DerivableFunction" shape="rect" coords="0,0,142,24"/>
-</map>
- </div></div>
+<!-- doxytag: class="roboptim::Freeze" -->
+<p>Add constraints that freeze parameters.  
+ <a href="a00009.html#details">More...</a></p>
 
-<p><a href="a00090.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/trajectory/freeze.hh&gt;</code></p>
+
+<p><a href="a00093.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair<br class="typebreak"/>
+&lt; Function::size_type, <br class="typebreak"/>
+Function::value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pair representing an argument index and a value.  <a href="#a7065a4d215b44041f603d7853b96a485"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ac99c64ca9f1b66729d6a40e1d4b0ac63">problem_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Problem type.  <a href="#ac99c64ca9f1b66729d6a40e1d4b0ac63"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00009.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of pairs (argument index, value).  <a href="#a5ff87f4d182bfd6c788ad2a835d57e4e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a845015d934dff044e564c8c048279be0">FrontalSpeed</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#abca26e347baf9b7ba5bfedb872710841">~FrontalSpeed</a> ()  throw ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a0aa16b5fa235ff4ea09a30b6bfd50e35">impl_compute</a> (result_t &amp;res, const argument_t &amp;t) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ae68e111aa89144b6eaf6a70815658c97">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;t, size_type i) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a71924baea4aea022619722e1b0b56283">Freeze</a> (<a class="el" href="a00009.html#ac99c64ca9f1b66729d6a40e1d4b0ac63">problem_t</a> &amp;problem)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the constraint from a vector of pairs.  <a href="#a71924baea4aea022619722e1b0b56283"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a315080a82486d7bb18e4ae56df396d40">~Freeze</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a8b7292f9b191e8fdae75cdbca2490282">operator()</a> (const <a class="el" href="a00009.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a> fa)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply modification.  <a href="#a8b7292f9b191e8fdae75cdbca2490282"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a6097e194ee38cb86af6f9af6e30f09a0">operator()</a> (const std::vector&lt; Function::size_type &gt; &amp;indices, const Function::vector_t &amp;values)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply modification.  <a href="#a6097e194ee38cb86af6f9af6e30f09a0"></a><br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a845015d934dff044e564c8c048279be0"></a><!-- doxytag: member="roboptim::FrontalSpeed::FrontalSpeed" ref="a845015d934dff044e564c8c048279be0" args="()" -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename P&gt;<br/>
+class roboptim::Freeze&lt; P &gt;</h3>
+
+<p>Add constraints that freeze parameters. </p>
+<p>This constraint expects a vector of pairs (argument id, value) to build a function that will freeze the given arguments to their associated value.</p>
+<p>For instance, the vector: [(0, 5.), (3, -12.)] forces the first parameter to five and the fourth one to minus twelve.</p>
+<p>This adds to the problem one linear constraint per frozen parameter. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a7065a4d215b44041f603d7853b96a485"></a><!-- doxytag: member="roboptim::Freeze::frozenArgument_t" ref="a7065a4d215b44041f603d7853b96a485" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html#a845015d934dff044e564c8c048279be0">roboptim::FrontalSpeed::FrontalSpeed</a> </td>
+          <td class="memname">typedef std::pair&lt;Function::size_type, Function::value_type&gt; <a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00009.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pair representing an argument index and a value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ff87f4d182bfd6c788ad2a835d57e4e"></a><!-- doxytag: member="roboptim::Freeze::frozenArguments_t" ref="a5ff87f4d182bfd6c788ad2a835d57e4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00009.html#a7065a4d215b44041f603d7853b96a485">frozenArgument_t</a>&gt; <a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00009.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Vector of pairs (argument index, value). </p>
+<p>This type define what are the frozen arguments and what their value. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac99c64ca9f1b66729d6a40e1d4b0ac63"></a><!-- doxytag: member="roboptim::Freeze::problem_t" ref="ac99c64ca9f1b66729d6a40e1d4b0ac63" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P <a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00009.html#ac99c64ca9f1b66729d6a40e1d4b0ac63">problem_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Problem type. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a71924baea4aea022619722e1b0b56283"></a><!-- doxytag: member="roboptim::Freeze::Freeze" ref="a71924baea4aea022619722e1b0b56283" args="(problem_t &amp;problem)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::<a class="el" href="a00009.html">Freeze</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00009.html#ac99c64ca9f1b66729d6a40e1d4b0ac63">problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>problem</em></td><td>)</td>
           <td>  throw ()</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Create the constraint from a vector of pairs. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">problem</td><td>problem that will be modified. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="abca26e347baf9b7ba5bfedb872710841"></a><!-- doxytag: member="roboptim::FrontalSpeed::~FrontalSpeed" ref="abca26e347baf9b7ba5bfedb872710841" args="()" -->
+<a class="anchor" id="a315080a82486d7bb18e4ae56df396d40"></a><!-- doxytag: member="roboptim::Freeze::~Freeze" ref="a315080a82486d7bb18e4ae56df396d40" args="()" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html#abca26e347baf9b7ba5bfedb872710841">roboptim::FrontalSpeed::~FrontalSpeed</a> </td>
+          <td class="memname"><a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::~<a class="el" href="a00009.html">Freeze</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -121,63 +201,68 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a0aa16b5fa235ff4ea09a30b6bfd50e35"></a><!-- doxytag: member="roboptim::FrontalSpeed::impl_compute" ref="a0aa16b5fa235ff4ea09a30b6bfd50e35" args="(result_t &amp;res, const argument_t &amp;t) const " -->
+<a class="anchor" id="a8b7292f9b191e8fdae75cdbca2490282"></a><!-- doxytag: member="roboptim::Freeze::operator()" ref="a8b7292f9b191e8fdae75cdbca2490282" args="(const frozenArguments_t fa)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00009.html#a0aa16b5fa235ff4ea09a30b6bfd50e35">roboptim::FrontalSpeed::impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
-          <td class="paramname"><em>res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td class="paramtype">const <a class="el" href="a00009.html#a5ff87f4d182bfd6c788ad2a835d57e4e">frozenArguments_t</a>&#160;</td>
+          <td class="paramname"><em>fa</em></td><td>)</td>
+          <td>  throw ()</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Apply modification. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fa</td><td>Vector of pairs containing what to freeze and to what value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="ae68e111aa89144b6eaf6a70815658c97"></a><!-- doxytag: member="roboptim::FrontalSpeed::impl_gradient" ref="ae68e111aa89144b6eaf6a70815658c97" args="(gradient_t &amp;grad, const argument_t &amp;t, size_type i) const " -->
+<a class="anchor" id="a6097e194ee38cb86af6f9af6e30f09a0"></a><!-- doxytag: member="roboptim::Freeze::operator()" ref="a6097e194ee38cb86af6f9af6e30f09a0" args="(const std::vector&lt; Function::size_type &gt; &amp;indices, const Function::vector_t &amp;values)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00009.html#ae68e111aa89144b6eaf6a70815658c97">roboptim::FrontalSpeed::impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00009.html">roboptim::Freeze</a>&lt; P &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>grad</em>, </td>
+          <td class="paramtype">const std::vector&lt; Function::size_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
+          <td class="paramtype">const Function::vector_t &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td>  throw ()</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Apply modification. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indices</td><td>Vector of parameters index that will be frozen. </td></tr>
+    <tr><td class="paramname">values</td><td>Vector of parameters values. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -199,7 +284,7 @@ Protected Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00072.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00009.html">FrontalSpeed</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00009.html">Freeze</a>      </li>
 </body>
 </html>

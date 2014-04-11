@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>freeze.hxx File Reference</title>
+<title>free-time-trajectory.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -56,18 +56,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">freeze.hxx File Reference</div>  </div>
+<div class="title">free-time-trajectory.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;roboptim/core/numeric-linear-function.hh&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
+<code>#include &lt;boost/type_traits/is_base_of.hpp&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00069.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00040.html">roboptim/trajectory/free-time-trajectory.hxx</a>&gt;</code><br/>
 </div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00008.html">roboptim::FreeTimeTrajectory&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate a trajectory to make time scalable.  <a href="a00008.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
 <br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a75f523058812afb18fd488daea880d3e">roboptim::addScaleToParameters</a> (const Function::vector_t &amp;p, Function::value_type t=1.)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aa5c12d11052417b6478ab2e668ff3e14">roboptim::removeScaleFromParameters</a> (const Function::vector_t &amp;v)</td></tr>
 </table>
 </div><!-- contents -->
 </div>
@@ -87,6 +101,6 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00039.html">freeze.hxx</a>      </li>
+      <li class="navelem"><a class="el" href="a00039.html">free-time-trajectory.hh</a>      </li>
 </body>
 </html>

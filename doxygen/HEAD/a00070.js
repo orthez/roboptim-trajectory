@@ -1,4 +1,5 @@
 var a00070 =
 [
-    [ "vectorInterpolation", "a00072.html#a9c7dcb3672048b40ea9a5703437f52ae", null ]
+    [ "plot_xy", "a00079.html#a8470b3cde9bc3f5c8bda1de059a469f4", null ],
+    [ "plot_xytheta", "a00079.html#a10e4af94da20e9c1e65d68c85a15f6d5", null ]
 ];
