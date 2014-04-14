@@ -110,7 +110,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;B-Spline&quot;)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a B-Spline from its definition.  <a href="#a2deb2d643d8d859be7f49d4a6f125e1d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa55445a0b02f7ff62b3c4c78cbf1bb49">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00004.html#ab548ff32ececa6baf96d5066ca2f966d">knots</a>, std::string name=&quot;B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa55445a0b02f7ff62b3c4c78cbf1bb49">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;knots, std::string name=&quot;B-Spline&quot;)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a B-Spline with parameters and knot points.  <a href="#aa55445a0b02f7ff62b3c4c78cbf1bb49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afa6c9456161e34290bf3292dcfdc2d85">BSpline</a> (const <a class="el" href="a00004.html">BSpline</a>&lt; N &gt; &amp;spline)  throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#afa6c9456161e34290bf3292dcfdc2d85"></a><br/></td></tr>
@@ -134,7 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aad6922a65e42a33ddd3df39a940cafb3">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const   throw ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3ce2d6683a47a00499e2516c1fb0e470">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a7a486480552686fa205dbb8a9faa72e4">Dt</a> () const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ab548ff32ececa6baf96d5066ca2f966d">knots</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3e4800fd7c0308a20484b214302efc2e">knotVector</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the knot vector of the spline.  <a href="#a3e4800fd7c0308a20484b214302efc2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a6c0f24371afc52ea8da4ed8a21c710fc">interval</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a4074fa2bebbbeb79bd6ad9aadce19577">getNumberControlPoints</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of control points of the spline.  <a href="#a4074fa2bebbbeb79bd6ad9aadce19577"></a><br/></td></tr>
@@ -928,14 +929,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab548ff32ececa6baf96d5066ca2f966d"></a><!-- doxytag: member="roboptim::BSpline::knots" ref="ab548ff32ececa6baf96d5066ca2f966d" args="() const " -->
+<a class="anchor" id="a3e4800fd7c0308a20484b214302efc2e"></a><!-- doxytag: member="roboptim::BSpline::knotVector" ref="a3e4800fd7c0308a20484b214302efc2e" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00004.html">BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> const &amp; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#ab548ff32ececa6baf96d5066ca2f966d">knots</a> </td>
+          <td class="memname">const <a class="el" href="a00004.html">BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3e4800fd7c0308a20484b214302efc2e">knotVector</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -943,6 +944,9 @@ template&lt;int N&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Return the knot vector of the spline. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>knot vector of the spline (const). </dd></dl>
 
 </div>
 </div>

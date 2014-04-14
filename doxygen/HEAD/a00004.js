@@ -29,7 +29,7 @@ var a00004 =
     [ "impl_derivative", "a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699", null ],
     [ "impl_derivative", "a00004.html#a0947260a5f9a00cdc802f27360d53fac", null ],
     [ "interval", "a00004.html#a6c0f24371afc52ea8da4ed8a21c710fc", null ],
-    [ "knots", "a00004.html#ab548ff32ececa6baf96d5066ca2f966d", null ],
+    [ "knotVector", "a00004.html#a3e4800fd7c0308a20484b214302efc2e", null ],
     [ "print", "a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34", null ],
     [ "resize", "a00004.html#ac10c0004aaf4363c936ce3899f62e58c", null ],
     [ "setParameters", "a00004.html#a6c4ec54103bf50d55ed9385363ee69b7", null ],
