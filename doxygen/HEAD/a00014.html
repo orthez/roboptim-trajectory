@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>NTimesDerivableFunction Class Reference</title>
+<title>roboptim::Monomial&lt; N &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -57,26 +57,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">NTimesDerivableFunction Class Reference</div>  </div>
+<div class="title">roboptim::Monomial&lt; N &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="NTimesDerivableFunction" --><div class="dynheader">
-Inheritance diagram for NTimesDerivableFunction:</div>
+<!-- doxytag: class="roboptim::Monomial" --><!-- doxytag: inherits="roboptim::Polynomial" -->
+<p><a class="el" href="a00014.html" title="Monomial .">Monomial</a> </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ M (t) = t-t_0 \]" src="form_9.png"/>
+</p>
+<p>.  
+ <a href="a00014.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/trajectory/polynomial.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::Monomial&lt; N &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00014.png" usemap="#NTimesDerivableFunction_map" alt=""/>
-  <map id="NTimesDerivableFunction_map" name="NTimesDerivableFunction_map">
-<area href="a00024.html" title="Abstract trajectory." alt="roboptim::Trajectory&lt; DerivabilityOrder &gt;" shape="rect" coords="0,56,257,80"/>
-<area href="a00024.html" alt="roboptim::Trajectory&lt; 3 &gt;" shape="rect" coords="267,56,524,80"/>
-<area href="a00024.html" alt="roboptim::Trajectory&lt; N &gt;" shape="rect" coords="667,56,924,80"/>
-<area href="a00024.html" alt="roboptim::Trajectory&lt; T::derivabilityOrder &gt;" shape="rect" coords="934,56,1191,80"/>
-<area href="a00006.html" title="Cubic B-Spline trajectory." alt="roboptim::CubicBSpline" shape="rect" coords="133,112,390,136"/>
-<area href="a00027.html" title="Takes a vector or argument and differentiate it." alt="roboptim::VectorInterpolation" shape="rect" coords="400,112,657,136"/>
-<area href="a00004.html" alt="roboptim::BSpline&lt; N &gt;" shape="rect" coords="667,112,924,136"/>
-<area href="a00008.html" title="Decorate a trajectory to make time scalable." alt="roboptim::FreeTimeTrajectory&lt; T &gt;" shape="rect" coords="934,112,1191,136"/>
+  <img src="a00014.png" usemap="#roboptim::Monomial&lt; N &gt;_map" alt=""/>
+  <map id="roboptim::Monomial&lt; N &gt;_map" name="roboptim::Monomial&lt; N &gt;_map">
+<area href="a00019.html" title="Polynomial of degree at most N." alt="roboptim::Polynomial&lt; N &gt;" shape="rect" coords="0,0,160,24"/>
 </map>
  </div></div>
+
+<p><a href="a00103.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a0221f3afb2884102f1baef6e0611ff9d">parent_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">parent_t::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a2ee832094452772d0d54ea94c35856ed">value_type</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#abb912c77052b62e710090a9b30b66131">Monomial</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of a monomial: (t-t₀)  <a href="#abb912c77052b62e710090a9b30b66131"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int N&gt;<br/>
+struct roboptim::Monomial&lt; N &gt;</h3>
+
+<p><a class="el" href="a00014.html" title="Monomial .">Monomial</a> </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ M (t) = t-t_0 \]" src="form_9.png"/>
+</p>
+<p>. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a0221f3afb2884102f1baef6e0611ff9d"></a><!-- doxytag: member="roboptim::Monomial::parent_t" ref="a0221f3afb2884102f1baef6e0611ff9d" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00019.html">Polynomial</a>&lt;N&gt; <a class="el" href="a00014.html">roboptim::Monomial</a>&lt; N &gt;::<a class="el" href="a00014.html#a0221f3afb2884102f1baef6e0611ff9d">parent_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ee832094452772d0d54ea94c35856ed"></a><!-- doxytag: member="roboptim::Monomial::value_type" ref="a2ee832094452772d0d54ea94c35856ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">parent_t::value_type</a> <a class="el" href="a00014.html">roboptim::Monomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">roboptim::Polynomial&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abb912c77052b62e710090a9b30b66131"></a><!-- doxytag: member="roboptim::Monomial::Monomial" ref="abb912c77052b62e710090a9b30b66131" args="(value_type t0)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html">roboptim::Monomial</a>&lt; N &gt;::<a class="el" href="a00014.html">Monomial</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramname"><em>t0</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor of a monomial: (t-t₀) </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t0</td><td>"center" of the monomial. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -95,6 +182,7 @@ Inheritance diagram for NTimesDerivableFunction:</div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00014.html">NTimesDerivableFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00014.html">Monomial</a>      </li>
 </body>
 </html>

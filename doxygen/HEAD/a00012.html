@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::LimitSpeed&lt; T &gt; Class Template Reference</title>
+<title>roboptim::LimitOmega&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -62,60 +62,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::LimitSpeed&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::LimitOmega&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::LimitSpeed" --><!-- doxytag: inherits="DerivableFunction" -->
-<p><code>#include &lt;roboptim/trajectory/limit-speed.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::LimitOmega" --><!-- doxytag: inherits="DerivableFunction" -->
+<p><code>#include &lt;roboptim/trajectory/limit-omega.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::LimitSpeed&lt; T &gt;:</div>
+Inheritance diagram for roboptim::LimitOmega&lt; T &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00012.png" usemap="#roboptim::LimitSpeed&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::LimitSpeed&lt; T &gt;_map" name="roboptim::LimitSpeed&lt; T &gt;_map">
-<area href="a00007.html" alt="DerivableFunction" shape="rect" coords="0,0,158,24"/>
+  <img src="a00012.png" usemap="#roboptim::LimitOmega&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::LimitOmega&lt; T &gt;_map" name="roboptim::LimitOmega&lt; T &gt;_map">
+<area href="a00008.html" alt="DerivableFunction" shape="rect" coords="0,0,162,24"/>
 </map>
  </div></div>
 
-<p><a href="a00096.html">List of all members.</a></p>
+<p><a href="a00099.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a13693a05b2346cc76723b9da5b53c9fd">LimitSpeed</a> (<a class="el" href="a00021.html">StableTimePoint</a> timePoint, const T &amp;spline)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a0e0f6b8a71b14091c5876330c032074b">~LimitSpeed</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aa6c7f02eb97dd9fc3dee5263251c7c27">trajectory</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ab01f410631c3a1e2495e53f628dc214d">LimitOmega</a> (<a class="el" href="a00022.html">StableTimePoint</a> timePoint, const T &amp;trajectory)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#adfd8abc74ec146f4ee7000bbc0b6b764">~LimitOmega</a> ()  throw ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00012.html#ab5ba47dc0a730eac6058827b1800bfb0">addToProblem</a> (const T &amp;, Problem&lt; F, CLIST &gt; &amp;, typename Function::interval_t, unsigned)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00012.html#aaa6fb90cf3867d0477bced341c200aa9">addToProblem</a> (const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ae589ca423df7437b0e8881790312134e">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a2b6073bca2e1a914d09554a809c73f54">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a0ffb2ac4ac3a3627d500ba1f81568b60">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a8b9a5b7700a2e68c20366a713942b959">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const   throw ()</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::LimitSpeed&lt; T &gt;</h3>
+<h3>template&lt;typename T&gt;<br/>
+ class roboptim::LimitOmega&lt; T &gt;</h3>
 
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a6">spline-time-optimization.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a13693a05b2346cc76723b9da5b53c9fd"></a><!-- doxytag: member="roboptim::LimitSpeed::LimitSpeed" ref="a13693a05b2346cc76723b9da5b53c9fd" args="(StableTimePoint timePoint, const T &amp;spline)" -->
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab01f410631c3a1e2495e53f628dc214d"></a><!-- doxytag: member="roboptim::LimitOmega::LimitOmega" ref="ab01f410631c3a1e2495e53f628dc214d" args="(StableTimePoint timePoint, const T &amp;trajectory)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::<a class="el" href="a00012.html">LimitSpeed</a> </td>
+          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html">LimitOmega</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00021.html">StableTimePoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>timePoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>spline</em>&#160;</td>
+          <td class="paramname"><em>trajectory</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -128,14 +125,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0e0f6b8a71b14091c5876330c032074b"></a><!-- doxytag: member="roboptim::LimitSpeed::~LimitSpeed" ref="a0e0f6b8a71b14091c5876330c032074b" args="()" -->
+<a class="anchor" id="adfd8abc74ec146f4ee7000bbc0b6b764"></a><!-- doxytag: member="roboptim::LimitOmega::~LimitOmega" ref="adfd8abc74ec146f4ee7000bbc0b6b764" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::~<a class="el" href="a00012.html">LimitSpeed</a> </td>
+          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::~<a class="el" href="a00012.html">LimitOmega</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td>  throw ()</td>
@@ -147,7 +144,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ab5ba47dc0a730eac6058827b1800bfb0"></a><!-- doxytag: member="roboptim::LimitSpeed::addToProblem" ref="ab5ba47dc0a730eac6058827b1800bfb0" args="(const T &amp;, Problem&lt; F, CLIST &gt; &amp;, typename Function::interval_t, unsigned)" -->
+<a class="anchor" id="aaa6fb90cf3867d0477bced341c200aa9"></a><!-- doxytag: member="roboptim::LimitOmega::addToProblem" ref="aaa6fb90cf3867d0477bced341c200aa9" args="(const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -156,7 +153,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename F , typename CLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::<a class="el" href="a00012.html#ab5ba47dc0a730eac6058827b1800bfb0">addToProblem</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#aaa6fb90cf3867d0477bced341c200aa9">addToProblem</a> </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>trajectory</em>, </td>
@@ -188,18 +185,18 @@ template&lt;typename F , typename CLIST &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00075.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+<p>References <a class="el" href="a00078.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae589ca423df7437b0e8881790312134e"></a><!-- doxytag: member="roboptim::LimitSpeed::impl_compute" ref="ae589ca423df7437b0e8881790312134e" args="(result_t &amp;res, const argument_t &amp;p) const " -->
+<a class="anchor" id="a0ffb2ac4ac3a3627d500ba1f81568b60"></a><!-- doxytag: member="roboptim::LimitOmega::impl_compute" ref="a0ffb2ac4ac3a3627d500ba1f81568b60" args="(result_t &amp;res, const argument_t &amp;p) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::<a class="el" href="a00012.html#ae589ca423df7437b0e8881790312134e">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a0ffb2ac4ac3a3627d500ba1f81568b60">impl_compute</a> </td>
           <td>(</td>
           <td class="paramtype">result_t &amp;&#160;</td>
           <td class="paramname"><em>res</em>, </td>
@@ -222,14 +219,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2b6073bca2e1a914d09554a809c73f54"></a><!-- doxytag: member="roboptim::LimitSpeed::impl_gradient" ref="a2b6073bca2e1a914d09554a809c73f54" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
+<a class="anchor" id="a8b9a5b7700a2e68c20366a713942b959"></a><!-- doxytag: member="roboptim::LimitOmega::impl_gradient" ref="a8b9a5b7700a2e68c20366a713942b959" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::<a class="el" href="a00012.html#a2b6073bca2e1a914d09554a809c73f54">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a8b9a5b7700a2e68c20366a713942b959">impl_gradient</a> </td>
           <td>(</td>
           <td class="paramtype">gradient_t &amp;&#160;</td>
           <td class="paramname"><em>grad</em>, </td>
@@ -258,24 +255,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa6c7f02eb97dd9fc3dee5263251c7c27"></a><!-- doxytag: member="roboptim::LimitSpeed::trajectory" ref="aa6c7f02eb97dd9fc3dee5263251c7c27" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const T &amp; <a class="el" href="a00012.html">roboptim::LimitSpeed</a>&lt; T &gt;::<a class="el" href="a00012.html#aa6c7f02eb97dd9fc3dee5263251c7c27">trajectory</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -294,7 +273,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00012.html">LimitSpeed</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00012.html">LimitOmega</a>      </li>
 </body>
 </html>

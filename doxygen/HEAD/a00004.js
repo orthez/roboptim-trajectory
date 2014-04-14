@@ -18,11 +18,13 @@ var a00004 =
     [ "BSpline", "a00004.html#afa6c9456161e34290bf3292dcfdc2d85", null ],
     [ "~BSpline", "a00004.html#ae72c5a15078b5207792b6fa4760ca8f2", null ],
     [ "basisFunctions", "a00004.html#a0d3879c2c90db8d035d4315ebe8e7894", null ],
+    [ "basisPolynomials", "a00004.html#a3c1bd3dc34d053bdd1380024ff168c68", null ],
     [ "computeBasisPolynomials", "a00004.html#afac4dd240d6c5299e26af185f0240466", null ],
     [ "cox_de_boor", "a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8", null ],
     [ "derivAfterSingularPoint", "a00004.html#ab621f760ea325778f9e573d76c2aa72e", null ],
     [ "derivBeforeSingularPoint", "a00004.html#aebdc1244a487f0468e0652aeb9122919", null ],
     [ "Dt", "a00004.html#a7a486480552686fa205dbb8a9faa72e4", null ],
+    [ "getNumberControlPoints", "a00004.html#a4074fa2bebbbeb79bd6ad9aadce19577", null ],
     [ "impl_compute", "a00004.html#a34896c40dc578750b9d1e4b70463e7a4", null ],
     [ "impl_derivative", "a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699", null ],
     [ "impl_derivative", "a00004.html#a0947260a5f9a00cdc802f27360d53fac", null ],
@@ -36,6 +38,6 @@ var a00004 =
     [ "variationConfigWrtParam", "a00004.html#aad6922a65e42a33ddd3df39a940cafb3", null ],
     [ "variationDerivWrtParam", "a00004.html#a3e8d5fdcea5270261a44ace50d983aa2", null ],
     [ "variationDerivWrtParam", "a00004.html#a3ce2d6683a47a00499e2516c1fb0e470", null ],
-    [ "logger", "a00083.html#ga1beb3cf4584db443b8f4ae85659d4a1c", null ],
+    [ "logger", "a00086.html#ga1beb3cf4584db443b8f4ae85659d4a1c", null ],
     [ "order_", "a00004.html#ad13d70c732cda1902f60daff7cd93eff", null ]
 ];

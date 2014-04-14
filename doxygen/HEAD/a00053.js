@@ -1,5 +1,4 @@
 var a00053 =
 [
-    [ "Monomial3", "a00075.html#a551b03622bc1907c6ab5a73bdfec1a32", null ],
-    [ "Polynomial3", "a00075.html#a5a84cb517e65b9793e4c84a3b6911fc8", null ]
+    [ "getLimitSpeedName", "a00080.html#a510a83f9d49d84dd2bcc1a65fcc33da4", null ]
 ];

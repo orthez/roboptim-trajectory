@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>stable-point-state-function.hh File Reference</title>
+<title>speed.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -56,31 +56,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">stable-point-state-function.hh File Reference</div>  </div>
+<div class="title">speed.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
-<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
-<code>#include &lt;boost/type_traits/is_base_of.hpp&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00045.html">roboptim/trajectory/fwd.hh</a>&gt;</code><br/>
-<code>#include &lt;roboptim/core/derivable-function.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00039.html">roboptim/trajectory/free-time-trajectory.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00061.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00060.html">roboptim/trajectory/stable-point-state-function.hxx</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00067.html">roboptim/trajectory/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;boost/format.hpp&gt;</code><br/>
+<code>#include &lt;roboptim/core/visualization/gnuplot.hh&gt;</code><br/>
+<code>#include &lt;roboptim/core/visualization/gnuplot-commands.hh&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00072.html">roboptim/trajectory/trajectory.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00064.html">roboptim/trajectory/stable-time-point.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00047.html">roboptim/trajectory/frontal-speed.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00055.html">roboptim/trajectory/orthogonal-speed.hh</a>&gt;</code><br/>
 </div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">roboptim::StablePointStateFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00024.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter.  <a href="a00020.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
 <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html">roboptim::visualization</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphic visualization. </p>
+<br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00082.html">roboptim::visualization::gnuplot</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Gnuplot rendering. </p>
+<br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00082.html#af0c2649b3ea630e1aed8ac2dde4d6495">roboptim::visualization::gnuplot::plot_speeds</a> (const T &amp;traj, typename T::value_type step=.01)</td></tr>
 </table>
 </div><!-- contents -->
 </div>
@@ -100,6 +105,6 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00059.html">stable-point-state-function.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00059.html">speed.hh</a>      </li>
 </body>
 </html>

@@ -1,8 +1,7 @@
 var a00011 =
 [
-    [ "LimitOmega", "a00011.html#ab01f410631c3a1e2495e53f628dc214d", null ],
-    [ "~LimitOmega", "a00011.html#adfd8abc74ec146f4ee7000bbc0b6b764", null ],
-    [ "addToProblem", "a00011.html#aaa6fb90cf3867d0477bced341c200aa9", null ],
-    [ "impl_compute", "a00011.html#a0ffb2ac4ac3a3627d500ba1f81568b60", null ],
-    [ "impl_gradient", "a00011.html#a8b9a5b7700a2e68c20366a713942b959", null ]
+    [ "FrontalSpeed", "a00011.html#a845015d934dff044e564c8c048279be0", null ],
+    [ "~FrontalSpeed", "a00011.html#abca26e347baf9b7ba5bfedb872710841", null ],
+    [ "impl_compute", "a00011.html#a0aa16b5fa235ff4ea09a30b6bfd50e35", null ],
+    [ "impl_gradient", "a00011.html#ae68e111aa89144b6eaf6a70815658c97", null ]
 ];

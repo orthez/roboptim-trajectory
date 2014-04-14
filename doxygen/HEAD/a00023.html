@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::TMax Class Reference</title>
+<title>roboptim::StateFunction&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -57,12 +57,369 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::TMax Class Reference</div>  </div>
+<div class="title">roboptim::StateFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00085.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::TMax" -->
-<p><code>#include &lt;roboptim/trajectory/stable-time-point.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::StateFunction" --><!-- doxytag: inherits="DerivableFunction" -->
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter.  
+ <a href="a00023.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/trajectory/state-function.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::StateFunction&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00023.png" usemap="#roboptim::StateFunction&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::StateFunction&lt; T &gt;_map" name="roboptim::StateFunction&lt; T &gt;_map">
+<area href="a00008.html" alt="DerivableFunction" shape="rect" coords="0,0,174,24"/>
+</map>
+ </div></div>
+
+<p><a href="a00107.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#a17010521237325e087014a549c418cd3"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6af3c2eaa0b7c1472ae2bba74ce827ec">StateFunction</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00022.html">StableTimePoint</a> tpt, size_type <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>=1)  throw (std::runtime_error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6af3c2eaa0b7c1472ae2bba74ce827ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a31f8efa638bff53256de0f9f3df540a0">~StateFunction</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a> () const   throw ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00023.html#a4328eeca6e66edbab179f74d6d7fd734">addToProblem</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;trajectory, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; function, unsigned <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t bounds, unsigned nConstraints)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00023.html#a09466f2cc15876d9b880d9b7116acda8">addToProblem</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;trajectory, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; function, unsigned <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>, Problem&lt; F, CLIST &gt; &amp;problem, const typename Function::intervals_t &amp;bounds, const std::vector&lt; typename Function::value_type &gt; &amp;scales, unsigned nConstraints)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aba28dab423bd30bd5913afdd50998856">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae9e624b5c00396938c688fbcb50f9300">impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::StateFunction&lt; T &gt;</h3>
+
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> cost function defined by state evaluation at parameter. </p>
+<p>The state along a trajectory is defined as the vector containing the configuration and derivatives up to order <img class="formulaInl" alt="$r$" src="form_14.png"/> of the configuration. </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \textbf{Cost}(\Gamma) = cost \left({\Gamma(t)}, {\dot{\Gamma}(t)},\cdots,\frac{d^{r}\Gamma}{dt^{r}}(t) \right) \]" src="form_15.png"/>
+</p>
+<p> where</p>
+<ul>
+<li><img class="formulaInl" alt="$\textbf{Cost}$" src="form_16.png"/> is the trajectory cost,</li>
+<li><img class="formulaInl" alt="$cost$" src="form_17.png"/> is the state cost,</li>
+<li><img class="formulaInl" alt="$t$" src="form_18.png"/> is the parameter along the trajectory where the cost is evaluated (fixed at construction),</li>
+<li><img class="formulaInl" alt="$r$" src="form_14.png"/> is called the order of the state.</li>
+</ul>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">T</td><td>trajectory type </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a17010521237325e087014a549c418cd3"></a><!-- doxytag: member="roboptim::StateFunction::trajectory_t" ref="a17010521237325e087014a549c418cd3" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> type. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6af3c2eaa0b7c1472ae2bba74ce827ec"></a><!-- doxytag: member="roboptim::StateFunction::StateFunction" ref="a6af3c2eaa0b7c1472ae2bba74ce827ec" args="(const trajectory_t &amp;gamma, boost::shared_ptr&lt; DerivableFunction &gt; cost, const StableTimePoint tpt, size_type order=1)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html">StateFunction</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>cost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>tpt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw (std::runtime_error)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gamma</td><td><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> <img class="formulaInl" alt="$\Gamma$" src="form_19.png"/> along which the state is evaluated. </td></tr>
+    <tr><td class="paramname">cost</td><td>state cost: <img class="formulaInl" alt="$cost$" src="form_17.png"/>. </td></tr>
+    <tr><td class="paramname">tpt</td><td>parameter <img class="formulaInl" alt="$t$" src="form_18.png"/> where the state is evaluated. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_14.png"/> of derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a31f8efa638bff53256de0f9f3df540a0"></a><!-- doxytag: member="roboptim::StateFunction::~StateFunction" ref="a31f8efa638bff53256de0f9f3df540a0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::~<a class="el" href="a00023.html">StateFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a4328eeca6e66edbab179f74d6d7fd734"></a><!-- doxytag: member="roboptim::StateFunction::addToProblem" ref="a4328eeca6e66edbab179f74d6d7fd734" args="(const trajectory_t &amp;trajectory, boost::shared_ptr&lt; DerivableFunction &gt; function, unsigned order, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t bounds, unsigned nConstraints)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename F , typename CLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#a4328eeca6e66edbab179f74d6d7fd734">addToProblem</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Problem&lt; F, CLIST &gt; &amp;&#160;</td>
+          <td class="paramname"><em>problem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename Function::interval_t&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>nConstraints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00078.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09466f2cc15876d9b880d9b7116acda8"></a><!-- doxytag: member="roboptim::StateFunction::addToProblem" ref="a09466f2cc15876d9b880d9b7116acda8" args="(const trajectory_t &amp;trajectory, boost::shared_ptr&lt; DerivableFunction &gt; function, unsigned order, Problem&lt; F, CLIST &gt; &amp;problem, const typename Function::intervals_t &amp;bounds, const std::vector&lt; typename Function::value_type &gt; &amp;scales, unsigned nConstraints)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename F , typename CLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#a4328eeca6e66edbab179f74d6d7fd734">addToProblem</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Problem&lt; F, CLIST &gt; &amp;&#160;</td>
+          <td class="paramname"><em>problem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename Function::intervals_t &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; typename Function::value_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scales</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>nConstraints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00078.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba28dab423bd30bd5913afdd50998856"></a><!-- doxytag: member="roboptim::StateFunction::impl_compute" ref="aba28dab423bd30bd5913afdd50998856" args="(result_t &amp;, const argument_t &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#aba28dab423bd30bd5913afdd50998856">impl_compute</a> </td>
+          <td>(</td>
+          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9e624b5c00396938c688fbcb50f9300"></a><!-- doxytag: member="roboptim::StateFunction::impl_gradient" ref="ae9e624b5c00396938c688fbcb50f9300" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#ae9e624b5c00396938c688fbcb50f9300">impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramname"><em>grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="aeca7305f8895bd733e31e99f651fa412"></a><!-- doxytag: member="roboptim::StateFunction::order" ref="aeca7305f8895bd733e31e99f651fa412" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html">StateFunction</a>&lt; T &gt;::size_type <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -81,7 +438,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00023.html">TMax</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00023.html">StateFunction</a>      </li>
 </body>
 </html>

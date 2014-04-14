@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::visualization::gnuplot::detail::PlotTrajectory&lt; T &gt; Struct Template Reference</title>
+<title>roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -60,34 +60,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::visualization::gnuplot::detail::PlotTrajectory&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::visualization::gnuplot::detail::PlotTrajectory" -->
-<p><code>#include &lt;roboptim/trajectory/visualization/trajectory.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::visualization::gnuplot::detail::PlotLimitSpeed" -->
+<p><code>#include &lt;roboptim/trajectory/visualization/limit-speed.hh&gt;</code></p>
 
-<p><a href="a00110.html">List of all members.</a></p>
+<p><a href="a00113.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aa705abbf968f28cd49cd86ad925b79ce">PlotTrajectory</a> (const T &amp;traj, std::string &amp;str)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae0051f8ed1e598cc49fa01916ba8fb85">operator()</a> (const typename T::value_type) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a0d9a76260d315aeb2ab8bd275a9e9b07">PlotLimitSpeed</a> (const T &amp;trajectory, std::string &amp;str)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a79a21ab9f22e3375197378859072aba6">operator()</a> (const Function::value_type &amp;t)</td></tr>
 </table>
 <h3>template&lt;typename T&gt;<br/>
- struct roboptim::visualization::gnuplot::detail::PlotTrajectory&lt; T &gt;</h3>
+ struct roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt;</h3>
 
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa705abbf968f28cd49cd86ad925b79ce"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotTrajectory::PlotTrajectory" ref="aa705abbf968f28cd49cd86ad925b79ce" args="(const T &amp;traj, std::string &amp;str)" -->
+<a class="anchor" id="a0d9a76260d315aeb2ab8bd275a9e9b07"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotLimitSpeed::PlotLimitSpeed" ref="a0d9a76260d315aeb2ab8bd275a9e9b07" args="(const T &amp;trajectory, std::string &amp;str)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00017.html">roboptim::visualization::gnuplot::detail::PlotTrajectory</a>&lt; T &gt;::<a class="el" href="a00017.html">PlotTrajectory</a> </td>
+          <td class="memname"><a class="el" href="a00017.html">roboptim::visualization::gnuplot::detail::PlotLimitSpeed</a>&lt; T &gt;::<a class="el" href="a00017.html">PlotLimitSpeed</a> </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>traj</em>, </td>
+          <td class="paramname"><em>trajectory</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -107,22 +107,24 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae0051f8ed1e598cc49fa01916ba8fb85"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotTrajectory::operator()" ref="ae0051f8ed1e598cc49fa01916ba8fb85" args="(const typename T::value_type) const " -->
+<a class="anchor" id="a79a21ab9f22e3375197378859072aba6"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotLimitSpeed::operator()" ref="a79a21ab9f22e3375197378859072aba6" args="(const Function::value_type &amp;t)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00017.html">roboptim::visualization::gnuplot::detail::PlotTrajectory</a>&lt; T &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="a00017.html">roboptim::visualization::gnuplot::detail::PlotLimitSpeed</a>&lt; T &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const typename T::value_type&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td class="paramtype">const Function::value_type &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>References <a class="el" href="a00078.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
 
 </div>
 </div>
@@ -144,10 +146,10 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00078.html">visualization</a>      </li>
-      <li class="navelem"><a class="el" href="a00079.html">gnuplot</a>      </li>
-      <li class="navelem"><a class="el" href="a00080.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00017.html">PlotTrajectory</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00081.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00082.html">gnuplot</a>      </li>
+      <li class="navelem"><a class="el" href="a00083.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00017.html">PlotLimitSpeed</a>      </li>
 </body>
 </html>

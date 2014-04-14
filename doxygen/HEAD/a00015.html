@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::OrthogonalSpeed Class Reference</title>
+<title>NTimesDerivableFunction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -57,130 +57,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::OrthogonalSpeed Class Reference</div>  </div>
+<div class="title">NTimesDerivableFunction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::OrthogonalSpeed" --><!-- doxytag: inherits="DerivableFunction" -->
-<p><code>#include &lt;roboptim/trajectory/orthogonal-speed.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::OrthogonalSpeed:</div>
+<!-- doxytag: class="NTimesDerivableFunction" --><div class="dynheader">
+Inheritance diagram for NTimesDerivableFunction:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00015.png" usemap="#roboptim::OrthogonalSpeed_map" alt=""/>
-  <map id="roboptim::OrthogonalSpeed_map" name="roboptim::OrthogonalSpeed_map">
-<area href="a00007.html" alt="DerivableFunction" shape="rect" coords="0,0,165,24"/>
+  <img src="a00015.png" usemap="#NTimesDerivableFunction_map" alt=""/>
+  <map id="NTimesDerivableFunction_map" name="NTimesDerivableFunction_map">
+<area href="a00025.html" title="Abstract trajectory." alt="roboptim::Trajectory&lt; DerivabilityOrder &gt;" shape="rect" coords="0,56,257,80"/>
+<area href="a00025.html" alt="roboptim::Trajectory&lt; 3 &gt;" shape="rect" coords="267,56,524,80"/>
+<area href="a00025.html" alt="roboptim::Trajectory&lt; N &gt;" shape="rect" coords="667,56,924,80"/>
+<area href="a00025.html" alt="roboptim::Trajectory&lt; T::derivabilityOrder &gt;" shape="rect" coords="934,56,1191,80"/>
+<area href="a00007.html" title="Cubic B-Spline trajectory." alt="roboptim::CubicBSpline" shape="rect" coords="133,112,390,136"/>
+<area href="a00028.html" title="Takes a vector or argument and differentiate it." alt="roboptim::VectorInterpolation" shape="rect" coords="400,112,657,136"/>
+<area href="a00004.html" alt="roboptim::BSpline&lt; N &gt;" shape="rect" coords="667,112,924,136"/>
+<area href="a00009.html" title="Decorate a trajectory to make time scalable." alt="roboptim::FreeTimeTrajectory&lt; T &gt;" shape="rect" coords="934,112,1191,136"/>
+<area href="a00006.html" title="Constrained B-spline." alt="roboptim::ConstrainedBSpline&lt; N &gt;" shape="rect" coords="667,168,924,192"/>
 </map>
  </div></div>
-
-<p><a href="a00097.html">List of all members.</a></p>
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a04979b813e8719aa8e0b710b54894c41">OrthogonalSpeed</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ad04149e5f4dfb01a74243044ca217f72">~OrthogonalSpeed</a> ()  throw ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae22a26b973bb6100b2ef18a88877c7e5">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a95e486a4b1321850f213a1c5adeb487f">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const   throw ()</td></tr>
-</table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a04979b813e8719aa8e0b710b54894c41"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::OrthogonalSpeed" ref="a04979b813e8719aa8e0b710b54894c41" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00015.html#a04979b813e8719aa8e0b710b54894c41">roboptim::OrthogonalSpeed::OrthogonalSpeed</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad04149e5f4dfb01a74243044ca217f72"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::~OrthogonalSpeed" ref="ad04149e5f4dfb01a74243044ca217f72" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00015.html#ad04149e5f4dfb01a74243044ca217f72">roboptim::OrthogonalSpeed::~OrthogonalSpeed</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae22a26b973bb6100b2ef18a88877c7e5"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::impl_compute" ref="ae22a26b973bb6100b2ef18a88877c7e5" args="(result_t &amp;res, const argument_t &amp;p) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00015.html#ae22a26b973bb6100b2ef18a88877c7e5">roboptim::OrthogonalSpeed::impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
-          <td class="paramname"><em>res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a95e486a4b1321850f213a1c5adeb487f"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::impl_gradient" ref="a95e486a4b1321850f213a1c5adeb487f" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00015.html#a95e486a4b1321850f213a1c5adeb487f">roboptim::OrthogonalSpeed::impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>grad</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -199,7 +96,6 @@ Protected Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00015.html">OrthogonalSpeed</a>      </li>
+      <li class="navelem"><a class="el" href="a00015.html">NTimesDerivableFunction</a>      </li>
 </body>
 </html>

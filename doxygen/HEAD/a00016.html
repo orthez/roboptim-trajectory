@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt; Struct Template Reference</title>
+<title>roboptim::OrthogonalSpeed Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,47 +58,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::OrthogonalSpeed Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::visualization::gnuplot::detail::PlotLimitSpeed" -->
-<p><code>#include &lt;roboptim/trajectory/visualization/limit-speed.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::OrthogonalSpeed" --><!-- doxytag: inherits="DerivableFunction" -->
+<p><code>#include &lt;roboptim/trajectory/orthogonal-speed.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::OrthogonalSpeed:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00016.png" usemap="#roboptim::OrthogonalSpeed_map" alt=""/>
+  <map id="roboptim::OrthogonalSpeed_map" name="roboptim::OrthogonalSpeed_map">
+<area href="a00008.html" alt="DerivableFunction" shape="rect" coords="0,0,165,24"/>
+</map>
+ </div></div>
 
-<p><a href="a00109.html">List of all members.</a></p>
+<p><a href="a00101.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a0d9a76260d315aeb2ab8bd275a9e9b07">PlotLimitSpeed</a> (const T &amp;trajectory, std::string &amp;str)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a79a21ab9f22e3375197378859072aba6">operator()</a> (const Function::value_type &amp;t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a04979b813e8719aa8e0b710b54894c41">OrthogonalSpeed</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ad04149e5f4dfb01a74243044ca217f72">~OrthogonalSpeed</a> ()  throw ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ae22a26b973bb6100b2ef18a88877c7e5">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a95e486a4b1321850f213a1c5adeb487f">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const   throw ()</td></tr>
 </table>
-<h3>template&lt;typename T&gt;<br/>
- struct roboptim::visualization::gnuplot::detail::PlotLimitSpeed&lt; T &gt;</h3>
-
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0d9a76260d315aeb2ab8bd275a9e9b07"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotLimitSpeed::PlotLimitSpeed" ref="a0d9a76260d315aeb2ab8bd275a9e9b07" args="(const T &amp;trajectory, std::string &amp;str)" -->
+<a class="anchor" id="a04979b813e8719aa8e0b710b54894c41"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::OrthogonalSpeed" ref="a04979b813e8719aa8e0b710b54894c41" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00016.html">roboptim::visualization::gnuplot::detail::PlotLimitSpeed</a>&lt; T &gt;::<a class="el" href="a00016.html">PlotLimitSpeed</a> </td>
+          <td class="memname"><a class="el" href="a00016.html#a04979b813e8719aa8e0b710b54894c41">roboptim::OrthogonalSpeed::OrthogonalSpeed</a> </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>trajectory</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()</td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad04149e5f4dfb01a74243044ca217f72"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::~OrthogonalSpeed" ref="ad04149e5f4dfb01a74243044ca217f72" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline]</code></td>
+          <td class="memname"><a class="el" href="a00016.html#ad04149e5f4dfb01a74243044ca217f72">roboptim::OrthogonalSpeed::~OrthogonalSpeed</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()</td>
         </tr>
       </table>
 </div>
@@ -107,24 +121,63 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a79a21ab9f22e3375197378859072aba6"></a><!-- doxytag: member="roboptim::visualization::gnuplot::detail::PlotLimitSpeed::operator()" ref="a79a21ab9f22e3375197378859072aba6" args="(const Function::value_type &amp;t)" -->
+<a class="anchor" id="ae22a26b973bb6100b2ef18a88877c7e5"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::impl_compute" ref="ae22a26b973bb6100b2ef18a88877c7e5" args="(result_t &amp;res, const argument_t &amp;p) const " -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00016.html">roboptim::visualization::gnuplot::detail::PlotLimitSpeed</a>&lt; T &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="a00016.html#ae22a26b973bb6100b2ef18a88877c7e5">roboptim::OrthogonalSpeed::impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">const Function::value_type &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00075.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a95e486a4b1321850f213a1c5adeb487f"></a><!-- doxytag: member="roboptim::OrthogonalSpeed::impl_gradient" ref="a95e486a4b1321850f213a1c5adeb487f" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00016.html#a95e486a4b1321850f213a1c5adeb487f">roboptim::OrthogonalSpeed::impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramname"><em>grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -146,10 +199,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00078.html">visualization</a>      </li>
-      <li class="navelem"><a class="el" href="a00079.html">gnuplot</a>      </li>
-      <li class="navelem"><a class="el" href="a00080.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00016.html">PlotLimitSpeed</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00016.html">OrthogonalSpeed</a>      </li>
 </body>
 </html>

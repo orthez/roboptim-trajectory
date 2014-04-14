@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::TrajectoryCost&lt; T &gt; Class Template Reference</title>
+<title>roboptim::Trajectory&lt; DerivabilityOrder &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -60,120 +60,292 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::TrajectoryCost&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00082.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::Trajectory&lt; DerivabilityOrder &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00085.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::TrajectoryCost" --><!-- doxytag: inherits="DerivableFunction" -->
-<p>Meta-function for trajectory cost.  
+<!-- doxytag: class="roboptim::Trajectory" --><!-- doxytag: inherits="NTimesDerivableFunction" -->
+<p>Abstract trajectory.  
  <a href="a00025.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/trajectory/trajectory-cost.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/trajectory/trajectory.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::TrajectoryCost&lt; T &gt;:</div>
+Inheritance diagram for roboptim::Trajectory&lt; DerivabilityOrder &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00025.png" usemap="#roboptim::TrajectoryCost&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::TrajectoryCost&lt; T &gt;_map" name="roboptim::TrajectoryCost&lt; T &gt;_map">
-<area href="a00007.html" alt="DerivableFunction" shape="rect" coords="0,0,180,24"/>
+  <img src="a00025.png" usemap="#roboptim::Trajectory&lt; DerivabilityOrder &gt;_map" alt=""/>
+  <map id="roboptim::Trajectory&lt; DerivabilityOrder &gt;_map" name="roboptim::Trajectory&lt; DerivabilityOrder &gt;_map">
+<area href="a00015.html" alt="NTimesDerivableFunction" shape="rect" coords="0,0,279,24"/>
 </map>
  </div></div>
 
-<p><a href="a00104.html">List of all members.</a></p>
+<p><a href="a00110.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00024.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#ad0b2be9f24cc110906215697a9a69a52"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00015.html">NTimesDerivableFunction</a><br class="typebreak"/>
+&lt; DerivabilityOrder &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a63f1856ee0c9c44db9c094558d725814">parent_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent type.  <a href="#a63f1856ee0c9c44db9c094558d725814"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import value type.  <a href="#a090f8aa4afd3b36ff98d015c40a21191"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import size type.  <a href="#ae35019afe3d72d07d1b624eac832ede2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import vector type.  <a href="#a62c888c5fdcdf698afc4b7a97db784ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import result type.  <a href="#a7c0a6357fa516067002b75114c56cb81"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import gradient type.  <a href="#acf4bc47abdb6e0adf131ee477dfbe2bb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::jacobian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import jacobian type.  <a href="#ac80538d62ff8f37c5232ab93a5aa7a4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef parent_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import interval type.  <a href="#a2722b17c64a0f01a73cfaf56b9188375"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a6d9d1399593c435c872ff1d125e13776">TrajectoryCost</a> (const <a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;traj, std::string name=std::string())  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concret class should call this constructor.  <a href="#a6d9d1399593c435c872ff1d125e13776"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac58cc178462e67a9d0279a8f01fcf5f3">~TrajectoryCost</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#af5a9baff00ca36f49549c149e37a5f18">~Trajectory</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a46135e7d406873aee5e6ce438d41138b">operator()</a> (<a class="el" href="a00022.html">StableTimePoint</a> argument) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aadb6d31316c549ce95630e5ccb4f06eb">operator()</a> (<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;result, <a class="el" href="a00022.html">StableTimePoint</a> argument) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (<a class="el" href="a00022.html">StableTimePoint</a> argument, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order=1) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a23e372ceddea2a419066c935604445cd">derivative</a> (<a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;<a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a>, <a class="el" href="a00022.html">StableTimePoint</a> argument, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order=1) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a06aeca11e301c147c2ff4e4f02353e6d">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a486070a92b99d92c1fb6bcebfcad17a5">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a720b3a37fd91afbb92df65b0bddd8b07">isValidTime</a> (<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> t) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a714dc1002f3fcaeeb03397668a123c7d">normalizeAngles</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> index)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize angles in parameters array.  <a href="#a714dc1002f3fcaeeb03397668a123c7d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a><br class="typebreak"/>
+&lt; DerivabilityOrder &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aa1dffb55ad833239ef87ccb8098b8408">clone</a> () const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a><br class="typebreak"/>
+&lt; DerivabilityOrder &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a663fb66c3ef467e6d3f0a33001ed2ad9">resize</a> (<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const =0  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone and resize a trajectory.  <a href="#a663fb66c3ef467e6d3f0a33001ed2ad9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a9fdf55675206c496ae578fdc741d0e03">print</a> (std::ostream &amp;) const   throw ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Accessing parameters, and state.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab629b024360573b744b2f2ea53f55f40">setParameters</a> (const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">length</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a6f8a06256dc173cef7f8918d07cca539">state</a> (double t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state along trajectory.  <a href="#a6f8a06256dc173cef7f8918d07cca539"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a97634c842e5c929bcf4f189f229c344f">state</a> (<a class="el" href="a00022.html">StableTimePoint</a> t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Accessing parameters and gradients</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aee9c38f8b50e76851ffc7e2639ac6adc">variationConfigWrtParam</a> (double t) const =0  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a configuration with respect to parameter vector.  <a href="#aee9c38f8b50e76851ffc7e2639ac6adc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a0a056eb444a272b4f6ae1e07131e7888">variationDerivWrtParam</a> (double t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const =0  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a derivative with respect to parameter vector.  <a href="#a0a056eb444a272b4f6ae1e07131e7888"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#af797267056d7487f1298791445161d98">variationStateWrtParam</a> (double t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of the state with respect to parameter vector.  <a href="#af797267056d7487f1298791445161d98"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a88da99f61fe597659b7eb6af9c07eb56">variationStateWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> stp, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const   throw ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Singular points</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#af144ce344fa1af57aad0d4773bf707fb">singularPoints</a> () const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of singular points.  <a href="#af144ce344fa1af57aad0d4773bf707fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a619dd773012986935cd7d2e146c0e049">singularPointAtRank</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank) const =0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singular point at given rank.  <a href="#a619dd773012986935cd7d2e146c0e049"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a11d44644c5892d80d5ef4b02d36586ef">derivBeforeSingularPoint</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const =0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get left limit value of derivative at given singular point.  <a href="#a11d44644c5892d80d5ef4b02d36586ef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a90bcbc3ff8224b7eff3c67364c796289">derivAfterSingularPoint</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> rank, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const =0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get right limit value of derivative at given singular point.  <a href="#a90bcbc3ff8224b7eff3c67364c796289"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Tolerance for inclusion of parameter in interval of definition.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Set tolerance for inclusion of parameter in interval of definition.</p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab9e92c163f5375bf614335dd409cea39">tolerance</a> (const double &amp;<a class="el" href="a00025.html#ab9e92c163f5375bf614335dd409cea39">tolerance</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4200380e77c7c4a9dba8112d8793676b">tolerance</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tolerance for inclusion of parameter in interval of definition.  <a href="#a4200380e77c7c4a9dba8112d8793676b"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4a73586d3a59f4fa0ba1f8d3d5eadd80">impl_compute</a> (<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;, <a class="el" href="a00022.html">StableTimePoint</a>) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aa956e4feb4b819f1dfbfe84fa68cc9ef">impl_derivative</a> (<a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;g, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ab2ca30e7b7d57fc0adc381b124a20100">Trajectory</a> (<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>, const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;, std::string name=std::string())  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a639fae7f0f7d54bc80d8ddc37851b188">normalizeAngles</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> index, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> offset)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal version of normalizeAngles allowing an optional offset.  <a href="#a639fae7f0f7d54bc80d8ddc37851b188"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a1fcac55e0be93c130db9ddfc6457c381">trajectory_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Input trajectory.  <a href="#a1fcac55e0be93c130db9ddfc6457c381"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#adf7d3def9b1bd2b1febab7ab89c8bab1">timeRange_</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">parameters_</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4cf72959ed1776528246fc06ab9330c6">singularPoints_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::TrajectoryCost&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;unsigned DerivabilityOrder&gt;<br/>
+class roboptim::Trajectory&lt; DerivabilityOrder &gt;</h3>
 
-<p>Meta-function for trajectory cost. </p>
-<p>This is a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_17.png"/> meta-function for costs on trajectories.</p>
-<p>It takes a trajectory as its input.</p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+<p>Abstract trajectory. </p>
+<p>A trajectory is a piecewise smooth mapping <img class="formulaInl" alt="$\Gamma$" src="form_19.png"/> from</p>
+<ul>
+<li>the Cartesian product of a definition interval and a vector space of parameters <img class="formulaInl" alt="$\textbf{R}^m$" src="form_23.png"/></li>
+<li>to a vector space <img class="formulaInl" alt="$\textbf{R}^n$" src="form_24.png"/>: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \begin{array}{llll} \Gamma: &amp; [t_{min}, t_{max}] \times \textbf{R}^m &amp; \rightarrow &amp; \textbf{R}^n \\ &amp; (t, \textbf{p}) &amp; \rightarrow &amp; \Gamma_{\textbf{p}}(t) \end{array} \]" src="form_25.png"/>
+</p>
+ <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">T</td><td>trajectory type </td></tr>
+    <tr><td class="paramname">DerivabilityOrder</td><td>derivability order </td></tr>
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ad0b2be9f24cc110906215697a9a69a52"></a><!-- doxytag: member="roboptim::TrajectoryCost::trajectory_t" ref="ad0b2be9f24cc110906215697a9a69a52" args="" -->
+<a class="anchor" id="acf4bc47abdb6e0adf131ee477dfbe2bb"></a><!-- doxytag: member="roboptim::Trajectory::gradient_t" ref="acf4bc47abdb6e0adf131ee477dfbe2bb" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;unsigned DerivabilityOrder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef T <a class="el" href="a00025.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a></td>
+          <td class="memname">typedef parent_t::gradient_t <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00024.html" title="Abstract trajectory.">Trajectory</a> type. </p>
+<p>Import gradient type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#ad623d5a52ea1a42e4462a2963e60616f">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, and <a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">roboptim::BSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2722b17c64a0f01a73cfaf56b9188375"></a><!-- doxytag: member="roboptim::Trajectory::interval_t" ref="a2722b17c64a0f01a73cfaf56b9188375" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::interval_t <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import interval type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a44dfbbe2f421035c6b5f3fc51f8d8622">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#a82f0c21a580dedff5500a805cb9dea60">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac80538d62ff8f37c5232ab93a5aa7a4a"></a><!-- doxytag: member="roboptim::Trajectory::jacobian_t" ref="ac80538d62ff8f37c5232ab93a5aa7a4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::jacobian_t <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import jacobian type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a53404bc4ba20fcfe7a4378fe7f2eb547">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#a25f6d36f1f51a46e41a2b7f2bb747786">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63f1856ee0c9c44db9c094558d725814"></a><!-- doxytag: member="roboptim::Trajectory::parent_t" ref="a63f1856ee0c9c44db9c094558d725814" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00015.html">NTimesDerivableFunction</a>&lt;DerivabilityOrder&gt; <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a63f1856ee0c9c44db9c094558d725814">parent_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Parent type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a5fe407ade13c2a85ec05572f7a68581d">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#aaa308b51bce2034e3589c1eec42e1ac1">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#ac63ba8bb8cd0272a6b7863b997ed92f9">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c0a6357fa516067002b75114c56cb81"></a><!-- doxytag: member="roboptim::Trajectory::result_t" ref="a7c0a6357fa516067002b75114c56cb81" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::result_t <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import result type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#ad38a4507bc7ce1c0547d481b56c8abe7">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, and <a class="el" href="a00004.html#aac6152350c075f143fb812abeda6d6e0">roboptim::BSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae35019afe3d72d07d1b624eac832ede2"></a><!-- doxytag: member="roboptim::Trajectory::size_type" ref="ae35019afe3d72d07d1b624eac832ede2" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::size_type <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import size type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a2640aaad67b102c46401bcc5b2f2868c">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#a41e2d999e00a13f5c106d1981232d4a8">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a090f8aa4afd3b36ff98d015c40a21191"></a><!-- doxytag: member="roboptim::Trajectory::value_type" ref="a090f8aa4afd3b36ff98d015c40a21191" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::value_type <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import value type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#aab97abcdb32ac48b09c1cbe8b5e29c53">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#a16cedcbe149f9e83287c468ef807f551">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62c888c5fdcdf698afc4b7a97db784ca"></a><!-- doxytag: member="roboptim::Trajectory::vector_t" ref="a62c888c5fdcdf698afc4b7a97db784ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef parent_t::vector_t <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Import vector type. </p>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a47efe489fde9376d58a84726f74dcfcb">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">roboptim::BSpline&lt; N &gt;</a>, and <a class="el" href="a00006.html#a830fcc20709e2a794c455b49a045c902">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6d9d1399593c435c872ff1d125e13776"></a><!-- doxytag: member="roboptim::TrajectoryCost::TrajectoryCost" ref="a6d9d1399593c435c872ff1d125e13776" args="(const trajectory_t &amp;traj, std::string name=std::string())" -->
+<a class="anchor" id="af5a9baff00ca36f49549c149e37a5f18"></a><!-- doxytag: member="roboptim::Trajectory::~Trajectory" ref="af5a9baff00ca36f49549c149e37a5f18" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;unsigned dorder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00025.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00025.html">TrajectoryCost</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>traj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Concret class should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">traj</td><td>trajectory on which the cost is computed </td></tr>
-    <tr><td class="paramname">name</td><td>function's name </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac58cc178462e67a9d0279a8f01fcf5f3"></a><!-- doxytag: member="roboptim::TrajectoryCost::~TrajectoryCost" ref="ac58cc178462e67a9d0279a8f01fcf5f3" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00025.html">roboptim::TrajectoryCost</a>&lt; T &gt;::~<a class="el" href="a00025.html">TrajectoryCost</a> </td>
+          <td class="memname"><a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::~<a class="el" href="a00025.html">Trajectory</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td>  throw ()<code> [virtual]</code></td>
@@ -184,21 +356,949 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a1fcac55e0be93c130db9ddfc6457c381"></a><!-- doxytag: member="roboptim::TrajectoryCost::trajectory_" ref="a1fcac55e0be93c130db9ddfc6457c381" args="" -->
+<a class="anchor" id="ab2ca30e7b7d57fc0adc381b124a20100"></a><!-- doxytag: member="roboptim::Trajectory::Trajectory" ref="ab2ca30e7b7d57fc0adc381b124a20100" args="(interval_t, size_type, const vector_t &amp;, std::string name=std::string())" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;unsigned dorder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00025.html#ad0b2be9f24cc110906215697a9a69a52">trajectory_t</a>&amp; <a class="el" href="a00025.html">roboptim::TrajectoryCost</a>&lt; T &gt;::<a class="el" href="a00025.html#a1fcac55e0be93c130db9ddfc6457c381">trajectory_</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html">Trajectory</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
+          <td class="paramname"><em>tr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>outputSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Input trajectory. </p>
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aa1dffb55ad833239ef87ccb8098b8408"></a><!-- doxytag: member="roboptim::Trajectory::clone" ref="aa1dffb55ad833239ef87ccb8098b8408" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html">Trajectory</a>&lt;DerivabilityOrder&gt;* <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#aa1dffb55ad833239ef87ccb8098b8408">clone</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90bcbc3ff8224b7eff3c67364c796289"></a><!-- doxytag: member="roboptim::Trajectory::derivAfterSingularPoint" ref="a90bcbc3ff8224b7eff3c67364c796289" args="(size_type rank, size_type order) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a90bcbc3ff8224b7eff3c67364c796289">derivAfterSingularPoint</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get right limit value of derivative at given singular point. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rank</td><td>rank of the singular points. </td></tr>
+    <tr><td class="paramname">order</td><td>order of derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>Return values:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">derivative</td><td>Limit of the derivative at singular point for decreasing parameter values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00004.html#ab621f760ea325778f9e573d76c2aa72e">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a482c14fa89be7476907bf11feff9c676">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#a13aa0f0de97c0ad0eadbd1a3758254dc">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#abbf6899270721a7657bb7702b16ba8ad">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37d249123851924155a46cb8c0a62dbc"></a><!-- doxytag: member="roboptim::Trajectory::derivative" ref="a37d249123851924155a46cb8c0a62dbc" args="(StableTimePoint argument, size_type order=1) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">roboptim::Trajectory&lt; T::derivabilityOrder &gt;::derivative()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23e372ceddea2a419066c935604445cd"></a><!-- doxytag: member="roboptim::Trajectory::derivative" ref="a23e372ceddea2a419066c935604445cd" args="(gradient_t &amp;derivative, StableTimePoint argument, size_type order=1) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>derivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11d44644c5892d80d5ef4b02d36586ef"></a><!-- doxytag: member="roboptim::Trajectory::derivBeforeSingularPoint" ref="a11d44644c5892d80d5ef4b02d36586ef" args="(size_type rank, size_type order) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a11d44644c5892d80d5ef4b02d36586ef">derivBeforeSingularPoint</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get left limit value of derivative at given singular point. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rank</td><td>rank of the singular points. </td></tr>
+    <tr><td class="paramname">order</td><td>order of derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Limit of the derivative at singular point for increasing parameter values. </dd></dl>
+
+<p>Implemented in <a class="el" href="a00004.html#aebdc1244a487f0468e0652aeb9122919">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a82ead7b0b4defe92f1d52788381ae359">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#a05170ea645fe94a609758b84ee456e87">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a4dacda8bcbe6f103371e1162fdc27d69">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a73586d3a59f4fa0ba1f8d3d5eadd80"></a><!-- doxytag: member="roboptim::Trajectory::impl_compute" ref="a4a73586d3a59f4fa0ba1f8d3d5eadd80" args="(result_t &amp;, StableTimePoint) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a4a73586d3a59f4fa0ba1f8d3d5eadd80">impl_compute</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>stp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+<p>References <a class="el" href="a00022.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>.</p>
+
+<p>Referenced by <a class="el" href="a00025.html#aadb6d31316c549ce95630e5ccb4f06eb">roboptim::Trajectory&lt; T::derivabilityOrder &gt;::operator()()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa956e4feb4b819f1dfbfe84fa68cc9ef"></a><!-- doxytag: member="roboptim::Trajectory::impl_derivative" ref="aa956e4feb4b819f1dfbfe84fa68cc9ef" args="(gradient_t &amp;g, StableTimePoint, size_type order) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#aa956e4feb4b819f1dfbfe84fa68cc9ef">impl_derivative</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb">gradient_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00009.html#a6ef6bf1597bcf3a41f9378baa6ad6b70">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#a0947260a5f9a00cdc802f27360d53fac">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00007.html#a7c9a50264ee5464048cac192044775f8">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#afd9ec6dea84b4f29ed3e0cd0ca65b4bd">roboptim::VectorInterpolation</a>.</p>
+
+<p>Referenced by <a class="el" href="a00025.html#a23e372ceddea2a419066c935604445cd">roboptim::Trajectory&lt; T::derivabilityOrder &gt;::derivative()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a720b3a37fd91afbb92df65b0bddd8b07"></a><!-- doxytag: member="roboptim::Trajectory::isValidTime" ref="a720b3a37fd91afbb92df65b0bddd8b07" args="(value_type t) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a720b3a37fd91afbb92df65b0bddd8b07">isValidTime</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e8f23a206f2f6fa065ea254d0792d62"></a><!-- doxytag: member="roboptim::Trajectory::length" ref="a6e8f23a206f2f6fa065ea254d0792d62" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">length</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a714dc1002f3fcaeeb03397668a123c7d"></a><!-- doxytag: member="roboptim::Trajectory::normalizeAngles" ref="a714dc1002f3fcaeeb03397668a123c7d" args="(size_type index)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a714dc1002f3fcaeeb03397668a123c7d">normalizeAngles</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Normalize angles in parameters array. </p>
+<p>Make sure angles are continuous. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Angles index in parameter array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="a00009.html#a908ba72e645442aa203525adb1b9731c">roboptim::FreeTimeTrajectory&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a639fae7f0f7d54bc80d8ddc37851b188"></a><!-- doxytag: member="roboptim::Trajectory::normalizeAngles" ref="a639fae7f0f7d54bc80d8ddc37851b188" args="(size_type index, size_type offset)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a714dc1002f3fcaeeb03397668a123c7d">normalizeAngles</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Internal version of normalizeAngles allowing an optional offset. </p>
+<p>Used to factorize code between trajectories and free time trajectories. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Angles index in parameter array. </td></tr>
+    <tr><td class="paramname">offset</td><td>Index of the first control point in the parameter vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a46135e7d406873aee5e6ce438d41138b"></a><!-- doxytag: member="roboptim::Trajectory::operator()" ref="a46135e7d406873aee5e6ce438d41138b" args="(StableTimePoint argument) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>argument</em></td><td>)</td>
+          <td> const  throw ()<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aadb6d31316c549ce95630e5ccb4f06eb"></a><!-- doxytag: member="roboptim::Trajectory::operator()" ref="aadb6d31316c549ce95630e5ccb4f06eb" args="(result_t &amp;result, StableTimePoint argument) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>argument</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6c0a684443a55738bfc2e47d5df592c"></a><!-- doxytag: member="roboptim::Trajectory::parameters" ref="ab6c0a684443a55738bfc2e47d5df592c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp; <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fdf55675206c496ae578fdc741d0e03"></a><!-- doxytag: member="roboptim::Trajectory::print" ref="a9fdf55675206c496ae578fdc741d0e03" args="(std::ostream &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a9fdf55675206c496ae578fdc741d0e03">print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a4699fe0183b9d707f05fb964df145cac">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, and <a class="el" href="a00007.html#a3e974fa06743e37072efc0d639e4e8c6">roboptim::CubicBSpline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a663fb66c3ef467e6d3f0a33001ed2ad9"></a><!-- doxytag: member="roboptim::Trajectory::resize" ref="a663fb66c3ef467e6d3f0a33001ed2ad9" args="(interval_t timeRange) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html">Trajectory</a>&lt;DerivabilityOrder&gt;* <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a663fb66c3ef467e6d3f0a33001ed2ad9">resize</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a>&#160;</td>
+          <td class="paramname"><em>timeRange</em></td><td>)</td>
+          <td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clone and resize a trajectory. </p>
+
+<p>Implemented in <a class="el" href="a00009.html#a4f924237d4e5654f285c48b2f24073e0">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#ac10c0004aaf4363c936ce3899f62e58c">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00006.html#a324ad8469c568c4a6656900f18bf8966">roboptim::ConstrainedBSpline&lt; N &gt;</a>, <a class="el" href="a00028.html#a10e3767705188efecb3132511b86a5a2">roboptim::VectorInterpolation</a>, and <a class="el" href="a00007.html#a629cdb8cd2321fd129893a6e4d2a48bc">roboptim::CubicBSpline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab629b024360573b744b2f2ea53f55f40"></a><!-- doxytag: member="roboptim::Trajectory::setParameters" ref="ab629b024360573b744b2f2ea53f55f40" args="(const vector_t &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ab629b024360573b744b2f2ea53f55f40">setParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td>  throw (std::runtime_error)<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00006.html#a84538e48965410f6b2cd27b09e054ec2">roboptim::ConstrainedBSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a91c66089ea69347f6b2d2e61c0e1e54b">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#ad3980bb2d61ceff9f5df92aa17768252">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a5f40eaac69c1884b9629a4fdde85fae5">roboptim::VectorInterpolation</a>.</p>
+
+<p>Referenced by <a class="el" href="a00028.html#a5f40eaac69c1884b9629a4fdde85fae5">roboptim::VectorInterpolation::setParameters()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a619dd773012986935cd7d2e146c0e049"></a><!-- doxytag: member="roboptim::Trajectory::singularPointAtRank" ref="a619dd773012986935cd7d2e146c0e049" args="(size_type rank) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a619dd773012986935cd7d2e146c0e049">singularPointAtRank</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>rank</em></td><td>)</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get singular point at given rank. </p>
+
+<p>Implemented in <a class="el" href="a00004.html#a74f22688a5914f6b39a709a47b60d0f3">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a4a801e6f2ca9d1b1ede3ebf682d9ee26">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#ab28cc29406766f2bb42f720314b6493c">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a3b5acc21c88ee314b9ddf969c27fc93b">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af144ce344fa1af57aad0d4773bf707fb"></a><!-- doxytag: member="roboptim::Trajectory::singularPoints" ref="af144ce344fa1af57aad0d4773bf707fb" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#af144ce344fa1af57aad0d4773bf707fb">singularPoints</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get number of singular points. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f8a06256dc173cef7f8918d07cca539"></a><!-- doxytag: member="roboptim::Trajectory::state" ref="a6f8a06256dc173cef7f8918d07cca539" args="(double t, size_type order) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a6f8a06256dc173cef7f8918d07cca539">state</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get state along trajectory. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_18.png"/> in the definition interval. </td></tr>
+    <tr><td class="paramname">order</td><td>the higher order <img class="formulaInl" alt="$r$" src="form_14.png"/> of the required derivative </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the state defined as the vector containing the config and first derivatives: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \textbf{X}(t) = \left(\Gamma_{\textbf{p}}(t), \frac{d\Gamma_{\textbf{p}}}{dt}(t),\cdots, \frac{d^{r}\Gamma_{\textbf{p}}}{dt^{r}}(t)\right) \]" src="form_26.png"/>
+</p>
+ The configuration and derivatives are concatenated in one vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a97634c842e5c929bcf4f189f229c344f"></a><!-- doxytag: member="roboptim::Trajectory::state" ref="a97634c842e5c929bcf4f189f229c344f" args="(StableTimePoint t, size_type order) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a6f8a06256dc173cef7f8918d07cca539">state</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad9f7c97440a329f98b2407e8cc924387"></a><!-- doxytag: member="roboptim::Trajectory::timeRange" ref="ad9f7c97440a329f98b2407e8cc924387" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00082.html#aad07f0f1d78793149fea1a519a578738">roboptim::visualization::gnuplot::plot_limitSpeed()</a>, <a class="el" href="a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4">roboptim::visualization::gnuplot::plot_xy()</a>, <a class="el" href="a00009.html#a4f924237d4e5654f285c48b2f24073e0">roboptim::FreeTimeTrajectory&lt; T &gt;::resize()</a>, and <a class="el" href="a00080.html#a52ba18d87cef70c3783bf6bf86ba1100">roboptim::detail::unscaleInterval()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9e92c163f5375bf614335dd409cea39"></a><!-- doxytag: member="roboptim::Trajectory::tolerance" ref="ab9e92c163f5375bf614335dd409cea39" args="(const double &amp;tolerance)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ab9e92c163f5375bf614335dd409cea39">tolerance</a> </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tolerance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4200380e77c7c4a9dba8112d8793676b"></a><!-- doxytag: member="roboptim::Trajectory::tolerance" ref="a4200380e77c7c4a9dba8112d8793676b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ab9e92c163f5375bf614335dd409cea39">tolerance</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get tolerance for inclusion of parameter in interval of definition. </p>
+
+</div>
+</div>
+<a class="anchor" id="aee9c38f8b50e76851ffc7e2639ac6adc"></a><!-- doxytag: member="roboptim::Trajectory::variationConfigWrtParam" ref="aee9c38f8b50e76851ffc7e2639ac6adc" args="(double t) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#aee9c38f8b50e76851ffc7e2639ac6adc">variationConfigWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the variation of a configuration with respect to parameter vector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_18.png"/> in the definition interval. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Jacobian: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[\frac{\partial\Gamma_{\textbf{p}}(t)}{\partial\textbf{p}}\]" src="form_27.png"/>
+</p>
+ </dd></dl>
+
+<p>Implemented in <a class="el" href="a00004.html#a26588ae63daaf2f7e572bb75a1a634af">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#ab00be863d62d7585e83d0056a732eca8">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#adcf137d2f85a0dea72f1b01eac4db32e">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a9708cc4b5c5ab6fc943c5227153a9ff7">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06aeca11e301c147c2ff4e4f02353e6d"></a><!-- doxytag: member="roboptim::Trajectory::variationConfigWrtParam" ref="a06aeca11e301c147c2ff4e4f02353e6d" args="(StableTimePoint tp) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#aee9c38f8b50e76851ffc7e2639ac6adc">variationConfigWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>tp</em></td><td>)</td>
+          <td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00009.html#a665047dc4ffd550ad26815595dbe115a">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#aad6922a65e42a33ddd3df39a940cafb3">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00007.html#ad76c2959098b7c47a06c566cf6300ffd">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#abd854d07f082d0e528e3cf81e4481769">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a056eb444a272b4f6ae1e07131e7888"></a><!-- doxytag: member="roboptim::Trajectory::variationDerivWrtParam" ref="a0a056eb444a272b4f6ae1e07131e7888" args="(double t, size_type order) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a0a056eb444a272b4f6ae1e07131e7888">variationDerivWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the variation of a derivative with respect to parameter vector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_18.png"/> in the definition interval. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_14.png"/> of the derivative. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>jacobian <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \frac{\partial}{\partial\textbf{p}} \left(\frac{d^r\Gamma_{\textbf{p}}}{dt^r}(t)\right) \]" src="form_28.png"/>
+</p>
+ </dd></dl>
+
+<p>Implemented in <a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">roboptim::ConstrainedBSpline&lt; N &gt;</a>, <a class="el" href="a00004.html#a3e8d5fdcea5270261a44ace50d983aa2">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00009.html#a53521701eb09efe176d347896e99333c">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00007.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a9246d8230893cd025ac741ea7b298b4b">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a486070a92b99d92c1fb6bcebfcad17a5"></a><!-- doxytag: member="roboptim::Trajectory::variationDerivWrtParam" ref="a486070a92b99d92c1fb6bcebfcad17a5" args="(StableTimePoint tp, size_type order) const =0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a0a056eb444a272b4f6ae1e07131e7888">variationDerivWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00009.html#a88b428f6a2a5c17323ac5bbc96411b19">roboptim::FreeTimeTrajectory&lt; T &gt;</a>, <a class="el" href="a00004.html#a3ce2d6683a47a00499e2516c1fb0e470">roboptim::BSpline&lt; N &gt;</a>, <a class="el" href="a00007.html#ac3da5c759b28482e0917b52e4faaead8">roboptim::CubicBSpline</a>, and <a class="el" href="a00028.html#a1d425bdee1195e1ee0b4c25b158350c1">roboptim::VectorInterpolation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af797267056d7487f1298791445161d98"></a><!-- doxytag: member="roboptim::Trajectory::variationStateWrtParam" ref="af797267056d7487f1298791445161d98" args="(double t, size_type order) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#af797267056d7487f1298791445161d98">variationStateWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the variation of the state with respect to parameter vector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>value <img class="formulaInl" alt="$t$" src="form_18.png"/> in the definition interval. </td></tr>
+    <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_14.png"/> of the derivative. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>jacobian <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \left(\begin{array}{c}\frac{\partial}{\partial \lambda} \Gamma_{\textbf{p}}(t) \\ \vdots \\ \frac{\partial}{\partial \lambda}\frac{d\Gamma_{\textbf{p}}^r}{dt^r}(t) \end{array}\right) \]" src="form_29.png"/>
+</p>
+ </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a88da99f61fe597659b7eb6af9c07eb56"></a><!-- doxytag: member="roboptim::Trajectory::variationStateWrtParam" ref="a88da99f61fe597659b7eb6af9c07eb56" args="(StableTimePoint stp, size_type order) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned dorder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; dorder &gt;::<a class="el" href="a00025.html#af797267056d7487f1298791445161d98">variationStateWrtParam</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
+          <td class="paramname"><em>stp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a496e1901f70e1d4418d2f76572112311"></a><!-- doxytag: member="roboptim::Trajectory::parameters_" ref="a496e1901f70e1d4418d2f76572112311" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">parameters_</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4cf72959ed1776528246fc06ab9330c6"></a><!-- doxytag: member="roboptim::Trajectory::singularPoints_" ref="a4cf72959ed1776528246fc06ab9330c6" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#a4cf72959ed1776528246fc06ab9330c6">singularPoints_</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf7d3def9b1bd2b1febab7ab89c8bab1"></a><!-- doxytag: member="roboptim::Trajectory::timeRange_" ref="adf7d3def9b1bd2b1febab7ab89c8bab1" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned DerivabilityOrder&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html">roboptim::Trajectory</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00025.html#adf7d3def9b1bd2b1febab7ab89c8bab1">timeRange_</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -220,7 +1320,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00075.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00025.html">TrajectoryCost</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00025.html">Trajectory</a>      </li>
 </body>
 </html>
