@@ -6,5 +6,6 @@ var searchData=
   ['impl_5ftranslate',['impl_translate',['../a00019.html#ade7edc4c36d96fb7eb8288c15b577c52',1,'roboptim::Polynomial']]],
   ['interval',['interval',['../a00004.html#a6c0f24371afc52ea8da4ed8a21c710fc',1,'roboptim::BSpline::interval()'],['../a00007.html#aedfccc978b8942bbb1a1f3f3a8d2a85c',1,'roboptim::CubicBSpline::interval()']]],
   ['interval_5ft',['interval_t',['../a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6',1,'roboptim::BSpline::interval_t()'],['../a00006.html#a82f0c21a580dedff5500a805cb9dea60',1,'roboptim::ConstrainedBSpline::interval_t()'],['../a00009.html#a44dfbbe2f421035c6b5f3fc51f8d8622',1,'roboptim::FreeTimeTrajectory::interval_t()'],['../a00025.html#a2722b17c64a0f01a73cfaf56b9188375',1,'roboptim::Trajectory::interval_t()']]],
+  ['isconstant',['isConstant',['../a00019.html#a23233d14096d1d673e5497958bcceef3',1,'roboptim::Polynomial']]],
   ['isvalidtime',['isValidTime',['../a00025.html#a720b3a37fd91afbb92df65b0bddd8b07',1,'roboptim::Trajectory']]]
 ];

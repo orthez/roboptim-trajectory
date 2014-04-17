@@ -15,6 +15,7 @@ var a00019 =
     [ "derivative", "a00019.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98", null ],
     [ "impl_derivative", "a00019.html#a727023f00fed5a59e443676eb8785e0b", null ],
     [ "impl_translate", "a00019.html#ade7edc4c36d96fb7eb8288c15b577c52", null ],
+    [ "isConstant", "a00019.html#a23233d14096d1d673e5497958bcceef3", null ],
     [ "operator()", "a00019.html#a476d94c1e37cd0e8f3c53c56251cbb01", null ],
     [ "operator*", "a00019.html#a0c94bad8f9317a217e18cf2896b44bee", null ],
     [ "operator*", "a00019.html#a302d13b8e1cdc9e8336d9f277eb026b1", null ],
