@@ -107,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new polynomial translated from (t-t₀) to (t-t₁).  <a href="#a6ff0d9f7311ce508bc9e67b1d235b417"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5127ae88e3f1d94fe92673e6f4c45d09">translateInPlace</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the polynomial (in place) from (t-t₀) to (t-t₁).  <a href="#a5127ae88e3f1d94fe92673e6f4c45d09"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;int K&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative polynomial of a given order.  <a href="#ac18ddbf9c86809ad4cfe62b1f6376066"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98">derivative</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>=1) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a7ef9624cd950cb41cf8d7d3b2a0a7b98"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
@@ -150,6 +153,9 @@ Protected Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> start_coef=0) const </td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;int K&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ac7bda9aaac0a8e4c32bcc25fa8295a31">impl_derivative</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the compile-time derivative.  <a href="#ac7bda9aaac0a8e4c32bcc25fa8295a31"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ade7edc4c36d96fb7eb8288c15b577c52">impl_translate</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a537a1e4aa6ca54fdce2214dea7de074f">Polynomial</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>, <a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a> key)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Special constructor for Monomial&lt;N&gt; and some operators.  <a href="#a537a1e4aa6ca54fdce2214dea7de074f"></a><br/></td></tr>
@@ -480,6 +486,37 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ac18ddbf9c86809ad4cfe62b1f6376066"></a><!-- doxytag: member="roboptim::Polynomial::derivative" ref="ac18ddbf9c86809ad4cfe62b1f6376066" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+<div class="memtemplate">
+template&lt;int K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Compute the derivative polynomial of a given order. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">K</td><td>derivative order. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>K-th derivative of the polynomial. </dd></dl>
+
+<p>Referenced by <a class="el" href="a00004.html#a0d3879c2c90db8d035d4315ebe8e7894">roboptim::BSpline&lt; N &gt;::basisFunctions()</a>, <a class="el" href="a00007.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative()</a>, <a class="el" href="a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699">roboptim::BSpline&lt; N &gt;::impl_derivative()</a>, <a class="el" href="a00007.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam()</a>, <a class="el" href="a00004.html#a3e8d5fdcea5270261a44ace50d983aa2">roboptim::BSpline&lt; N &gt;::variationDerivWrtParam()</a>, and <a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">roboptim::ConstrainedBSpline&lt; N &gt;::variationDerivWrtParam()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7ef9624cd950cb41cf8d7d3b2a0a7b98"></a><!-- doxytag: member="roboptim::Polynomial::derivative" ref="a7ef9624cd950cb41cf8d7d3b2a0a7b98" args="(value_type t, size_type order=1) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -487,7 +524,7 @@ template&lt;int N&gt; </div>
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98">derivative</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -516,8 +553,6 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>derivative of a given order evaluated at t. </dd></dl>
-
-<p>Referenced by <a class="el" href="a00004.html#a0d3879c2c90db8d035d4315ebe8e7894">roboptim::BSpline&lt; N &gt;::basisFunctions()</a>, <a class="el" href="a00007.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative()</a>, <a class="el" href="a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699">roboptim::BSpline&lt; N &gt;::impl_derivative()</a>, <a class="el" href="a00007.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam()</a>, <a class="el" href="a00004.html#a3e8d5fdcea5270261a44ace50d983aa2">roboptim::BSpline&lt; N &gt;::variationDerivWrtParam()</a>, and <a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">roboptim::ConstrainedBSpline&lt; N &gt;::variationDerivWrtParam()</a>.</p>
 
 </div>
 </div>
@@ -553,6 +588,35 @@ template&lt;int N&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7bda9aaac0a8e4c32bcc25fa8295a31"></a><!-- doxytag: member="roboptim::Polynomial::impl_derivative" ref="ac7bda9aaac0a8e4c32bcc25fa8295a31" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+<div class="memtemplate">
+template&lt;int K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implementation of the compile-time derivative. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">K</td><td>order of the derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>K-th derivative. </dd></dl>
 
 </div>
 </div>
