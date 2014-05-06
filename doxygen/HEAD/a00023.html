@@ -89,10 +89,10 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00025.html" title="Abstract trajectory.">Trajectory</a> type.  <a href="#a17010521237325e087014a549c418cd3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6af3c2eaa0b7c1472ae2bba74ce827ec">StateFunction</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00022.html">StableTimePoint</a> tpt, size_type <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>=1)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6af3c2eaa0b7c1472ae2bba74ce827ec">StateFunction</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00022.html">StableTimePoint</a> tpt, size_type <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>=1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6af3c2eaa0b7c1472ae2bba74ce827ec"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a31f8efa638bff53256de0f9f3df540a0">~StateFunction</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a31f8efa638bff53256de0f9f3df540a0">~StateFunction</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
@@ -101,8 +101,8 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00023.html#a09466f2cc15876d9b880d9b7116acda8">addToProblem</a> (const <a class="el" href="a00023.html#a17010521237325e087014a549c418cd3">trajectory_t</a> &amp;trajectory, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; function, unsigned <a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a>, Problem&lt; F, CLIST &gt; &amp;problem, const typename Function::intervals_t &amp;bounds, const std::vector&lt; typename Function::value_type &gt; &amp;scales, unsigned nConstraints)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aba28dab423bd30bd5913afdd50998856">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae9e624b5c00396938c688fbcb50f9300">impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aba28dab423bd30bd5913afdd50998856">impl_compute</a> (result_t &amp;, const argument_t &amp;) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae9e624b5c00396938c688fbcb50f9300">impl_gradient</a> (gradient_t &amp;, const argument_t &amp;, size_type) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -178,7 +178,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw (std::runtime_error)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -191,6 +191,12 @@ template&lt;typename T &gt; </div>
     <tr><td class="paramname">cost</td><td>state cost: <img class="formulaInl" alt="$cost$" src="form_17.png"/>. </td></tr>
     <tr><td class="paramname">tpt</td><td>parameter <img class="formulaInl" alt="$t$" src="form_18.png"/> where the state is evaluated. </td></tr>
     <tr><td class="paramname">order</td><td>order <img class="formulaInl" alt="$r$" src="form_14.png"/> of derivation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -207,7 +213,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::~<a class="el" href="a00023.html">StateFunction</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -357,7 +363,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -393,7 +399,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -412,7 +418,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00023.html">StateFunction</a>&lt; T &gt;::size_type <a class="el" href="a00023.html">roboptim::StateFunction</a>&lt; T &gt;::<a class="el" href="a00023.html#aeca7305f8895bd733e31e99f651fa412">order</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>

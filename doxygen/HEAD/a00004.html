@@ -108,18 +108,18 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef cox_map::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ace74805dc6518b77623b1bfd42e935e1">cox_map_itr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;B-Spline&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a B-Spline from its definition.  <a href="#a2deb2d643d8d859be7f49d4a6f125e1d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa55445a0b02f7ff62b3c4c78cbf1bb49">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;knots, std::string name=&quot;B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa55445a0b02f7ff62b3c4c78cbf1bb49">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;knots, std::string name=&quot;B-Spline&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a B-Spline with parameters and knot points.  <a href="#aa55445a0b02f7ff62b3c4c78cbf1bb49"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afa6c9456161e34290bf3292dcfdc2d85">BSpline</a> (const <a class="el" href="a00004.html">BSpline</a>&lt; N &gt; &amp;spline)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afa6c9456161e34290bf3292dcfdc2d85">BSpline</a> (const <a class="el" href="a00004.html">BSpline</a>&lt; N &gt; &amp;spline)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#afa6c9456161e34290bf3292dcfdc2d85"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ae72c5a15078b5207792b6fa4760ca8f2">~BSpline</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">setParameters</a> (const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ae72c5a15078b5207792b6fa4760ca8f2">~BSpline</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">setParameters</a> (const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify spline parameters.  <a href="#a6c4ec54103bf50d55ed9385363ee69b7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a26588ae63daaf2f7e572bb75a1a634af">variationConfigWrtParam</a> (double t) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a26588ae63daaf2f7e572bb75a1a634af">variationConfigWrtParam</a> (double t) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a configuration with respect to parameter vector.  <a href="#a26588ae63daaf2f7e572bb75a1a634af"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3e8d5fdcea5270261a44ace50d983aa2">variationDerivWrtParam</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3e8d5fdcea5270261a44ace50d983aa2">variationDerivWrtParam</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a derivative with respect to parameter vector.  <a href="#a3e8d5fdcea5270261a44ace50d983aa2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a74f22688a5914f6b39a709a47b60d0f3">singularPointAtRank</a> (<a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> rank) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singular point at given rank.  <a href="#a74f22688a5914f6b39a709a47b60d0f3"></a><br/></td></tr>
@@ -127,12 +127,12 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get left limit value of derivative at given singular point.  <a href="#aebdc1244a487f0468e0652aeb9122919"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ab621f760ea325778f9e573d76c2aa72e">derivAfterSingularPoint</a> (<a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> rank, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get right limit value of derivative at given singular point.  <a href="#ab621f760ea325778f9e573d76c2aa72e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a>&lt; N &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ac10c0004aaf4363c936ce3899f62e58c">resize</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a>&lt; N &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ac10c0004aaf4363c936ce3899f62e58c">resize</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone and resize a trajectory.  <a href="#ac10c0004aaf4363c936ce3899f62e58c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#aff2b4f4bfb8aeb8c54c26bc3ce880e34"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aad6922a65e42a33ddd3df39a940cafb3">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3ce2d6683a47a00499e2516c1fb0e470">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aad6922a65e42a33ddd3df39a940cafb3">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3ce2d6683a47a00499e2516c1fb0e470">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a7a486480552686fa205dbb8a9faa72e4">Dt</a> () const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3e4800fd7c0308a20484b214302efc2e">knotVector</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the knot vector of the spline.  <a href="#a3e4800fd7c0308a20484b214302efc2e"></a><br/></td></tr>
@@ -144,9 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the B-spline.  <a href="#a3c1bd3dc34d053bdd1380024ff168c68"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a34896c40dc578750b9d1e4b70463e7a4">impl_compute</a> (<a class="el" href="a00004.html#aac6152350c075f143fb812abeda6d6e0">result_t</a> &amp;, double) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699">impl_derivative</a> (<a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">gradient_t</a> &amp;g, double x, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0947260a5f9a00cdc802f27360d53fac">impl_derivative</a> (<a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">gradient_t</a> &amp;g, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a34896c40dc578750b9d1e4b70463e7a4">impl_compute</a> (<a class="el" href="a00004.html#aac6152350c075f143fb812abeda6d6e0">result_t</a> &amp;, double) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ad78ae2fe4e9665cd494eb0e2a37b4699">impl_derivative</a> (<a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">gradient_t</a> &amp;g, double x, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0947260a5f9a00cdc802f27360d53fac">impl_derivative</a> (<a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">gradient_t</a> &amp;g, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0d3879c2c90db8d035d4315ebe8e7894">basisFunctions</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afac4dd240d6c5299e26af185f0240466">computeBasisPolynomials</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3">cox_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">cox_de_boor</a> (<a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> j, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> n) const </td></tr>
@@ -437,7 +437,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -454,6 +454,8 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 <p>Number of control points is inferred from dimension of dimenion of parameter vector. </p>
+
+<p>References <a class="el" href="a00004.html#afac4dd240d6c5299e26af185f0240466">roboptim::BSpline&lt; N &gt;::computeBasisPolynomials()</a>, <a class="el" href="a00004.html#ad13d70c732cda1902f60daff7cd93eff">roboptim::BSpline&lt; N &gt;::order_</a>, <a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">roboptim::Trajectory&lt; N &gt;::parameters_</a>, and <a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">roboptim::BSpline&lt; N &gt;::setParameters()</a>.</p>
 
 </div>
 </div>
@@ -496,7 +498,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -514,6 +516,8 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 
+<p>References <a class="el" href="a00004.html#afac4dd240d6c5299e26af185f0240466">roboptim::BSpline&lt; N &gt;::computeBasisPolynomials()</a>, <a class="el" href="a00004.html#ad13d70c732cda1902f60daff7cd93eff">roboptim::BSpline&lt; N &gt;::order_</a>, <a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">roboptim::Trajectory&lt; N &gt;::parameters_</a>, and <a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">roboptim::BSpline&lt; N &gt;::setParameters()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afa6c9456161e34290bf3292dcfdc2d85"></a><!-- doxytag: member="roboptim::BSpline::BSpline" ref="afa6c9456161e34290bf3292dcfdc2d85" args="(const BSpline&lt; N &gt; &amp;spline)" -->
@@ -527,7 +531,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00004.html">BSpline</a>&lt; N &gt; &amp;&#160;</td>
           <td class="paramname"><em>spline</em></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -541,6 +545,8 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 
+<p>References <a class="el" href="a00004.html#ad13d70c732cda1902f60daff7cd93eff">roboptim::BSpline&lt; N &gt;::order_</a>, <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; N &gt;::parameters()</a>, <a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">roboptim::Trajectory&lt; N &gt;::parameters_</a>, and <a class="el" href="a00004.html#a6c4ec54103bf50d55ed9385363ee69b7">roboptim::BSpline&lt; N &gt;::setParameters()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae72c5a15078b5207792b6fa4760ca8f2"></a><!-- doxytag: member="roboptim::BSpline::~BSpline" ref="ae72c5a15078b5207792b6fa4760ca8f2" args="()" -->
@@ -553,7 +559,7 @@ template&lt;int N&gt; </div>
           <td class="memname">virtual <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::~<a class="el" href="a00004.html">BSpline</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [inline, virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -630,6 +636,8 @@ template&lt;int N&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">roboptim::BSpline&lt; N &gt;::BSpline()</a>.</p>
 
 </div>
 </div>
@@ -822,7 +830,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -859,7 +867,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -898,13 +906,15 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Implements <a class="el" href="a00025.html#aa956e4feb4b819f1dfbfe84fa68cc9ef">roboptim::Trajectory&lt; N &gt;</a>.</p>
+
+<p>References <a class="el" href="a00022.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>.</p>
 
 </div>
 </div>
@@ -961,7 +971,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -991,7 +1001,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a>&#160;</td>
           <td class="paramname"><em>timeRange</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1016,7 +1026,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1027,6 +1037,8 @@ template&lt;int N&gt; </div>
 <p>Reimplemented from <a class="el" href="a00025.html#ab629b024360573b744b2f2ea53f55f40">roboptim::Trajectory&lt; N &gt;</a>.</p>
 
 <p>Reimplemented in <a class="el" href="a00006.html#a84538e48965410f6b2cd27b09e054ec2">roboptim::ConstrainedBSpline&lt; N &gt;</a>.</p>
+
+<p>Referenced by <a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">roboptim::BSpline&lt; N &gt;::BSpline()</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1076,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1097,13 +1109,15 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>tp</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Implements <a class="el" href="a00025.html#a06aeca11e301c147c2ff4e4f02353e6d">roboptim::Trajectory&lt; N &gt;</a>.</p>
+
+<p>References <a class="el" href="a00022.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1142,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1176,13 +1190,15 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Implements <a class="el" href="a00025.html#a486070a92b99d92c1fb6bcebfcad17a5">roboptim::Trajectory&lt; N &gt;</a>.</p>
+
+<p>References <a class="el" href="a00022.html#ad56b244310ce512b8d9d736ebc5130cc">roboptim::StableTimePoint::getTime()</a>.</p>
 
 </div>
 </div>
@@ -1201,6 +1217,8 @@ template&lt;int N&gt; </div>
 <div class="memdoc">
 
 <p>order of the B-Spline </p>
+
+<p>Referenced by <a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">roboptim::BSpline&lt; N &gt;::BSpline()</a>.</p>
 
 </div>
 </div>

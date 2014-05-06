@@ -102,23 +102,23 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import jacobian type.  <a href="#a25f6d36f1f51a46e41a2b7f2bb747786"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#acad50995170db0590419691335a2f020">ConstrainedBSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a>, const std::string name=&quot;Constrained B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#acad50995170db0590419691335a2f020">ConstrainedBSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a>, const std::string name=&quot;Constrained B-Spline&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">see B-Spline constructors for documentation  <a href="#acad50995170db0590419691335a2f020"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#adfd34bb045c6b76ef376fea7b407f9b9">ConstrainedBSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;knots, std::string name=&quot;Constrained B-Spline&quot;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#adfd34bb045c6b76ef376fea7b407f9b9">ConstrainedBSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> tr, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a>, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;knots, std::string name=&quot;Constrained B-Spline&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">see B-Spline constructors for documentation  <a href="#adfd34bb045c6b76ef376fea7b407f9b9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a10ec2ffddf1dea18ea8f7dee9a20c3da">~ConstrainedBSpline</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a10ec2ffddf1dea18ea8f7dee9a20c3da">~ConstrainedBSpline</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of constrained B-spline.  <a href="#a10ec2ffddf1dea18ea8f7dee9a20c3da"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac9247c76cc4c9cdc6d19ef3216e5b5eb">addFixedConstraint</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> value, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a>=0)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac9247c76cc4c9cdc6d19ef3216e5b5eb">addFixedConstraint</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> value, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a>=0)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a constraint on the basic spline.  <a href="#ac9247c76cc4c9cdc6d19ef3216e5b5eb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4ab60a5dbeb146a37baaac30079badb9">addCoupledConstraint</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t_1, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension_1, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t_2, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension_2, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a>=0, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> factor=1.)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4ab60a5dbeb146a37baaac30079badb9">addCoupledConstraint</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t_1, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension_1, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t_2, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension_2, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> <a class="el" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a>=0, <a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> factor=1.)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a constraint against another part of the spline.  <a href="#a4ab60a5dbeb146a37baaac30079badb9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded parameters method from <a class="el" href="a00025.html">Trajectory&lt;N&gt;</a>.  <a href="#ac41f0f974801a22609a4d0b35196a686"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a84538e48965410f6b2cd27b09e054ec2">setParameters</a> (const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a84538e48965410f6b2cd27b09e054ec2">setParameters</a> (const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded setParameters method from <a class="el" href="a00025.html">Trajectory&lt;N&gt;</a>.  <a href="#a84538e48965410f6b2cd27b09e054ec2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a>&lt; N &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a324ad8469c568c4a6656900f18bf8966">resize</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00025.html">Trajectory</a>&lt; N &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a324ad8469c568c4a6656900f18bf8966">resize</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone and resize a trajectory.  <a href="#a324ad8469c568c4a6656900f18bf8966"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">variationDerivWrtParam</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#acbac1c2a022d29706b068903b7ad6b27">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">variationDerivWrtParam</a> (double t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a derivative with respect to parameter vector.  <a href="#a23e0111f71892c2ca1e3bceb64853535"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -314,7 +314,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -363,7 +363,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -383,7 +383,7 @@ template&lt;int N&gt; </div>
           <td class="memname"><a class="el" href="a00006.html">roboptim::ConstrainedBSpline</a>&lt; N &gt;::~<a class="el" href="a00006.html">ConstrainedBSpline</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -439,7 +439,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -496,7 +496,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -528,7 +528,7 @@ template&lt;int N&gt; </div>
           <td class="memname">const <a class="el" href="a00006.html">ConstrainedBSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp; <a class="el" href="a00006.html">roboptim::ConstrainedBSpline</a>&lt; N &gt;::<a class="el" href="a00006.html#ac41f0f974801a22609a4d0b35196a686">parameters</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -552,7 +552,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a>&#160;</td>
           <td class="paramname"><em>timeRange</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -584,7 +584,7 @@ template&lt;int N&gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>parameters_in</em></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -638,7 +638,7 @@ template&lt;int N&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>

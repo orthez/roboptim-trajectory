@@ -97,14 +97,14 @@ parent_t::discreteInterval_t&#160;</td><td class="memItemRight" valign="bottom">
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import discrete interval type.  <a href="#aa92ae3c9f70bfb6c628145028a7733ec"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7546e9b87c43f85847a08c84d5697225">TrajectorySumCost</a> (const <a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval, size_type <a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a>=1)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7546e9b87c43f85847a08c84d5697225">TrajectorySumCost</a> (const <a class="el" href="a00027.html#ad4fb3f8ec4865b9b461474b869485939">trajectory_t</a> &amp;gamma, boost::shared_ptr&lt; <a class="el" href="a00008.html">DerivableFunction</a> &gt; cost, const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval, size_type <a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a>=1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7546e9b87c43f85847a08c84d5697225"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a5762a8c40580798b89c8d7fee0742ff6">~TrajectorySumCost</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a5762a8c40580798b89c8d7fee0742ff6">~TrajectorySumCost</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7987432f43a9ce7fb8f75f87b49caaeb">impl_compute</a> (result_t &amp;, const argument_t &amp;) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4649289d51d38aacd18858d4e05ce541">impl_gradient</a> (<a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a> &amp;, const argument_t &amp;, size_type) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7987432f43a9ce7fb8f75f87b49caaeb">impl_compute</a> (result_t &amp;, const argument_t &amp;) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4649289d51d38aacd18858d4e05ce541">impl_gradient</a> (<a class="el" href="a00027.html#a0528dabf8268e40db79ee63f76739198">gradient_t</a> &amp;, const argument_t &amp;, size_type) const </td></tr>
 <tr><td colspan="2"><h2><a name="member-group"></a>
 Discrete interval of stable time points.</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef boost::tuple<br class="typebreak"/>
@@ -118,11 +118,11 @@ Discrete interval of stable time points.</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
 <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a0d5806d4c5327117101bfb4cbafc52b9">makeDiscreteInterval</a> (interval_t interval, <a class="el" href="a00022.html">StableTimePoint</a> step)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a discrete interval.  <a href="#a0d5806d4c5327117101bfb4cbafc52b9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a359163d4d872e2cd00ea866d3a20cb35">getLowerBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a359163d4d872e2cd00ea866d3a20cb35">getLowerBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of a discrete interval.  <a href="#a359163d4d872e2cd00ea866d3a20cb35"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#afe2d0ba0e4c47683dde4e51f0d53dabd">getUpperBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#afe2d0ba0e4c47683dde4e51f0d53dabd">getUpperBound</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of a discrete interval.  <a href="#afe2d0ba0e4c47683dde4e51f0d53dabd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aa8f91e6840e896b6b2311956669803fd">getStep</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aa8f91e6840e896b6b2311956669803fd">getStep</a> (const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;interval)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper step of a discrete interval.  <a href="#aa8f91e6840e896b6b2311956669803fd"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -290,7 +290,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -319,7 +319,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::~<a class="el" href="a00027.html">TrajectorySumCost</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -339,7 +339,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
-          <td>  throw ()<code> [inline, static]</code></td>
+          <td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
@@ -367,7 +367,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
-          <td>  throw ()<code> [inline, static]</code></td>
+          <td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
@@ -395,7 +395,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00027.html#a637edcf053c62eb2b02747217180bb5f">discreteStableTimePointInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
-          <td>  throw ()<code> [inline, static]</code></td>
+          <td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
@@ -433,7 +433,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -469,7 +469,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected]</code></td>
+          <td></td><td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -571,7 +571,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00027.html">TrajectorySumCost</a>&lt; T &gt;::size_type <a class="el" href="a00027.html">roboptim::TrajectorySumCost</a>&lt; T &gt;::<a class="el" href="a00027.html#a1fa8949f2f9d9b052d0cd87ddcda73f5">order</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>
